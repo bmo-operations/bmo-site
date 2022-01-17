@@ -13,6 +13,7 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
+	<script type="text/javascript" src="assets/js/playerbio.js"></script>
 </head>
 
 <body class="no-sidebar is-preload">
@@ -36,11 +37,74 @@
 					<li><a href="media.html">Social Media</a></li>
 					<li><a href="photos/photos.html">Photos</a></li>
 					<li><a href="support.html">Support</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
 					<!--<li><a href="ztips.html">Zip's Tips</a></li>-->
 				</ul>
 			</nav>
 
 		</section>
+
+<!-- The Modal -->
+<div id="popup" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+	<span class="close" onclick="onspanclick('popup')">&times;</span>
+	<p id='height'>Placeholder</p>
+	<p id='hometown'>Placeholder</p>
+	<p id='highschool'>Placeholder</p>
+	<p id='concentration'>Placeholder</p>
+	<p id='q1'>Placeholder</p>
+	<p id='q2'>Placeholder</p>
+	</div>
+</div>
+
+		<!-- Main -->
+		<div id="main" class="wrapper style3" style="padding-bottom:3em;">
+			<div class="title">Roster ('22 Season) </div>
+			<div class="container">
+
+				<!-- Content -->
+				<div class="row">
+					<div class="column">
+					  <div class="card">
+						<img src="img1.jpg" alt="Cleb" style="width:100%">
+						<div class="container">
+						  <h2>Caleb Moran</h2>
+						  <p>Class year: 2025</p>
+						  <p>Nickname: Cleb</p>
+						  <button class="button" onclick="onbtnclick('popup', 'cleb')">Open Modal</button>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="column">
+					  <div class="card">
+						<img src="img2.jpg" alt="Mike" style="width:100%">
+						<div class="container">
+						  <h2>Mike Ross</h2>
+						  <p class="title">Art Director</p>
+						  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+						  <p>example@example.com</p>
+						  <p><button class="button">Contact</button></p>
+						</div>
+					  </div>
+					</div>
+				  
+					<div class="column">
+					  <div class="card">
+						<img src="img3.jpg" alt="John" style="width:100%">
+						<div class="container">
+						  <h2>John Doe</h2>
+						  <p class="title">Designer</p>
+						  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+						  <p>example@example.com</p>
+						  <p><button class="button">Contact</button></p>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Main -->
 		<div id="main" class="wrapper style3" style="padding-bottom:3em;">
@@ -60,6 +124,7 @@
 
 			</div>
 		</div>
+
 		<!-- Main -->
 		<div id="old-roster" class="wrapper style2" style="padding-bottom:3em;">
 			<div class="title">Roster ('19 Season) </div>
@@ -84,9 +149,8 @@
 			<div id="copyright" style="margin:10px;padding-top:.8em;">
 				<ul style="margin-bottom:0;">
 					<li style="" class="fb-like"
-					data-href="https://www.facebook.com/brownultimatefrisbee/" data-width="200"
-					data-layout="button_count" data-action="like" data-size="large" data-show-faces="false"
-					data-share="false"></li>
+					data-href="https://www.facebook.com/bmoultimate/" data-width="200"
+					data-layout="button_count" data-action="like" data-size="large" data-share="false"></li>
 					<li style="color:#aaa;">Contact Us: bmocaptains@gmail.com</li>
 					<li style="color:#aaa;">&copy; Brownian Motion 2021.</li>
 				</ul>
