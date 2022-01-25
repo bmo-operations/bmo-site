@@ -16,19 +16,9 @@ function onbtnclick(modalid, player) {
    document.getElementById("hometown").innerText = "Hometown: " + info.hometown;
    document.getElementById("highschool").innerText = "High School: " + info.highschool;
    document.getElementById("concentration").innerText = "Concentration: " + info.concentration;
-   document.getElementById("q1").innerText = info.q1 + ": " + info.a1;
-   document.getElementById("q2").innerText = info.q2 + ": " + info.a2;
-
-   /*
-   <p id='height'>Placeholder</p>
-	<p id='hometown'>Placeholder</p>
-	<p id='highschool'>Placeholder</p>
-	<p id='concentration'>Placeholder</p>
-	<p id='q1'>Placeholder</p>
-	<p id='a1'>Placeholder</p>
-	<p id='q2'>Placeholder</p>
-	<p id='a2'>Placeholder</p>
-   */
+   document.getElementById("q1").innerText = info.q1 + ":\n" + info.a1;
+   document.getElementById("q2").innerText = info.q2 + ":\n" + info.a2;
+   document.getElementById("q3").innerText = info.q3 + ":\n" + info.a3;
 
    // display
    document.getElementById(modalid).style.display = "block";
