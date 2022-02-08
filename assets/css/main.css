@@ -82,7 +82,7 @@ input, select, textarea {
 	margin-bottom: 16px;
 	padding: 0 8px;
   }
-  
+
   /* Display the columns below each other instead of side by side on small screens */
   @media screen and (max-width: 650px) {
 	.column {
@@ -90,28 +90,32 @@ input, select, textarea {
 	  display: block;
 	}
   }
-  
+
   /* Add some shadows to create a card effect */
   .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  
+
   /* Some left and right padding inside the container */
   .container {
 	padding: 0 16px;
   }
-  
+
+	.container p {
+		margin-bottom: 1em;
+	}
+
   /* Clear floats */
   .container::after, .row::after {
 	content: "";
 	clear: both;
 	display: table;
   }
-  
+
   .title {
 	color: grey;
   }
-  
+
   .button {
 	border: none;
 	outline: 0;
@@ -123,7 +127,7 @@ input, select, textarea {
 	cursor: pointer;
 	width: 100%;
   }
-  
+
   .button:hover {
 	background-color: #555;
   }
@@ -143,7 +147,7 @@ input, select, textarea {
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	-ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
   }
-  
+
   /* Modal Content/Box */
   .modal-content {
 	background-color: #fefefe;
@@ -157,7 +161,7 @@ input, select, textarea {
   .modal::-webkit-scrollbar {
 	  display: none;
   }
-  
+
   /* The Close Button */
   .close {
 	color: #aaa;
@@ -165,7 +169,7 @@ input, select, textarea {
 	font-size: 28px;
 	font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
 	color: black;
@@ -2171,7 +2175,7 @@ input, select, textarea {
 /* Logo */
 
 	#logo {
-		
+
 		text-align: center;
 		position: relative;
 		top: 1.5em;
@@ -2226,7 +2230,7 @@ input, select, textarea {
 				#nav > ul > li > a, #nav > ul > li > span {
 					display: block;
 					color: white;
-					
+
 					text-transform: uppercase;
 					text-decoration: none;
 					font-size: 0.8em;
