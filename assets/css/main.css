@@ -70,13 +70,9 @@ input, select, textarea {
 }
 
 /* custom stuff for roster */
-.grid-container {
-	display: grid;
-	grid-template: 150px / auto auto auto auto;
-}
 
-.player {
-	text-align: center;
+.biopic {
+	width: 100%;
 }
 
 /* Three columns side by side */
