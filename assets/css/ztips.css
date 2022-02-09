@@ -1,3 +1,46 @@
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.ztips-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ztips-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.ztips-search {
+    flex-grow: 1;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 56px;
+    border-radius: 32px;
+    border: none;
+}
+
+.icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 56px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+    cursor: pointer;
+}
+
 #ztips-container {
     display: flex;
     flex-direction: column;
@@ -29,6 +72,7 @@
 .ztip-title {
     flex-grow: 1;
     color: rgba(0, 0, 0, 0.87);
+    font-weight: 600;
 }
 
 .ztip-text {
