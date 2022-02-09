@@ -1,0 +1,40 @@
+#ztips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ztip {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    cursor: pointer;
+}
+
+:hover.ztip {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.ztip-header {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.ztip-title {
+    flex-grow: 1;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.ztip-text {
+    display: none;
+}
+
+.ztip-text.expanded {
+    display: block;
+}

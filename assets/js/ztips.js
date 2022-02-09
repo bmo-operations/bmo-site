@@ -1,14 +1,29 @@
+function toggle_tip(date) {
+    tip_id = '#tip-'+date.split('/').join('')
+    console.log("toggling " + tip_id)
+    document.querySelector(tip_id).classList.toggle("expanded")
+    document.querySelector(`${tip_id} > .ztip-text`).classList.toggle("expanded")
+    document.querySelector(`${tip_id} > .ztip-expand`).innerHTML = ""
+
+}
+
+function tip_component(tip) {
+    return `
+    <div class="ztip" id="tip-${tip['date'].split('/').join('')}" onclick="toggle_tip('${tip['date']}')">
+        <div class="ztip-header">
+            <span class="ztip-title">${tip['title']}</span>
+            <span class="ztip-date">${tip['date']}</span>
+            <span class="ztip-expand material-icons-outlined">expand_more</span>
+        </div>
+        <span class="ztip-text">${tip['tip']}</span>
+    </div>
+    `
+}
 
 function populate_html(zips_dict) {
-    style_string = 'style="text-transform: none;font-weight:400;letter-spacing:0.015em;width:100%;text-align:center;"';
-    for(var i=0;i<48;i++){
-        $('#tips-col1').append('<a href="#" class="button style2 ztips" '+style_string+'>'+zips_dict[i]['title']+'</a>')
-    }
-    for(var i=48;i<96;i++){
-        $('#tips-col2').append('<a href="#" class="button style2 ztips" '+style_string+'>'+zips_dict[i]['title']+'</a>')
-    }
-    for(var i=96;i<142;i++){
-        $('#tips-col3').append('<a href="#" class="button style2 ztips" '+style_string+'>'+zips_dict[i]['title']+'</a>')
+    for(var i = 0; i < 142; i++) {
+        let tip = zips_dict[i]
+        $('#ztips-container').append(tip_component(tip))
     }
 }
 
