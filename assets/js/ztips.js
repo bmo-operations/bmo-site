@@ -49,7 +49,7 @@ function tip_component(tip) {
             <span class="ztip-date">${tip['date']}</span>
             <span class="ztip-expand material-icons-outlined">expand_more</span>
         </div>
-        <span class="ztip-text">${tip['tip']}</span>
+        <span class="ztip-text">${tip['text']}</span>
     </div>
     `
 }
@@ -63,18 +63,15 @@ function populate_html(zips_dict) {
 
 $(document).ready(function () {
     $.get('ztips.txt', function (data) {
-        var zips_dict = {}
-        data = data.split("\n");
-        n = data.length;
-        let counter = 0;
-        for (var i = 0; i < n; i += 3) {
-            if (i % 2 == 0) {
-                zips_dict[counter] = { "date": data[i], "title": data[i + 1], "tip": data[i + 2] }
-                counter++;
-            }
-        }
-        console.log(counter);
+        let zips_dict = getTips()
         console.log(zips_dict);
         populate_html(zips_dict);
     });
 });
+
+function getTips() {
+    var request = new XMLHttpRequest();
+    request.open("GET", "assets/ztips.json", false);
+    request.send(null)
+    return JSON.parse(request.responseText);
+ }
