@@ -49,7 +49,7 @@ function tip_component(tip) {
             <span class="ztip-date">${tip['date']}</span>
             <span class="ztip-expand material-icons-outlined">expand_more</span>
         </div>
-        <span class="ztip-text">${tip['text']}</span>
+        <span class="ztip-text">${tip['text'].split('\n').join('<br/>')}</span>
     </div>
     `
 }
@@ -62,11 +62,9 @@ function populate_html(zips_dict) {
 }
 
 $(document).ready(function () {
-    $.get('ztips.txt', function (data) {
-        let zips_dict = getTips()
-        console.log(zips_dict);
-        populate_html(zips_dict);
-    });
+    let zips_dict = getTips()
+    console.log(zips_dict);
+    populate_html(zips_dict);
 });
 
 function getTips() {
