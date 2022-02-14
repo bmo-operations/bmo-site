@@ -1,0 +1,84 @@
+.roster-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    max-width: 120ch;
+    margin: auto;
+    padding: 16px;
+}
+
+@media screen and (max-width: 850px) {
+    .roster-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .roster-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.roster-card {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.player-image {
+    width: 100%;
+}
+
+.player-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.player-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.player-name {
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+.player-nickname-container {
+    margin-bottom: 0;
+}
+
+.player-aka {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.player-nickname {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.player-info-item {
+    display: flex;
+    gap: 16px;
+}
+
+.player-info-item-text {
+    margin-bottom: 0px;
+}
+
+.button {
+    color:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.05);
+}

@@ -5,7 +5,9 @@
 	<title>Brown Men's Ultimate | Roster</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/roster.css" />
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -13,13 +15,12 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<script type="text/javascript" src="assets/js/playerbio.js"></script>
 </head>
 
 <body class="no-sidebar is-preload">
-		<div id="fb-root"></div>
-		<script async defer crossorigin="anonymous"
-			src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -44,339 +45,26 @@
 
 		</section>
 
-<!-- The Modal -->
-<div id="popup" class="modal">
-	<!-- Modal content -->
-	<div class="modal-content">
-	<span class="close" onclick="onspanclick('popup')">&times;</span>
-	<p id='height'>Placeholder</p>
-	<p id='hometown'>Placeholder</p>
-	<p id='highschool'>Placeholder</p>
-	<p id='concentration'>Placeholder</p>
-	<p id='q1'>Placeholder</p>
-	<p id='q2'>Placeholder</p>
-	<p id='q3'>Placeholder</p>
-	</div>
-</div>
+		<!-- The Modal -->
+		<div id="popup" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close" onclick="onspanclick('popup')">&times;</span>
+				<p id='height'>Placeholder</p>
+				<p id='hometown'>Placeholder</p>
+				<p id='highschool'>Placeholder</p>
+				<p id='concentration'>Placeholder</p>
+				<p id='q1'>Placeholder</p>
+				<p id='q2'>Placeholder</p>
+				<p id='q3'>Placeholder</p>
+			</div>
+		</div>
 
 		<!-- Main -->
 		<div id="main" class="wrapper style3" style="padding-bottom:3em;">
 			<div class="title">Roster ('22 Season) </div>
-			<div class="container">
-
-				<!-- Content -->
-					  <div class="column">
-						<div class="card">
-						<img src="photos/images/biopics/noah.jpg" alt="Noah" class="biopic">
-						<div class="container">
-							<h2>Noah Ball-Burack</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Berkeley, MA</p>
-							<p>Nickname: Bert</p>
-							<button class="button" onclick="onbtnclick('popup', 'noah')">More</button>
-						</div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						<img src="photos/images/biopics/boyce.jpg" alt="Boyce" class="biopic">
-						<div class="container">
-							<h2>William Boyce</h2>
-							<p>Class year: 2025</p>
-							<p>Hometown: Old Tappan, NJ</p>
-							<p>Nickname: Boyce</p>
-							<button class="button" onclick="onbtnclick('popup', 'boyce')">More</button>
-						</div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/andy.jpeg" alt="Andy" class="biopic">
-						  <div class="container">
-							<h2>Andy Burris</h2>
-							<p>Class year: 2025</p>
-							<p>Hometown: Washington, DC</p>
-							<p>Nickname: Burris With A 'B'</p>
-							<button class="button" onclick="onbtnclick('popup', 'andy')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/patrick.jpg" alt="Patrick" class="biopic">
-						  <div class="container">
-							<h2>Patrick Connor</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Austin, TX</p>
-							<p>Nickname: Archduke Slimy Man</p>
-							<button class="button" onclick="onbtnclick('popup', 'patrick')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/cam.jpg" alt="Cam" class="biopic">
-						  <div class="container">
-							<h2>Cameron Curney</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Abington, MA</p>
-							<p>Nickname: Cam</p>
-							<button class="button" onclick="onbtnclick('popup', 'cam')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/dice.jpg" alt="Dice" class="biopic">
-						  <div class="container">
-							<h2>Jackson De Campos (captain)</h2>
-							<p>Class year: 2022</p>
-							<p>Hometown: Seattle, WA</p>
-							<p>Nickname: Dice</p>
-							<button class="button" onclick="onbtnclick('popup', 'dice')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/luca.jpg" alt="Luca" class="biopic">
-						  <div class="container">
-							<h2>Luca Duclos-Orsello</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Somerville, MA</p>
-							<p>Nickname: The Cheesman of North Ubmria</p>
-							<button class="button" onclick="onbtnclick('popup', 'luca')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/leo.jpg" alt="Leo" class="biopic">
-						  <div class="container">
-							<h2>Leo Tamagawa Gordon</h2>
-							<p>Class year: 2023</p>
-							<p>Hometown: Berkeley, CA</p>
-							<p>Nickname: Leland</p>
-							<button class="button" onclick="onbtnclick('popup', 'leo')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/graham.jpg" alt="Graham" class="biopic">
-						  <div class="container">
-							<h2>Graham Huntington</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Starksboro, VT</p>
-							<p>Nickname: Grunt</p>
-							<button class="button" onclick="onbtnclick('popup', 'graham')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/trails.jpg" alt="Trails" class="biopic">
-						  <div class="container">
-							<h2>Talon Johnson</h2>
-							<p>Class year: 2022</p>
-							<p>Hometown: Kangaroo Court, KS</p>
-							<p>Nickname: Trails</p>
-							<button class="button" onclick="onbtnclick('popup', 'trails')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/zach.jpg" alt="Zach" class="biopic">
-						  <div class="container">
-							<h2>Zachary Kaufman</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Lexington, MA</p>
-							<p>Nickname: Zach</p>
-							<button class="button" onclick="onbtnclick('popup', 'zach')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/ian.jpg" alt="Ian" class="biopic">
-						  <div class="container">
-							<h2>Ian Layzer</h2>
-							<p>Class year: 2023</p>
-							<p>Hometown: Durham, NC</p>
-							<p>Nickname: Layzer</p>
-							<button class="button" onclick="onbtnclick('popup', 'ian')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/matias.jpg" alt="Matias" class="biopic">
-						  <div class="container">
-							<h2>Matias Lee</h2>
-							<p>Class year: 2025</p>
-							<p>Hometown: Hanover, NH</p>
-							<p>Nickname: Teez</p>
-							<button class="button" onclick="onbtnclick('popup', 'morgann')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/oscar.jpg" alt="Olow" class="biopic">
-						  <div class="container">
-							<h2>Oscar Low</h2>
-							<p>Class year: 2025</p>
-							<p>Hometown: Williamstown, MA</p>
-							<p>Nickname: OLow</p>
-							<button class="button" onclick="onbtnclick('popup', 'olow')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/cleb.jpg" alt="Cleb" class="biopic">
-						  <div class="container">
-							<h2>Caleb Moran</h2>
-							<p>Class year: 2025</p>
-							  <p>Hometown: Arlington, VA</p>
-							<p>Nickname: Cleb</p>
-							<button class="button" onclick="onbtnclick('popup', 'cleb')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/munch.jpg" alt="Munch" class="biopic">
-						  <div class="container">
-							<h2>Cal Nightingale</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Durham, NC</p>
-							<p>Nickname: Munch</p>
-							<button class="button" onclick="onbtnclick('popup', 'munch')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/jac.jpg" alt="Jac" class="biopic">
-						  <div class="container">
-							<h2>Jacques Nissen (captain)</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Washington, DC</p>
-							<p>Nickname: Moped</p>
-							<button class="button" onclick="onbtnclick('popup', 'jac')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/john.jpg" alt="John" class="biopic">
-						  <div class="container">
-							<h2>John Randolph (captain)</h2>
-							<p>Class year: 2022</p>
-							<p>Hometown: Seattle, WA</p>
-							<p>Nickname: JR</p>
-							<button class="button" onclick="onbtnclick('popup', 'john')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/yut.jpg" alt="Yut" class="biopic">
-						  <div class="container">
-							<h2>Elliott Rosenberg</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Oakland, CA</p>
-							<p>Nickname: Yut</p>
-							<button class="button" onclick="onbtnclick('popup', 'yut')">More</button>
-						  </div>
-						</div>
-					  </div>
-					
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/willis.jpg" alt="Willis" class="biopic">
-						  <div class="container">
-							<h2>Will Steinfeld</h2>
-							<p>Class year: 2024</p>
-							<p>Hometown: Lexington, MA</p>
-							<p>Nickname: Willis</p>
-							<button class="button" onclick="onbtnclick('popup', 'willis')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/morgann.jpg" alt="Morgann" class="biopic">
-						  <div class="container">
-							<h2>Morgann Thain</h2>
-							<p>Class year: 2022</p>
-							<p>Hometown: Abington, PA</p>
-							<p>Nickname: Mdog</p>
-							<button class="button" onclick="onbtnclick('popup', 'matias')">More</button>
-						  </div>
-						</div>
-					  </div>
-					
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/marty.jpg" alt="Marty" class="biopic">
-						  <div class="container">
-							<h2>Martin Trouilloud</h2>
-							<p>Class year: 2023</p>
-							<p>Hometown: Norwood, NJ</p>
-							<p>Nickname: Marty</p>
-							<button class="button" onclick="onbtnclick('popup', 'marty')">More</button>
-						  </div>
-						</div>
-					  </div>
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/dyl.jpg" alt="Dyl" class="biopic">
-						  <div class="container">
-							<h2>Dylan Villeneuve</h2>
-							<p>Class year: 2022</p>
-							<p>Hometown: Berkeley, CA</p>
-							<p>Nickname: Dyl</p>
-							<button class="button" onclick="onbtnclick('popup', 'dyl')">More</button>
-						  </div>
-						</div>
-					  </div>		  
-
-					  <div class="column">
-						<div class="card">
-						  <img src="photos/images/biopics/zuck.jpg" alt="Zuck" class="biopic">
-						  <div class="container">
-							<h2>Kaleb Zuckerman</h2>
-							<p>Class year: 2025</p>
-							<p>Hometown: Northampton, MA</p>
-							<p>Nickname: Zuck</p>
-							<button class="button" onclick="onbtnclick('popup', 'zuck')">More</button>
-						  </div>
-						</div>
-					  </div>
-
+			<div class="roster-grid">
+				
 			</div>
 		</div>
 
@@ -422,22 +110,23 @@
 		<section id="footer" class="" style="padding:15px;">
 			<div id="copyright" style="margin:10px;padding-top:.8em;">
 				<ul style="margin-bottom:0;">
-					<li style="color:#aaa;" class="fb-like"
-					data-href="https://www.facebook.com/bmoultimate/" data-width="200"
-					data-layout="button_count" data-action="like" data-size="large" data-share="false"></li>
+					<li style="color:#aaa;" class="fb-like" data-href="https://www.facebook.com/bmoultimate/"
+						data-width="200" data-layout="button_count" data-action="like" data-size="large"
+						data-share="false"></li>
 					<li style="color:#aaa;">Contact Us: bmocaptains@gmail.com</li>
 					<li style="color:#aaa;">&copy; Brownian Motion 2021.</li>
 				</ul>
 			</div>
 		</section>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/playerbio.js"></script>
 
 </body>
 
