@@ -12,51 +12,65 @@ function getPlayerBio(player) {
 
 // When the user clicks on the button, open the modal
 function onbtnclick(modalid, player) {
-   // parse relevant data
-   var info = getPlayerBio(player);
-   console.log(`player bio = ${info}`)
-   // set text
-   document.getElementById("height").innerText = "Height: " + info.height;
-   document.getElementById("hometown").innerText = "Hometown: " + info.hometown;
-   document.getElementById("highschool").innerText = "High School: " + info.highschool;
-   document.getElementById("concentration").innerText = "Concentration: " + info.concentration;
-   document.getElementById("q1").innerText = info.q1 + ":\n" + info.a1;
-   document.getElementById("q2").innerText = info.q2 + ":\n" + info.a2;
-   document.getElementById("q3").innerText = info.q3 + ":\n" + info.a3;
-
    // display
    document.getElementById(modalid).style.display = "block";
+   document.getElementById(modalid).innerHTML = PopupContent(player);
 }
 
 // When the user clicks on <span> (x), close the modal
-function onspanclick(modalid) {
+function oncloseclick(modalid) {
    document.getElementById(modalid).style.display = "none";
 }
 
-function populateHTML() {
-   console.log("populating html")
+function PopupContent(playerID) {
+   var bio = getPlayerBio(playerID);
+   return `
+   <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="popup-image-container">
+         <img class="popup-image" src="${bio.img}" alt="${bio.name}" />
+         <div id="popup-close" onclick="oncloseclick('popup')">
+            <span class="material-icons-outlined" >clear</span>
+         </div>
+      </div>
+      <div id="popup-content">
+         <div class="popup-header-text">
+            <h1 id='popup-name'>${bio.name}</h1>
+            ${Nickname(bio.nickname)}
+         </div>
+         <div class="popup-section">
+            <p class="popup-section-header">Info</p>
+            ${InfoItem("person", bio.height)}
+            ${InfoItem("date_range", `Class of ${bio.class}`)}
+            ${InfoItem("local_library", bio.concentration)}
+            ${InfoItem("home_work", bio.hometown)}
+            ${InfoItem("school", bio.highschool)}
+         </div>
+         <div class="popup-section">
+            <p class="popup-section-header">Bio</p>
+            ${BioQuestion(bio.q1, bio.a1)}
+            ${BioQuestion(bio.q2, bio.a2)}
+            ${BioQuestion(bio.q3, bio.a3)}
+         </div>
+      </div>
+   </div>
+   `
+}
+
+function populateRosterHTML() {
    let bios = Object.values(getAllBios())
-   console.log(`bios = ${bios}`)
    let parser = new DOMParser()
    bios.forEach(bio => {
       let card = `
       <div class="roster-card">
-         <img class="player-image" src="${bio.img}" alt="${bio.name}" />
+         <img class="player-image" src="${bio.img}" alt="${bio.name}" loading=lazy />
          <div class="player-container">
             <div class="player-text">
                <p class="player-name">${bio.name}${(bio.captain) ? " (captain)" : ""}</p>
-               <p class="player-nickname-container"><span class="player-aka">aka</span> <span
-                     class="player-nickname">${bio.nickname}</span></p>
+               ${Nickname(bio.nickname)}
             </div>
             <div class="player-info">
-               <div class="player-info-item">
-                  <span class="material-icons-outlined">school</span>
-                  <p class="player-info-item-text">Class of ${bio.class}</p>
-               </div>
-               <div class="player-info-item">
-                  <span class="material-icons-outlined">home_work</span>
-                  <p class="player-info-item-text">${bio.hometown}</p>
-               </div>
+               ${InfoItem("date_range", `Class of ${bio.class}`)}
+               ${InfoItem("home_work", bio.hometown)}
             </div>
             <button class="button" onclick="onbtnclick('popup', '${bio.id}')">More</button>
          </div>
@@ -67,7 +81,34 @@ function populateHTML() {
    });
 }
 
+function InfoItem(iconName, text) {
+   return `
+   <div class="player-info-item">
+      <span class="material-icons-outlined">${iconName}</span>
+      <p class="player-info-item-text">${text}</p>
+   </div>
+   `
+}
+
+function Nickname(nickname) {
+   return `
+   <p class="player-nickname-container">
+      <span class="player-aka">aka</span> 
+      <span class="player-nickname">${nickname}</span>
+   </p>
+   `
+}
+
+function BioQuestion(question, answer) {
+   return `
+   <div class="popup-bio-item">
+      <p class="popup-bio-q">${question}</p>
+      <p class="popup-bio-a">${answer}</p>
+   </div>
+   `
+}
+
 window.onload = function() { 
    console.log("window loaded")
-   populateHTML()
+   populateRosterHTML()
  }

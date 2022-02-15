@@ -19,7 +19,7 @@
     },
     "boyce": {
         "id": "boyce",
-        "name": "William Boyce",
+        "name": "William Boyce V",
         "img": "photos/images/biopics/boyce.jpg",
         "captain": false,
         "class": 2025,
@@ -69,7 +69,7 @@
         "q2": "Alumni with the most overrrated kids",
         "a2": "Sol’s army of future lawyers are going to destroy the game",
         "q3": "Are you satisfied with the amount of saliva you produce? Explain",
-        "a3": "i wish i was drooling exuberant amounts 24/7, enough to feed a family of four"
+        "a3": "I wish I was drooling exuberant amounts 24/7, enough to feed a family of four"
     },
     "dice": {
         "id": "dice",

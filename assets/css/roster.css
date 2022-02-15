@@ -25,6 +25,7 @@
     width: 100%;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.25);
+    background-color: white;
     overflow: hidden;
 }
 
@@ -49,6 +50,7 @@
     color: rgba(0, 0, 0, 0.87);
     margin-bottom: 0;
     line-height: 1;
+    font-weight: 600;
 }
 
 .player-nickname-container {
@@ -81,4 +83,78 @@
 .button {
     color:rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal-content {
+    border-radius: 16px;
+    padding: 0px;
+    border: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+    height: 90vh;
+    margin: 5vh auto;
+    max-width: 100ch;
+}
+
+#popup-close {
+    border-radius: 32px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.popup-image-container {
+    width: 100%;
+}
+
+.popup-image {
+    width: 100%;
+}
+
+#popup-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#popup-name {
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.popup-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.popup-section-header {
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+.popup-bio-item {
+
+}
+
+.popup-bio-q {
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 0px;
+    font-weight: 600;    
+}
+
+.popup-bio-a {
+    margin-bottom: 0px;
 }
