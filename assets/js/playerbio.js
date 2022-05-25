@@ -33,9 +33,12 @@ function PopupContent(playerID) {
          </div>
       </div>
       <div id="popup-content">
-         <div class="popup-header-text">
-            <h1 id='popup-name'>${bio.name}</h1>
-            ${Nickname(bio.nickname)}
+         <div class="player-card-header">
+            <div class="popup-header-text">
+               <h1 id='popup-name'>${bio.name}</h1>
+               ${Nickname(bio.nickname)}
+            </div>
+            ${NumberCircle(bio.number)}
          </div>
          <div class="popup-section">
             <p class="popup-section-header">Info</p>
@@ -64,9 +67,12 @@ function populateRosterHTML() {
       <div class="roster-card">
          <img class="player-image" src="${bio.img}" alt="${bio.name}" loading=lazy />
          <div class="player-container">
-            <div class="player-text">
-               <p class="player-name">${bio.name}${(bio.captain) ? " (captain)" : ""}</p>
-               ${Nickname(bio.nickname)}
+            <div class="player-card-header">
+               <div class="player-text">
+                  <p class="player-name">${bio.name}${(bio.captain) ? " (captain)" : ""}</p>
+                  ${Nickname(bio.nickname)}
+               </div>
+               ${NumberChip(bio.number)}
             </div>
             <div class="player-info">
                ${InfoItem("date_range", `Class of ${bio.class}`)}
@@ -96,6 +102,24 @@ function Nickname(nickname) {
       <span class="player-aka">aka</span> 
       <span class="player-nickname">${nickname}</span>
    </p>
+   `
+}
+
+function NumberChip(number) {
+   return `
+   <div class="number-chip">
+      <span class="number-sign">#</span>
+      <span class="player-number">${number}</span>
+   </div>
+   `
+}
+
+function NumberCircle(number) {
+   return `
+   <div class="number-circle">
+      <span class="number-sign">#</span>
+      <span class="player-number">${number}</span>
+   </div>
    `
 }
 

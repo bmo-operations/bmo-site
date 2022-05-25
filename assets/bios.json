@@ -2,6 +2,7 @@
     "andy": {
         "id": "andy",
         "name": "Andy Burris",
+        "number": 76,
         "img": "photos/images/biopics/andy.jpeg",
         "captain": false,
         "class": 2025,
@@ -20,6 +21,7 @@
     "boyce": {
         "id": "boyce",
         "name": "William Boyce V",
+        "number": 5,
         "img": "photos/images/biopics/boyce.jpg",
         "captain": false,
         "class": 2025,
@@ -38,6 +40,7 @@
     "cam": {
         "id": "cam",
         "name": "Cameron Curney",
+        "number": 16,
         "img": "photos/images/biopics/cam.jpg",
         "captain": false,
         "class": 2024,
@@ -56,6 +59,7 @@
     "cleb": {
         "id": "cleb",
         "name": "Caleb Moran",
+        "number": 30,
         "img": "photos/images/biopics/cleb.jpg",
         "captain": false,
         "class": 2025,
@@ -74,6 +78,7 @@
     "dice": {
         "id": "dice",
         "name": "Jackson De Campos",
+        "number": 14,
         "img": "photos/images/biopics/dice.jpg",
         "captain": true,
         "class": 2022,
@@ -92,6 +97,7 @@
     "dyl": {
         "id": "dyl",
         "name": "Dylan Villeneuve",
+        "number": 6,
         "img": "photos/images/biopics/dyl.jpg",
         "captain": false,
         "class": 2022,
@@ -110,6 +116,7 @@
     "graham": {
         "id": "graham",
         "name": "Graham Huntington",
+        "number": 48,
         "img": "photos/images/biopics/graham.jpg",
         "captain": false,
         "class": 2024,
@@ -128,6 +135,7 @@
     "ian": {
         "id": "ian",
         "name": "Ian Layzer",
+        "number": 12,
         "img": "photos/images/biopics/ian.jpg",
         "captain": false,
         "class": 2023,
@@ -146,6 +154,7 @@
     "jac": {
         "id": "jac",
         "name": "Jacques Nissen",
+        "number": 24,
         "img": "photos/images/biopics/jac.jpg",
         "captain": true,
         "class": 2024,
@@ -164,6 +173,7 @@
     "john": {
         "id": "john",
         "name": "John Randolph",
+        "number": 34,
         "img": "photos/images/biopics/john.jpg",
         "captain": true,
         "class": 2022,
@@ -182,6 +192,7 @@
     "leo": {
         "id": "leo",
         "name": "Leo Tamagawa Gordon",
+        "number": 7,
         "img": "photos/images/biopics/leo.jpg",
         "captain": false,
         "class": 2023,
@@ -200,6 +211,7 @@
     "luca": {
         "id": "luca",
         "name": "Luca Duclos-Orsello",
+        "number": 11,
         "img": "photos/images/biopics/luca.jpg",
         "captain": false,
         "class": 2024,
@@ -218,6 +230,7 @@
     "marty": {
         "id": "marty",
         "name": "Martin Trouilloud",
+        "number": 22,
         "img": "photos/images/biopics/marty.jpg",
         "captain": false,
         "class": 2023,
@@ -236,6 +249,7 @@
     "matias": {
         "id": "matias",
         "name": "Matias Lee",
+        "number": 19,
         "img": "photos/images/biopics/matias.jpg",
         "captain": false,
         "class": 2025,
@@ -254,6 +268,7 @@
     "morgann": {
         "id": "morgann",
         "name": "Morgann Thain",
+        "number": 3,
         "img": "photos/images/biopics/morgann.jpg",
         "captain": false,
         "class": 2022,
@@ -272,6 +287,7 @@
     "munch": {
         "id": "munch",
         "name": "Cal Nightingale",
+        "number": 2,
         "img": "photos/images/biopics/munch.jpg",
         "captain": false,
         "class": 2024,
@@ -290,6 +306,7 @@
     "noah": {
         "id": "noah",
         "name": "Noah Ball-Burack",
+        "number": 4,
         "img": "photos/images/biopics/noah.jpg",
         "captain": false,
         "class": 2024,
@@ -308,6 +325,7 @@
     "olow": {
         "id": "olow",
         "name": "Oscar Low",
+        "number": 29,
         "img": "photos/images/biopics/oscar.jpg",
         "captain": false,
         "class": 2025,
@@ -326,6 +344,7 @@
     "patrick": {
         "id": "patrick",
         "name": "Patrick Connor",
+        "number": 35,
         "img": "photos/images/biopics/patrick.jpg",
         "captain": false,
         "class": 2024,
@@ -344,6 +363,7 @@
     "trails": {
         "id": "trails",
         "name": "Talon Johnson",
+        "number": 68,
         "img": "photos/images/biopics/trails.jpg",
         "captain": false,
         "class": 2022,
@@ -362,6 +382,7 @@
     "willis": {
         "id": "willis",
         "name": "Will Steinfeld",
+        "number": 8,
         "img": "photos/images/biopics/willis.jpg",
         "captain": false,
         "class": 2024,
@@ -380,6 +401,7 @@
     "yut": {
         "id": "yut",
         "name": "Elliott Rosenberg",
+        "number": 27,
         "img": "photos/images/biopics/yut.jpg",
         "captain": false,
         "class": 2024,
@@ -398,6 +420,7 @@
     "zach": {
         "id": "zach",
         "name": "Zachary Kaufman",
+        "number": 17,
         "img": "photos/images/biopics/zach.jpg",
         "captain": false,
         "class": 2024,
@@ -416,6 +439,7 @@
     "zuck": {
         "id": "zuck",
         "name": "Kaleb Zuckerman",
+        "number": 42,
         "img": "photos/images/biopics/zuck.jpg",
         "captain": false,
         "class": 2025,
