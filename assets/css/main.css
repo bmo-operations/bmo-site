@@ -30,6 +30,15 @@ body {
 	line-height: 1;
 }
 
+.hellfishAsciiWrapper {
+	position: relative;
+	height:40rem;
+	width: 40rem;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -2170,6 +2179,9 @@ input, select, textarea {
 
 		.homepage #header {
 			height: 35em;
+			background: url("/images/team_crump_2022.jpg");
+			background-size: 100% auto;
+			background-position: 50% 40%;
 		}
 
 /* Logo */
@@ -3066,3 +3078,4 @@ input, select, textarea {
 						}
 
 	}
+	
