@@ -2179,7 +2179,7 @@ input, select, textarea {
 
 		.homepage #header {
 			height: 35em;
-			background: url("/images/team_crump_2022.jpg");
+			background: url("../../images/team_crump_2022.jpg");
 			background-size: 100% auto;
 			background-position: 50% 40%;
 		}
