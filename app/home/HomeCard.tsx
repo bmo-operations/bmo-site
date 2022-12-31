@@ -1,16 +1,10 @@
-import { styled } from '@stitches/react';
-import React from 'react';
+import { styled } from '../../theme/global';
 
-export default function HomeCard({title, imageSrc, onClick}: {title: string, imageSrc: string, onClick: () => void}) {
-    return (
-        <div></div>
-    )
-}
-
-const HomeCardLayout = styled('div', {
+export const HomeCard = styled('div', {
     display: 'flex',
-    flexDirection: 'row',
-    gap: '8px',
+    flexDirection: 'column',
+    gap: '16px',
     padding: '32px',
     height: 'fit-content',
+    borderRadius: '32px',
   })

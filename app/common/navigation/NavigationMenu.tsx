@@ -1,9 +1,9 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
-import { styled } from '@stitches/react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { red, violet, mauve, indigo, purple, blackA } from '@radix-ui/colors';
 import React from 'react';
 import { CaretDownIcon } from '@radix-ui/react-icons';
+import { styled } from '../../../theme/global';
 
 export default function NavigationMenu() {
     let router = useRouter();
@@ -11,7 +11,7 @@ export default function NavigationMenu() {
         <NavigationMenuPrimitive.Root>
             <StyledList>
                 <NavigationMenuPrimitive.Item>
-                    <StyledLink onSelect={() => router.push('/home')}>Home</StyledLink>
+                    <StyledLink onSelect={() => router.push('/')}>Home</StyledLink>
                 </NavigationMenuPrimitive.Item>
                 <NavigationMenuPrimitive.Item>
                     <StyledLink onSelect={() => router.push('/roster')}>Roster</StyledLink>

@@ -1,29 +1,12 @@
 import { globalCss, styled } from '@stitches/react';
 import { useState } from 'react';
-import NavigationMenu from '../common/NavigationMenu';
+import NavigationMenu from '../common/navigation/NavigationMenu';
 import { globalStyles, Heading1 } from '../../theme/global';
-
-function Header({ title }: { title: string }) {
-    return <h1>{title ? title : 'Default title'}</h1>;
-  }
-
-function Landing({ title }: { title: string }) {
-  return (
-    <LandingLayout>
-      <Heading1>
-        {title}
-      </Heading1>
-      <LandingImage src="/images/team_crump_2022.jpg"/>
-    </LandingLayout>
-  )
-}
-
-const LandingLayout = styled('div', {
-  display: 'flex',
-  gap: '64px',
-  padding: '64px',
-  height: 'fit-content',
-})
+import HomeCardLayout from './HomeCardLayout';
+import LandingHeader from './LandingHeader';
+import { useRouter } from 'next/navigation';
+import ImageCard from './ImageCard';
+import AboutCard from './cards/AboutCard';
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -35,26 +18,17 @@ const LandingImage = styled('img', {
   
 export default function HomePage() {
     globalStyles();
-    const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-  
-    const [likes, setLikes] = useState(0);
-  
-    function handleClick() {
-      setLikes(likes + 1);
-    }
+    const router = useRouter();
   
     return (
       <div>
-        <NavigationMenu/>
-        {/* <Header title="Develop. Preview. Ship. 🚀" /> */}
-        <Landing title='Brownian Motion'/>
-        <ul>
-          {names.map((name) => (
-            <li key={name}>{name}</li>
-          ))}
-        </ul>
-  
-        <button onClick={handleClick}>Like ({likes})</button>
+        
+        <HomeCardLayout>
+          <LandingHeader/>
+          <LandingImage src="/images/team_crump_2022.jpg"/>
+          <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')}/>
+          <AboutCard/>
+        </HomeCardLayout>        
       </div>
     );
 }

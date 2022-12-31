@@ -1,0 +1,650 @@
+{
+    "andy": {
+        "id": "andy",
+        "name": "Andy Burris",
+        "number": 76,
+        "img": "photos/images/biopics/andy.jpeg",
+        "captain": false,
+        "class": 2025,
+        "nickname": "Burris With a 'B'",
+        "height": "5'11\"",
+        "hometown": "Washington DC",
+        "highschool": "Wilson High",
+        "concentration": "Computer Science",
+        "bioQuestions": [
+            {
+                "question": "A good memory with BMo",
+                "answer": "First Jos run during tryouts"
+            },
+            {
+                "question": "Pet Peeve",
+                "answer": "Slow left turns when they have an arrow"
+            },
+            {
+                "question": "What's the craziest thing you've done in the name of love?",
+                "answer": "Got addicted to TikTok"
+            }
+        ]
+    },
+    "boyce": {
+        "id": "boyce",
+        "name": "William Boyce V",
+        "number": 5,
+        "img": "photos/images/biopics/boyce.jpg",
+        "captain": false,
+        "class": 2025,
+        "nickname": "Boyce",
+        "height": "6'0\"",
+        "hometown": "Old Tappan, NJ",
+        "highschool": "Northern Valley Regional High School at Old Tappan (NVOT)",
+        "concentration": "Biology",
+        "bioQuestions": [
+            {
+                "question": "What motivates you?",
+                "answer": "The inevitable heat death of the universe"
+            },
+            {
+                "question": "Fictional character who you self-identify as in your weakest moments",
+                "answer": "Baby yoda"
+            },
+            {
+                "question": "What else?",
+                "answer": "New Jersey is the best state in the US and Marty and I could easily take over the Northeast in a matter of milliseconds."
+            }
+        ]
+    },
+    "cam": {
+        "id": "cam",
+        "name": "Cameron Curney",
+        "number": 16,
+        "img": "photos/images/biopics/cam.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Cam",
+        "height": "6'7\"",
+        "hometown": "Abington, MA",
+        "highschool": "Abington High",
+        "concentration": "Engineering Maybe",
+        "bioQuestions": [
+            {
+                "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                "answer": "A lotta people have like their first three to five interactions with people scripted.  You really don't start to know a person until meet up number 6."
+            },
+            {
+                "question": "Who is your hero?",
+                "answer": "One time I was about to throw my retainer away in the Ratty, when a random girl, who had seen me take it out before I ate, said, \"hey make sure you don't throw away your retainer.\"  So her."
+            },
+            {
+                "question": "Do you want your child to be taller than you?",
+                "answer": "Eh its a hassle being this tall anytime I'm indoors, so it'd likely build character if they were.  I'm going with yes"
+            }
+        ]
+    },
+    "cleb": {
+        "id": "cleb",
+        "name": "Caleb Moran",
+        "number": 30,
+        "img": "photos/images/biopics/cleb.jpg",
+        "captain": false,
+        "class": 2025,
+        "nickname": "Cleb",
+        "height": "5'11\"",
+        "hometown": "Arlington, VA",
+        "highschool": "HB Woodlawn",
+        "concentration": "Applied Math / Computer Science",
+        "bioQuestions": [
+            {
+                "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                "answer": "The threshold for True Love is unfortunately at the 5-minute-and-11-seconds mark, but once that is achieved, True Love is guaranteed"
+            },
+            {
+                "question": "Alumni with the most overrrated kids",
+                "answer": "Sol’s army of future lawyers are going to destroy the game"
+            },
+            {
+                "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                "answer": "I wish I was drooling exuberant amounts 24/7, enough to feed a family of four"
+            }
+        ]
+    },
+    "dice": {
+        "id": "dice",
+        "name": "Jackson De Campos",
+        "number": 14,
+        "img": "photos/images/biopics/dice.jpg",
+        "captain": true,
+        "class": 2022,
+        "nickname": "Dice",
+        "height": "6'0\"",
+        "hometown": "Seattle, WA",
+        "highschool": "Lakeside",
+        "concentration": "Computer Science",
+        "bioQuestions": [
+            {
+                "question": "Biggest fear",
+                "answer": "[redacted]"
+            },
+            {
+                "question": "Pet Peeve",
+                "answer": "Subject-verb disagreement"
+            },
+            {
+                "question": "What is one thing you will never do again?",
+                "answer": "I'll never again be wholly entertained by a garbage truck"
+            }
+        ]
+    },
+    "dyl": {
+        "id": "dyl",
+        "name": "Dylan Villeneuve",
+        "number": 6,
+        "img": "photos/images/biopics/dyl.jpg",
+        "captain": false,
+        "class": 2022,
+        "nickname": "Dyl",
+        "height": "6'2\"",
+        "hometown": "Berkeley, CA",
+        "highschool": "Berkeley High",
+        "concentration": "Literary Arts",
+        "bioQuestions": [
+            {
+                "question": "A good memory with BMo",
+                "answer": "Nothing beats winning a national championship."
+            },
+            {
+                "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                "answer": "Definitely a villain. At least a voice of opposition. Chaos will reign supreme."
+            },
+            {
+                "question": "Thoughts on crypto?",
+                "answer": "I bought 160 bitcoin in high school and lost the login info. I cry myself to sleep regularly."
+            }
+        ]
+    },
+    "graham": {
+        "id": "graham",
+        "name": "Graham Huntington",
+        "number": 48,
+        "img": "photos/images/biopics/graham.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Grunt",
+        "height": "6'4\"",
+        "hometown": "Starksboro, VT",
+        "highschool": "BB&N",
+        "concentration": "Not sure… IAPA maybe",
+        "bioQuestions": [
+            {
+                "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                "answer": "Camera man"
+            },
+            {
+                "question": "What would you do for Trails if he was in a real pickle?",
+                "answer": "1. Crack the jar/barrel/etc \n2. Drain the pickle juice \n3. Locate the pickle in which trails is stuck \n4. Extract trails from said pickle \n5. Eat pickle"
+            },
+            {
+                "question": "Biggest fear",
+                "answer": "Chocolate chips in pancakes"
+            }
+        ]
+    },
+    "ian": {
+        "id": "ian",
+        "name": "Ian Layzer",
+        "number": 12,
+        "img": "photos/images/biopics/ian.jpg",
+        "captain": false,
+        "class": 2023,
+        "nickname": "Layzer",
+        "height": "5'9\"",
+        "hometown": "Durham, NC",
+        "highschool": "Durham Academy",
+        "concentration": "Computer Science",
+        "bioQuestions": [
+            {
+                "question": "A good memory with BMo",
+                "answer": "Unlimited breadsticks and Martin ordering the Tour of Italy at Olive Garden."
+            },
+            {
+                "question": "What do you do outside of BMo?",
+                "answer": "I've been a TA and HTA for numerous CS classes. I also like to read and play board games with my roommates."
+            },
+            {
+                "question": "A recent movie you saw + review",
+                "answer": "Dune: stunning cinematography and design, nailed the feeling of how I imagined Dune, plot was a little underwhelming though"
+            }
+        ]
+    },
+    "jac": {
+        "id": "jac",
+        "name": "Jacques Nissen",
+        "number": 24,
+        "img": "photos/images/biopics/jac.jpg",
+        "captain": true,
+        "class": 2024,
+        "nickname": "Moped",
+        "height": "6'1\"",
+        "hometown": "Washington DC",
+        "highschool": "Wilson High",
+        "concentration": "Cognitive Science",
+        "bioQuestions": [
+            {
+                "question": "A recent movie you saw + review",
+                "answer": "North by Northwest (Hitchcock Movie). I picked this movie out of the 326 offerings on the plane, and I wish I had picked something else. I had watched this move before when I was around 8 years old and I remember I loved it, but looking back that is probably only because I thought that escaping from criminals by climbing down Mt. Rushmore was the coolest thing in the world. The movie overall was solid (as all Hitchcock's are), but the ending of this one was especially outrageous and incomprehensible. 7/10"
+            },
+            {
+                "question": "Ideal job/career path",
+                "answer": "VDub chicken finger supplier"
+            },
+            {
+                "question": "Who is your hero?",
+                "answer": "Will Shortz"
+            }
+        ]
+    },
+    "john": {
+        "id": "john",
+        "name": "John Randolph",
+        "number": 34,
+        "img": "photos/images/biopics/john.jpg",
+        "captain": true,
+        "class": 2022,
+        "nickname": "JR",
+        "height": "5'11\"",
+        "hometown": "Seattle, WA",
+        "highschool": "Lakeside",
+        "concentration": "APMA-CS & Behavioral Decision Sciences",
+        "bioQuestions": [
+            {
+                "question": "What do you do outside of BMo?",
+                "answer": "Not much"
+            },
+            {
+                "question": "Ideal job/career path",
+                "answer": "Chief envoy to the moon people"
+            },
+            {
+                "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                "answer": "I am not satisfied. I need enough saliva to eat a pack of saltines in sixty seconds"
+            }
+        ]
+    },
+    "leo": {
+        "id": "leo",
+        "name": "Leo Tamagawa Gordon",
+        "number": 7,
+        "img": "photos/images/biopics/leo.jpg",
+        "captain": false,
+        "class": 2023,
+        "nickname": "Leland",
+        "height": "5'10\"",
+        "hometown": "Berkeley, CA",
+        "highschool": "Berkeley High",
+        "concentration": "Education Studies",
+        "bioQuestions": [
+            {
+                "question": "What do you do outside of BMo?",
+                "answer": "Roast fools, multiracial club, ESV, bike without a helmet, paint cards, procrastinate, read books"
+            },
+            {
+                "question": "What's the craziest thing you've done in the name of love?",
+                "answer": "nothing is crazy if done in the name of love"
+            },
+            {
+                "question": "Do you collect anything",
+                "answer": "hearts in a jar"
+            }
+        ]
+    },
+    "luca": {
+        "id": "luca",
+        "name": "Luca Duclos-Orsello",
+        "number": 11,
+        "img": "photos/images/biopics/luca.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "The Cheesman of North Ubmria",
+        "height": "6'2\"",
+        "hometown": "Somerville, MA",
+        "highschool": "Somerville High",
+        "concentration": "International and Public Affairs ; French and Francophone Studies",
+        "bioQuestions": [
+            {
+                "question": "What motivates you?",
+                "answer": "Self-belief and ice cream"
+            },
+            {
+                "question": "A recent movie you saw + review",
+                "answer": "The Guilty - 3/5 -> intriguing, but main character lacked depth/variety of personality traits. Fun twist, but unsurprising that there was going to be a twist. Okay job of tying up loose ends at the end of the movie."
+            },
+            {
+                "question": "Who knows you the best?",
+                "answer": "My Mom"
+            }
+        ]
+    },
+    "marty": {
+        "id": "marty",
+        "name": "Martin Trouilloud",
+        "number": 22,
+        "img": "photos/images/biopics/marty.jpg",
+        "captain": false,
+        "class": 2023,
+        "nickname": "Marty",
+        "height": "6'4\"",
+        "hometown": "Norwood, NJ",
+        "highschool": "Old Tappan",
+        "concentration": "Physics and Math",
+        "bioQuestions": [
+            {
+                "question": "Favorite restaurant on Thayer",
+                "answer": "CVS"
+            },
+            {
+                "question": "What motivates you?",
+                "answer": "The knowledge that one day I will be proven right about everything completely"
+            },
+            {
+                "question": "A recent movie you saw + review",
+                "answer": "Luca (the Disney movie) is an unnervingly accurate documentary of Luca Duclos-Orsello’s secret Italian childhood, down to his frightening parents and communist sympathies. Pretty boring!"
+            }
+        ]
+    },
+    "matias": {
+        "id": "matias",
+        "name": "Matias Lee",
+        "number": 19,
+        "img": "photos/images/biopics/matias.jpg",
+        "captain": false,
+        "class": 2025,
+        "nickname": "Teez",
+        "height": "5.9375 ft",
+        "hometown": "Hanover, NH",
+        "highschool": "Hanover High",
+        "concentration": "Applied Mathematics - Biology",
+        "bioQuestions": [
+            {
+                "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                "answer": "Love is mereLy a chemical sensaTion, The moLecules in the body working to make you feel good. However, ThaT being said, I do beLieve that one could meet a LoveLy person in a one on one conversaTion."
+            },
+            {
+                "question": "Favorite TV show",
+                "answer": "Friends (i know)"
+            },
+            {
+                "question": "Ideal job/career path",
+                "answer": "Not working at Facebook"
+            }
+        ]
+    },
+    "morgann": {
+        "id": "morgann",
+        "name": "Morgann Thain",
+        "number": 3,
+        "img": "photos/images/biopics/morgann.jpg",
+        "captain": false,
+        "class": 2022,
+        "nickname": "Mdog",
+        "height": "5'10\"",
+        "hometown": "Abington, PA",
+        "highschool": "Abington Friends",
+        "concentration": "Computer Science",
+        "bioQuestions": [
+            {
+                "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                "answer": "I believe in “falling in love” like that, but I don’t think it’s True Love til you spend a lot of time together, know each other, and like internalize caring for each other to the point that you value them similarly to how you value yourself (think of how for some parents, their children are like their purpose and even more important than themselves) "
+            },
+            {
+                "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                "answer": "Inspiring feel good underdog story where I grind and fail for 3 straight years, each more painful than the last, but then I finally make it my senior year and it’s hype"
+            },
+            {
+                "question": "Pet Peeve",
+                "answer": "English language, specifically questions like “do you mind if…” making you answer with no when you want to affirm them"
+            }
+        ]
+    },
+    "munch": {
+        "id": "munch",
+        "name": "Cal Nightingale",
+        "number": 2,
+        "img": "photos/images/biopics/munch.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Munch",
+        "height": "5'11\"",
+        "hometown": "Durham, NC",
+        "highschool": "Jordan High",
+        "concentration": "Applied Math / Computer Science",
+        "bioQuestions": [
+            {
+                "question": "Fictional character who you self-identify as in your weakest moments",
+                "answer": "Martin Trouilloud"
+            },
+            {
+                "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                "answer": "Just like Dennis Rodman in The Last Dance"
+            },
+            {
+                "question": "If you were king for a day what law would you impose?",
+                "answer": "That I'm king for all subsequent days. Boom!"
+            }
+        ]
+    },
+    "noah": {
+        "id": "noah",
+        "name": "Noah Ball-Burack",
+        "number": 4,
+        "img": "photos/images/biopics/noah.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Bert",
+        "height": "6'0\"",
+        "hometown": "Berkeley, CA",
+        "highschool": "Berkeley High",
+        "concentration": "Public Policy and Economics",
+        "bioQuestions": [
+            {
+                "question": "What do you do outside of BMo?",
+                "answer": "Climate research!"
+            },
+            {
+                "question": "Alumni with the most overrated kids? Alumni / current player who will have the most overrated kids?",
+                "answer": "If Cal's kids are rated, this will be done overly"
+            },
+            {
+                "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                "answer": "Yes, actually. There must be benefits to producing saliva, though I cannot articulate said benefits. Therefore, I would not reduce the amount of saliva I produce. Meanwhile, I would not increase the amount, since I enjoy not spitting on people and stuff."
+            }
+        ]
+    },
+    "oscar": {
+        "id": "oscar",
+        "name": "Oscar Low",
+        "number": 29,
+        "img": "photos/images/biopics/oscar.jpg",
+        "captain": false,
+        "class": 2025,
+        "nickname": "OLow",
+        "height": "5'11\"",
+        "hometown": "Williamstown, MA",
+        "highschool": "Mount Greylock Regional High",
+        "concentration": "Undecided",
+        "bioQuestions": [
+            {
+                "question": "Biggest fear",
+                "answer": "Being trapped in an elevator"
+            },
+            {
+                "question": "What is one thing you will never do again?",
+                "answer": "take a math class"
+            },
+            {
+                "question": "Fictional character who you self-identify as in your weakest moments",
+                "answer": "Shrek"
+            }
+        ]
+    },
+    "patrick": {
+        "id": "patrick",
+        "name": "Patrick Connor",
+        "number": 35,
+        "img": "photos/images/biopics/patrick.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Archduke Slimy Man",
+        "height": "6'4\"",
+        "hometown": "Austin, TX",
+        "highschool": "LASA",
+        "concentration": "Undecided",
+        "bioQuestions": [
+            {
+                "question": "A good memory with BMo",
+                "answer": "Star St. Sprints"
+            },
+            {
+                "question": "Who is your hero?",
+                "answer": "Jake Smart"
+            },
+            {
+                "question": "Do you collect anything",
+                "answer": "Coins and Rocks"
+            }
+        ]
+    },
+    "trails": {
+        "id": "trails",
+        "name": "Talon Johnson",
+        "number": 68,
+        "img": "photos/images/biopics/trails.jpg",
+        "captain": false,
+        "class": 2022,
+        "nickname": "Trails",
+        "height": "6'3\"",
+        "hometown": "Kangaroo Court, KS",
+        "highschool": "Hopkins School",
+        "concentration": "Chemical Biology",
+        "bioQuestions": [
+            {
+                "question": "Thoughts on crypto?",
+                "answer": "Blockchain synergy aligns pragmatic quarterly business objectives to forge innovative new strategies for engaging forward-thinking partners in the meta-verse."
+            },
+            {
+                "question": "Bro, I'm pissed! I'm so pissed!",
+                "answer": "Yeah, me too. Bottle it up and age it like a fine barolo. One day, it'll be ready to open like a beefy can of whoop-ass."
+            },
+            {
+                "question": "If you were king for a day what law would you impose?",
+                "answer": "Schools must bring back the dunce cap and all the dunces will know once more what dummy little dumb dumbs they are."
+            }
+        ]
+    },
+    "willis": {
+        "id": "willis",
+        "name": "Will Steinfeld",
+        "number": 8,
+        "img": "photos/images/biopics/willis.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Willis",
+        "height": "5'8\"",
+        "hometown": "Lexington, MA",
+        "highschool": "The Lexington High School",
+        "concentration": "International and Public Affairs",
+        "bioQuestions": [
+            {
+                "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                "answer": "If you have the right conversation topics written on your hand, definitely possible"
+            },
+            {
+                "question": "If you were king for a day what law would you impose?",
+                "answer": "Large infrastructure investment into chocolate milk/seltzer water fountains"
+            },
+            {
+                "question": "Who knows you the best?",
+                "answer": "It's not about if you know who you are, it's not about if other people know who you are, it's about if you know who other people know who you are. Everyone knows that."
+            }
+        ]
+    },
+    "yut": {
+        "id": "yut",
+        "name": "Elliott Rosenberg",
+        "number": 27,
+        "img": "photos/images/biopics/yut.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Yut",
+        "height": "6'0\"",
+        "hometown": "Oakland, CA",
+        "highschool": "Lick-Wilmerding",
+        "concentration": "Engineering & Furniture Design",
+        "bioQuestions": [
+            {
+                "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                "answer": "Like chandler in friends"
+            },
+            {
+                "question": "What motivates you?",
+                "answer": "The fear of no-nonsense Cal’s wrath"
+            },
+            {
+                "question": "Ideal job/career path",
+                "answer": "Valet for Frisbee Legend Beau Kittredge"
+            }
+        ]
+    },
+    "zach": {
+        "id": "zach",
+        "name": "Zachary Kaufman",
+        "number": 17,
+        "img": "photos/images/biopics/zach.jpg",
+        "captain": false,
+        "class": 2024,
+        "nickname": "Zach",
+        "height": "6'1\"",
+        "hometown": "Lexington, MA",
+        "highschool": "Lexington High School",
+        "concentration": "Applied Math-Econ",
+        "bioQuestions": [
+            {
+                "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                "answer": "My heart says it's possible, and my brain says it isn't."
+            },
+            {
+                "question": "You're an aging one-hit-wonder boy band frontman. One day, you get a call from Raja Gosnell, director of the Smurfs multimedia franchise. He wants your band to write the soundtrack for Smurfs 4: Smurfs Fight Back. Five years ago, you'd laugh in his face, but people are starting to forget you. Do you accept?",
+                "answer": "Smurf yes!"
+            },
+            {
+                "question": "What motivates you?",
+                "answer": "My haters"
+            }
+        ]
+    },
+    "zuck": {
+        "id": "zuck",
+        "name": "Kaleb Zuckerman",
+        "number": 42,
+        "img": "photos/images/biopics/zuck.jpg",
+        "captain": false,
+        "class": 2025,
+        "nickname": "Zuck",
+        "height": "6'0\"",
+        "hometown": "Northampton, MA",
+        "highschool": "Northampton High",
+        "concentration": "Computer science + biochemistry",
+        "bioQuestions": [
+            {
+                "question": "Who from a combined roster of BMo and your immediate family would you trade to the Amish for a free trip to Lancaster, PA?",
+                "answer": "I would give up the whole team and my entire family just for a trip to Lancaster, PA"
+            },
+            {
+                "question": "What's the craziest thing you've done in the name of love?",
+                "answer": "Bought a $60 blanket for a girl I'd known for 2 weeks. We broke up not long after and I got nothing in return"
+            },
+            {
+                "question": "What else?",
+                "answer": "I used to hold a Guinness world record for most consecutive frisbee passes"
+            }
+        ]
+    }
+}
