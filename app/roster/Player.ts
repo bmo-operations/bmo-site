@@ -9,7 +9,7 @@ export interface Player {
     nickname: string,
     height: string,
     hometown: string,
-    highSchool: string,
+    highschool: string,
     concentration: string,
     bioQuestions: BioQuestion[],
 }

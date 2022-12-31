@@ -1,4 +1,4 @@
-import { gray, red } from "@radix-ui/colors";
+import { blackA, gray, red } from "@radix-ui/colors";
 import { createStitches, globalCss } from "@stitches/react";
 
 export const globalStyles = globalCss({
@@ -7,23 +7,33 @@ export const globalStyles = globalCss({
     // '*, p, h1, h2, h3, h4, h5, h6, span': {
     //     fontFamily: 'Aeonik, Inter, sans-serif',
     // }
-});  
+});
 
 export const { styled, css } = createStitches({
     media: {
-      sm: '(min-width: 640px)',
-      md: '(min-width: 768px)',
-      lg: '(min-width: 1024px)',
+        sm: '(min-width: 640px)',
+        md: '(min-width: 768px)',
+        lg: '(min-width: 1024px)',
     },
     theme: {
         colors: {
             ...gray,
+            ...blackA,
             ...red,
+        },
+        fontSizes: {
+            caption: '12px',
+            body: '18px',
+            h6: '32px',
+            h2: '36px',
+            h1: '108px'
         }
-    }
+    },
 });
 
 export const Text = styled('p', {
+    fontSize: '$body',
+
     variants: {
         style: {
             subtitle: {
@@ -53,25 +63,28 @@ export const Text = styled('p', {
 })
 
 export const Heading1 = styled('h1', {
-    fontSize: '108px',
+    fontSize: '$h1',
     fontWeight: '800',
     lineHeight: '80%',
     letterSpacing: '-0.02em',
 })
 
 export const Heading2 = styled('h2', {
-    fontSize: '36px',
+    fontSize: '$h2',
     fontWeight: '700',
 })
-  
+
 export const Heading6 = styled('h6', {
-    fontSize: '32px',
+    fontSize: '$h6',
     fontWeight: '400',
     // lineHeight: '1'
 })
 
+const maxContainerWidthPx = 1200
 export const Container = styled('div', {
-    maxWidth: '1200px'
+    maxWidth: `${maxContainerWidthPx}px`,
+    padding: '16px',
+    margin: 'auto',
 })
 
 export const Button = styled('button', {
@@ -93,7 +106,7 @@ export const Button = styled('button', {
 
             },
         },
-        
+
         color: {
             neutral: {
                 backgroundColor: '$gray3',

@@ -57,6 +57,7 @@ const StyledLink = styled(NavigationMenuPrimitive.Link, {
     textDecoration: 'none',
     fontSize: 15,
     lineHeight: 1,
+    cursor: 'pointer',
 });
 
 const StyledTrigger = styled(NavigationMenuPrimitive.Trigger, {
