@@ -72,6 +72,20 @@ export const Heading1 = styled('h1', {
 export const Heading2 = styled('h2', {
     fontSize: '$h2',
     fontWeight: '700',
+
+    variants: {
+        color: {
+            primary: {
+                color: "$gray12"
+            },
+            secondary: {
+                color: "$gray11"
+            },
+            tertiary: {
+                color: "$gray10"
+            },
+        }
+    },
 })
 
 export const Heading6 = styled('h6', {

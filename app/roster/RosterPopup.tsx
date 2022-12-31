@@ -16,7 +16,7 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
                     <Image
                         src={`/roster/${year}/pics/${player.id}.jpg`}
                         alt={`Picture of ${player.name}`}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        sizes="100vw"
                         width={0}
                         height={0}
                         style={{ width: '100%', height: 'auto' }}
@@ -33,7 +33,9 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
 
 const ModalWrapper = styled('div', {
     width: 'calc(100% - 10vh)',
+    // width: '100%',
     height: 'calc(100% - 10vh)',
+    // height: '100%',
     position: "fixed",
     top: '0',
     padding: '5vh',
@@ -97,7 +99,7 @@ function PopupBottom({ player }: { player: Player }) {
 
 function BioQuestionItem({ bioQuestion }: { bioQuestion: BioQuestion }) {
     return (
-        <Column>
+        <Column gap="4px">
             <Text style="subtitle">{bioQuestion.question}</Text>
             <Text color="secondary">{bioQuestion.answer}</Text>
         </Column>
