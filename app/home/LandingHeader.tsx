@@ -9,8 +9,8 @@ export default function LandingHeader() {
         <Column gap="32px" gapMobile="16px" padding="72px 0px 0px 0px">
             <Hellfish size={{ '@initial': 'mobile', '@md': 'desktop' }} />
             <Column gap="16px" gapMobile="8px">
-                <Text style="h1" color="accent">{'Brownian Motion'}</Text>
-                <Text style="h6" color="accent">{'Brown University Men’s Club Ultimate'}</Text>
+                <Text style="h1" color="accent">Brownian <br /> Motion</Text>
+                <Text style="h6" color="accent">Brown University Men’s Club Ultimate</Text>
             </Column>
         </Column>
     )

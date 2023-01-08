@@ -77,7 +77,7 @@ export const BaseText = styled('p', {
             h2: { fontWeight: '700', },
             h3: { fontWeight: '700', },
             h6: { fontWeight: '400', lineHeight: '1', },
-            subtitle: { fontWeight: '700', },
+            subtitle: { fontWeight: '600', },
             body: {},
             caption: {},
         },
@@ -96,10 +96,6 @@ export const BaseText = styled('p', {
             },
         },
     },
-
-    defaultVariants: {
-        color: 'primary',
-    }
 })
 
 export const Button = styled('button', {
