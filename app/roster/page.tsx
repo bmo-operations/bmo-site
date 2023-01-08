@@ -55,7 +55,7 @@ const DialogOverlay = styled(Dialog.Overlay, {
 
 function RosterImage({ year }: { year: number }) {
     return (
-        <Column gap="32px">
+        <Column gap="32px" gapMobile="16px">
             <RosterYearText year={year} />
             <Image
                 src={`/roster/${year}/roster${year}.jpg`}
@@ -63,7 +63,7 @@ function RosterImage({ year }: { year: number }) {
                 sizes="100vw"
                 width={0}
                 height={0}
-                style={{ width: '100%', height: 'auto' }}
+                style={{ width: '100%', height: 'auto', borderRadius: '24px' }}
             />
         </Column>
     )
@@ -71,7 +71,7 @@ function RosterImage({ year }: { year: number }) {
 
 export function RosterYearText({ year }: { year: number }) {
     return (
-        <Row gap="12px">
+        <Row gap="12px" gapMobile="8px">
             <Text style="h2">{`${year}`}</Text>
             <Text style="h2" color='secondary'>{`Roster`}</Text>
         </Row>

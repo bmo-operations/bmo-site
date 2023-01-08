@@ -1,13 +1,12 @@
 import { styled } from "../../theme/global";
 
-export interface LayoutProps {
+export interface LayoutProps extends React.HTMLAttributes<HTMLDivElement> {
     padding?: string,
     paddingMobile?: string,
     gap?: string,
     gapMobile?: string,
     justify?: string,
     align?: string,
-    children: React.ReactNode
 }
 
 export function Row(props: LayoutProps) {
@@ -23,23 +22,36 @@ interface FlexProps extends LayoutProps {
 }
 
 function Flex(props: FlexProps) {
+
+    const {
+        direction,
+        justify = 'start',
+        align = 'start',
+        gap = '0',
+        gapMobile = gap,
+        padding = '0',
+        paddingMobile = padding,
+        ...divProps
+    } = props
+
     const BaseFlex = styled('div', {
         display: 'flex',
-        flexDirection: props.direction,
-        justifyContent: (props.justify ?? 'start'),
-        alignItems: (props.align ?? 'start'),
+        flexDirection: direction,
+        justifyContent: (justify ?? 'start'),
+        alignItems: (align ?? 'start'),
     })
 
     return (
-        <BaseFlex css={{
-            gap: (props.gapMobile ?? props.gap ?? '0'),
-            padding: (props.paddingMobile ?? props.padding ?? '0'),
-            '@md': {
-                gap: (props.gap ?? '0'),
-                padding: (props.padding ?? '0'),
-            },
-        }}>
-            {props.children}
-        </BaseFlex>
+        <BaseFlex
+            css={{
+                gap: gapMobile,
+                padding: paddingMobile,
+                '@md': {
+                    gap: gap,
+                    padding: padding,
+                },
+            }}
+            {...props}
+        />
     )
 }

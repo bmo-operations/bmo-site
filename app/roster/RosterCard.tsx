@@ -29,7 +29,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
                     <InfoItem icon={(<CalendarIcon />)} text={`Class of ${player.class}`} />
                     <InfoItem icon={(<HomeIcon />)} text={`${player.hometown}`} />
                 </Column>
-                <Button onClick={e => onMore()}><Text style="subtitle" color="secondary">More</Text></Button>
+                <Button size={{ '@initial': 'mobile', '@md': 'desktop' }} onClick={e => onMore()}><Text style="subtitle" color="secondary">More</Text></Button>
             </Column>
         </RosterCardBase>
     )

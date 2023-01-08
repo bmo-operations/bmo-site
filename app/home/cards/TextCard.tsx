@@ -4,7 +4,7 @@ import { HomeCard } from "../HomeCard"
 
 export default function TextCard({ title, text }: { title: string, text: string }) {
     return (
-        <AboutCardLayout size={{ '@initial': "mobile", '@md': "desktop" }}>
+        <AboutCardLayout>
             <Text style='h3'>{title}</Text>
             <Text style='body'>{text}</Text>
         </AboutCardLayout>

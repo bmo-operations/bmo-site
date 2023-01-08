@@ -1,20 +1,29 @@
 import { styled } from '../../theme/global';
+import { Column } from '../common/Layouts';
 
-export const HomeCard = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
+
+export function HomeCard(props: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <HomeCardBase
+      gap='16px'
+      gapMobile='12px'
+      padding='32px'
+      paddingMobile='24px'
+      size={{ '@initial': 'mobile', '@md': 'desktop' }}
+      {...props}
+    />
+  )
+}
+
+const HomeCardBase = styled(Column, {
   height: 'fit-content',
 
   variants: {
     size: {
       mobile: {
-        gap: '12px',
-        padding: '24px',
         borderRadius: '24px',
       },
       desktop: {
-        gap: '16px',
-        padding: '32px',
         borderRadius: '32px',
       },
     },

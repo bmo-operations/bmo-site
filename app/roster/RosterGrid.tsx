@@ -10,7 +10,7 @@ export default function RosterGrid({ year, onPopupPlayer }: { year: number, onPo
 
     const rosterCards = playerBios.map(p => (<RosterCard player={p} year={year} onMore={() => onPopupPlayer(p)} />))
     return (
-        <Column gap="32px" align="stretch">
+        <Column gap="32px" gapMobile="16px" align="stretch">
             <Row justify="space-between">
                 <RosterYearText year={year} />
             </Row>
