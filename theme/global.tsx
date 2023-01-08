@@ -11,8 +11,7 @@ export const globalStyles = globalCss({
 
 export const { styled, css } = createStitches({
     media: {
-        sm: '(min-width: 640px)',
-        md: '(min-width: 768px)',
+        md: '(min-width: 620px)',
         lg: '(min-width: 1024px)',
     },
     theme: {
@@ -22,11 +21,17 @@ export const { styled, css } = createStitches({
             ...red,
         },
         fontSizes: {
+            h1Desktop: '108px',
+            h1Mobile: '48px',
+            h2Desktop: '48px',
+            h2Mobile: '32px',
+            h3Desktop: '36px',
+            h3Mobile: '24px',
+            h6Desktop: '32px',
+            h6Mobile: '20px',
+            bodyDesktop: '18px',
+            bodyMobile: '16px',
             caption: '12px',
-            body: '18px',
-            h6: '32px',
-            h2: '36px',
-            h1: '108px'
         }
     },
 });
@@ -53,7 +58,10 @@ export const Text = styled('p', {
             tertiary: {
                 color: "$gray10"
             },
-        }
+            accent: {
+                color: "$red11",
+            },
+        },
     },
 
     defaultVariants: {
@@ -62,43 +70,36 @@ export const Text = styled('p', {
     }
 })
 
-export const Heading1 = styled('h1', {
-    fontSize: '$h1',
-    fontWeight: '800',
-    lineHeight: '80%',
-    letterSpacing: '-0.02em',
-})
-
-export const Heading2 = styled('h2', {
-    fontSize: '$h2',
-    fontWeight: '700',
-
+export const BaseText = styled('p', {
     variants: {
+        style: {
+            h1: { fontWeight: '800', lineHeight: '80%', letterSpacing: '-0.02em', },
+            h2: { fontWeight: '700', },
+            h3: { fontWeight: '700', },
+            h6: { fontWeight: '400', lineHeight: '1', },
+            subtitle: { fontWeight: '700', },
+            body: {},
+            caption: {},
+        },
         color: {
             primary: {
-                color: "$gray12"
+                color: "$gray12",
             },
             secondary: {
-                color: "$gray11"
+                color: "$gray11",
             },
             tertiary: {
-                color: "$gray10"
+                color: "$gray10",
             },
-        }
+            accent: {
+                color: "$red11",
+            },
+        },
     },
-})
 
-export const Heading6 = styled('h6', {
-    fontSize: '$h6',
-    fontWeight: '400',
-    // lineHeight: '1'
-})
-
-const maxContainerWidthPx = 1200
-export const Container = styled('div', {
-    maxWidth: `${maxContainerWidthPx}px`,
-    padding: '16px',
-    margin: 'auto',
+    defaultVariants: {
+        color: 'primary',
+    }
 })
 
 export const Button = styled('button', {
@@ -107,17 +108,17 @@ export const Button = styled('button', {
 
     variants: {
         size: {
-            small: {
-
-            },
-            medium: {
-                height: '48px',
+            mobile: {
+                height: '44px',
                 padding: '8px',
                 borderRadius: '16px',
                 fontSize: '100%',
             },
-            large: {
-
+            desktop: {
+                height: '56px',
+                padding: '8px',
+                borderRadius: '16px',
+                fontSize: '100%',
             },
         },
 

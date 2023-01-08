@@ -3,8 +3,10 @@
 import * as Dialog from "@radix-ui/react-dialog"
 import Image from "next/image"
 import { useState } from "react"
-import { Container, Heading2, styled } from "../../theme/global"
+import { styled } from "../../theme/global"
+import Container from "../common/Container"
 import { Column, Row } from "../common/Layouts"
+import Text from "../common/Text"
 import { Player } from "./Player"
 import { hasBioJSON } from "./PlayerBioRepository"
 import RosterCard from "./RosterCard"
@@ -70,8 +72,8 @@ function RosterImage({ year }: { year: number }) {
 export function RosterYearText({ year }: { year: number }) {
     return (
         <Row gap="12px">
-            <Heading2>{`${year}`}</Heading2>
-            <Heading2 color='secondary'>{`Roster`}</Heading2>
+            <Text style="h2">{`${year}`}</Text>
+            <Text style="h2" color='secondary'>{`Roster`}</Text>
         </Row>
     )
 }

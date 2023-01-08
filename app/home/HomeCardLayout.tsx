@@ -1,11 +1,12 @@
-import { Container, styled } from "../../theme/global";
+import { styled } from "../../theme/global";
+import Container from "../common/Container";
 
-export default function HomeCardLayout({children}: {children: React.ReactNode}) {
+export default function HomeCardLayout({ children }: { children: React.ReactNode }) {
     return (
         <Container>
-            <HomeGrid 
+            <HomeGrid
                 size={{
-                    '@sm': 'oneColumn',
+                    '@initial': 'oneColumn',
                     '@lg': 'twoColumns',
                 }}
             >
@@ -24,13 +25,11 @@ const HomeGrid = styled('div', {
             oneColumn: {
                 gridTemplateColumns: '1fr',
                 rowGap: '24px',
-                padding: '24px',
             },
             twoColumns: {
                 gridTemplateColumns: '1fr 1fr',
                 rowGap: '48px',
                 columnGap: '48px',
-                padding: '48px',
             },
         },
     },

@@ -1,27 +1,29 @@
 import Image from "next/image"
-import { Heading1, Heading6, styled } from "../../theme/global"
+import { styled } from "../../theme/global"
+import BaseHellfish from "../../public/images/BlackHellfish.svg"
+import { Column } from "../common/Layouts"
+import Text from "../common/Text"
 
 export default function LandingHeader() {
     return (
-        <LandingLayout>
-            <Image src="/images/hellfish-red.png" width={144} height={144} alt="Hellfish logo"/>
-            <LandingText>
-                <Heading1>{'Brownian Motion'}</Heading1>
-                <Heading6>{'Brown University Men’s Club Ultimate'}</Heading6>
-            </LandingText>
-        </LandingLayout>
+        <Column gap="32px" gapMobile="16px" padding="72px 0px 0px 0px">
+            <Hellfish size={{ '@initial': 'mobile', '@md': 'desktop' }} />
+            <Column gap="16px" gapMobile="8px">
+                <Text style="h1" color="accent">{'Brownian Motion'}</Text>
+                <Text style="h6" color="accent">{'Brown University Men’s Club Ultimate'}</Text>
+            </Column>
+        </Column>
     )
 }
 
-const LandingLayout = styled('div', {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '32px',
-})
+const Hellfish = styled(BaseHellfish, {
+    width: 144,
+    fill: '$red11',
 
-const LandingText = styled('div', {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '16px',
-    color: "$red11",
+    variants: {
+        size: {
+            mobile: { width: 64 },
+            desktop: { width: 144 },
+        }
+    }
 })

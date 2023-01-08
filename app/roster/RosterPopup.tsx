@@ -1,12 +1,13 @@
 import { Player } from "./Player";
 import Image from "next/image";
 import { BookmarkIcon, CalendarIcon, Cross1Icon, HomeIcon, Pencil2Icon, PersonIcon, PilcrowIcon, StackIcon } from "@radix-ui/react-icons";
-import { Heading2, styled, Text } from "../../theme/global";
+import { styled } from "../../theme/global";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Column, Row } from "../common/Layouts";
 import { NumberCircle, RosterNickname } from "./RosterComponents";
 import InfoItem from "./InfoItem";
 import { BioQuestion } from "./BioQuestion";
+import Text from "../common/Text";
 
 export default function RosterPopup({ player, year, onClose }: { player: Player, year: number, onClose: () => void }) {
     return (
@@ -76,7 +77,7 @@ function PopupBottom({ player }: { player: Player }) {
         <Column padding="24px" gap="32px" align="stretch">
             <Row gap="16px" justify="space-between" align="center">
                 <Column>
-                    <Heading2>{player.name}</Heading2>
+                    <Text style="h2">{player.name}</Text>
                     <RosterNickname nickname={player.nickname} />
                 </Column>
                 <NumberCircle number={player.number} />
@@ -101,7 +102,7 @@ function BioQuestionItem({ bioQuestion }: { bioQuestion: BioQuestion }) {
     return (
         <Column gap="4px">
             <Text style="subtitle">{bioQuestion.question}</Text>
-            <Text color="secondary">{bioQuestion.answer}</Text>
+            <Text style="body" color="secondary">{bioQuestion.answer}</Text>
         </Column>
     )
 }

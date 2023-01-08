@@ -1,45 +1,45 @@
 import { styled } from "../../theme/global";
 
-export function Row({ padding, gap, justify, align, children }: { 
+export interface LayoutProps {
     padding?: string,
+    paddingMobile?: string,
     gap?: string,
+    gapMobile?: string,
     justify?: string,
     align?: string,
-    children: React.ReactNode 
-}) {
-    return (<Flex direction='row' padding={padding} gap={gap} justify={justify} align={align} children={children}/>)
+    children: React.ReactNode
 }
 
-export function Column({ padding, gap, justify, align, children }: { 
-    padding?: string,
-    gap?: string,
-    justify?: string,
-    align?: string,
-    children: React.ReactNode 
-}) {
-    return (<Flex direction='column' padding={padding} gap={gap} justify={justify} align={align} children={children}/>)
+export function Row(props: LayoutProps) {
+    return (<Flex {...{ direction: 'row', ...props }} />)
 }
 
-function Flex({ direction, padding, gap, justify, align, children }: { 
-    direction: string,
-    padding?: string,
-    gap?: string,
-    justify?: string,
-    align?: string,
-    children: React.ReactNode 
-}) {
+export function Column(props: LayoutProps) {
+    return (<Flex {...{ direction: 'column', ...props }} />)
+}
+
+interface FlexProps extends LayoutProps {
+    direction: string
+}
+
+function Flex(props: FlexProps) {
     const BaseFlex = styled('div', {
         display: 'flex',
-        flexDirection: direction,
-        gap: (gap ?? '0'),
-        padding: (padding ?? '0'),
-        justifyContent: (justify ?? 'start'),
-        alignItems: (align ?? 'start'),
+        flexDirection: props.direction,
+        justifyContent: (props.justify ?? 'start'),
+        alignItems: (props.align ?? 'start'),
     })
 
     return (
-        <BaseFlex>
-            {children}
+        <BaseFlex css={{
+            gap: (props.gapMobile ?? props.gap ?? '0'),
+            padding: (props.paddingMobile ?? props.padding ?? '0'),
+            '@md': {
+                gap: (props.gap ?? '0'),
+                padding: (props.padding ?? '0'),
+            },
+        }}>
+            {props.children}
         </BaseFlex>
     )
 }

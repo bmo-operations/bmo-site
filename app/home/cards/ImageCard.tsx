@@ -1,14 +1,15 @@
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import React from 'react';
-import { Heading2, styled } from '../../theme/global';
-import { HomeCard } from './HomeCard';
+import { styled } from '../../../theme/global';
+import Text from '../../common/Text';
+import { HomeCard } from '../HomeCard';
 
-export default function ImageCard({title, imageSrc, onClick}: {title: string, imageSrc: string, onClick: () => void}) {
+export default function ImageCard({ title, imageSrc, onClick }: { title: string, imageSrc: string, onClick: () => void }) {
     return (
-        <ImageCardLayout onClick={e => onClick()}>
+        <ImageCardLayout size={{ '@initial': "mobile", '@md': "desktop" }} onClick={e => onClick()}>
             <ContentLayout>
-                <Heading2>{title}</Heading2>
-                <ArrowRightIcon width={30} height={30}/>
+                <Text style="h3" color="accent">{title}</Text>
+                <ArrowRightIcon width={30} height={30} />
             </ContentLayout>
         </ImageCardLayout>
     )
@@ -21,7 +22,7 @@ const ImageCardLayout = styled(HomeCard, {
     cursor: 'pointer',
     height: '-webkit-fill-available',
     justifyContent: 'flex-end',
-  })
+})
 
 const ContentLayout = styled('div', {
     display: 'flex',

@@ -1,12 +1,12 @@
 import { globalCss, styled } from '@stitches/react';
 import { useState } from 'react';
 import NavigationMenu from '../common/navigation/NavigationMenu';
-import { globalStyles, Heading1 } from '../../theme/global';
+import { globalStyles } from '../../theme/global';
 import HomeCardLayout from './HomeCardLayout';
 import LandingHeader from './LandingHeader';
 import { useRouter } from 'next/navigation';
-import ImageCard from './ImageCard';
-import AboutCard from './cards/AboutCard';
+import ImageCard from './cards/ImageCard';
+import TextCard from './cards/TextCard';
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -14,21 +14,22 @@ const LandingImage = styled('img', {
   objectFit: 'cover',
   width: '100%',
   borderRadius: '24px',
+  alignSelf: "stretch",
 })
-  
+
 export default function HomePage() {
-    globalStyles();
-    const router = useRouter();
-  
-    return (
-      <div>
-        
-        <HomeCardLayout>
-          <LandingHeader/>
-          <LandingImage src="/images/team_crump_2022.jpg"/>
-          <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')}/>
-          <AboutCard/>
-        </HomeCardLayout>        
-      </div>
-    );
+  globalStyles();
+  const router = useRouter();
+
+  return (
+    <div>
+
+      <HomeCardLayout>
+        <LandingHeader />
+        <LandingImage src="/images/team_crump_2022.jpg" />
+        <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
+        <TextCard title="About Us" text="For over 40 years, the Brown Ultimate program has churned out elite players and coaches all across the country. Brown Ultimate, commonly referred to as “The Program,” claims three men’s national titles (2000, 2005, and 2019) and four Callahan winners. This year’s BMo has relied on contributions from a strong Senior class headed by 2022 Callahan Award winnner John Randolph and a standout sophomore class. BMo returned to the College Championships in 2018 after a 10-year hiatus, thanks to the superior coaching of Sam Lehman and Jake Smart, whose commitment and acuity have taken BMo from kangaroo court to nationals contender." />
+      </HomeCardLayout>
+    </div>
+  );
 }
