@@ -44,6 +44,7 @@ export default function HomePage() {
             { icon: (<TwitterLogoIcon />), text: "Twitter", colorPalette: Object.values(blue), link: "https://twitter.com/BMoUltimate" },
             { icon: (<FramerLogoIcon />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
           ]} />
+        <ImageCard title="Zip's Tips" imageSrc="" onClick={() => router.push('/zipstips')} />
       </HomeCardLayout>
     </div>
   );

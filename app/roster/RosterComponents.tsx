@@ -1,11 +1,12 @@
-import { styled, Text } from "../../theme/global";
+import { styled } from "../../theme/global";
 import { Row } from "../common/Layouts";
+import Text from "../common/Text";
 
 export function RosterNickname({ nickname }: { nickname: string }) {
     return (
         <Row gap="4px">
-            <Text color="tertiary">aka</Text>
-            <Text color="secondary">{nickname}</Text>
+            <Text style="body" color="tertiary">aka</Text>
+            <Text style="body" color="secondary">{nickname}</Text>
         </Row>
     )
 }
@@ -13,8 +14,8 @@ export function RosterNickname({ nickname }: { nickname: string }) {
 function NumberText({ number }: { number: number }) {
     return (
         <Row justify="center" align="center">
-            <Text color="tertiary">#</Text>
-            <Text color="secondary">{number}</Text>
+            <Text style="body" color="tertiary">#</Text>
+            <Text style="body" color="secondary">{number}</Text>
         </Row>
     )
 }

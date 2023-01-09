@@ -36,40 +36,6 @@ export const { styled, css } = createStitches({
     },
 });
 
-export const Text = styled('p', {
-    fontSize: '$body',
-
-    variants: {
-        style: {
-            subtitle: {
-                fontWeight: 'bold'
-            },
-            body: {
-                fontWeight: 'normal'
-            }
-        },
-        color: {
-            primary: {
-                color: "$gray12"
-            },
-            secondary: {
-                color: "$gray11"
-            },
-            tertiary: {
-                color: "$gray10"
-            },
-            accent: {
-                color: "$red11",
-            },
-        },
-    },
-
-    defaultVariants: {
-        style: 'body',
-        color: 'primary'
-    }
-})
-
 export const BaseText = styled('p', {
     variants: {
         style: {
@@ -79,6 +45,7 @@ export const BaseText = styled('p', {
             h6: { fontWeight: '400', lineHeight: '1', },
             subtitle: { fontWeight: '600', },
             body: {},
+            paragraph: { lineHeight: '150%', whiteSpace: 'pre-line' },
             caption: {},
         },
         color: {

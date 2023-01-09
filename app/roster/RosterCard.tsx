@@ -1,10 +1,11 @@
 import { CalendarIcon, HomeIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import { Button, Text, styled } from "../../theme/global";
+import { Button, styled } from "../../theme/global";
 import { Column, Row } from "../common/Layouts";
 import InfoItem from "./InfoItem";
 import { Player } from "./Player";
 import { NumberChip, RosterNickname } from "./RosterComponents";
+import Text from "../common/Text";
 
 export default function RosterCard({ player, year, onMore }: { player: Player, year: number, onMore: () => void }) {
     return (
