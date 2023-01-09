@@ -18,7 +18,7 @@ export function Column(props: LayoutProps) {
 }
 
 interface FlexProps extends LayoutProps {
-    direction: string
+    direction: 'row' | 'column'
 }
 
 function Flex(props: FlexProps) {
@@ -34,16 +34,12 @@ function Flex(props: FlexProps) {
         ...divProps
     } = props
 
-    const BaseFlex = styled('div', {
-        display: 'flex',
-        flexDirection: direction,
-        justifyContent: (justify ?? 'start'),
-        alignItems: (align ?? 'start'),
-    })
-
     return (
         <BaseFlex
             css={{
+                flexDirection: direction,
+                justifyContent: (justify ?? 'start'),
+                alignItems: (align ?? 'start'),
                 gap: gapMobile,
                 padding: paddingMobile,
                 '@md': {
@@ -55,3 +51,7 @@ function Flex(props: FlexProps) {
         />
     )
 }
+
+const BaseFlex = styled('div', {
+    display: 'flex',
+})

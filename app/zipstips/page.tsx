@@ -22,7 +22,7 @@ export default function ZipsTips() {
                     <Text style="subtitle" color="secondary">written by Josh Ziperstein ‘05</Text>
                 </Column>
                 <Row>
-                    <SearchBarBase placeholder="Search tips" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
+                    <SearchBar key="ztips-search-bar" placeholder="Search tips" value={searchTerm} onChange={value => setSearchTerm(value)} />
                 </Row>
                 <Column gap="32px" align="stretch">
                     {filteredTips.map(t => <TipItem tip={t} />)}
@@ -32,10 +32,9 @@ export default function ZipsTips() {
     );
 }
 
-function SearchBar({ value, placeholder, onChange }: { value: string, placeholder: string, onChange: (value: string) => void }) {
-    const [v, setV] = useState(value)
-    useEffect(() => setV(value), [value])
-    return (<input placeholder={placeholder} value={v} onChange={e => onChange(e.target.value)} />)
+export function SearchBar({ value, placeholder, onChange }: { value: string, placeholder: string, onChange: (value: string) => void }) {
+    useEffect(() => console.log("remounted search bar"), [])
+    return (<SearchBarBase placeholder={placeholder} value={value} onChange={e => onChange(e.target.value)} />)
 }
 
 const SearchBarBase = styled('input', {
