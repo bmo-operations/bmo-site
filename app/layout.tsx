@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        <Column css={{ height: '100vh', width: '100vw' }} align="stretch">
+        <Column style={{ height: '100vh', width: '100vw' }} align="stretch">
           <NavigationMenu />
           <ScrollableContent>
             {children}

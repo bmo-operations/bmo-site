@@ -51,7 +51,7 @@ function Flex(props: FlexProps) {
                     padding: padding,
                 },
             }}
-            {...props}
+            {...divProps}
         />
     )
 }

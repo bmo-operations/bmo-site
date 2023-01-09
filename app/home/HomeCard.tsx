@@ -1,8 +1,8 @@
 import { styled } from '../../theme/global';
-import { Column } from '../common/Layouts';
+import { Column, LayoutProps } from '../common/Layouts';
 
 
-export function HomeCard(props: React.HTMLAttributes<HTMLDivElement>) {
+export function HomeCard(props: LayoutProps) {
   return (
     <HomeCardBase
       gap='16px'
