@@ -1,7 +1,6 @@
 import { globalCss, styled } from '@stitches/react';
 import { useState } from 'react';
 import NavigationMenu from '../common/navigation/NavigationMenu';
-import { globalStyles } from '../../theme/global';
 import HomeCardLayout from './HomeCardLayout';
 import LandingHeader from './LandingHeader';
 import { useRouter } from 'next/navigation';
@@ -10,6 +9,9 @@ import TextCard from './cards/TextCard';
 import { LinkCard } from './cards/LinkCard';
 import { blue, indigo, red } from '@radix-ui/colors';
 import { EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import { ContentCard } from './cards/ContentCard';
+import { TipItem } from '../zipstips/TipItem';
+import { randomTip } from '../zipstips/Tips';
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -21,7 +23,6 @@ const LandingImage = styled('img', {
 })
 
 export default function HomePage() {
-  globalStyles();
   const router = useRouter();
 
   return (
@@ -44,7 +45,9 @@ export default function HomePage() {
             { icon: (<TwitterLogoIcon />), text: "Twitter", colorPalette: Object.values(blue), link: "https://twitter.com/BMoUltimate" },
             { icon: (<FramerLogoIcon />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
           ]} />
-        <ImageCard title="Zip's Tips" imageSrc="" onClick={() => router.push('/zipstips')} />
+        <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')}>
+          <TipItem tip={randomTip()} style="tipCard" />
+        </ContentCard>
       </HomeCardLayout>
     </div>
   );

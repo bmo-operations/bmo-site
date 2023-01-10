@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google';
 import { styled } from '../theme/global';
 import { Column } from './common/Layouts';
 import NavigationMenu from './common/navigation/NavigationMenu';
+import { globalStyles } from '../theme/global';
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })
@@ -15,6 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  globalStyles();
   return (
     <html lang="en" className={inter.className}>
       <body>

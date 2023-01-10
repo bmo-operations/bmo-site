@@ -2,54 +2,61 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
 import { usePathname, useRouter } from 'next/navigation';
 import { red, gray, blackA } from '@radix-ui/colors';
 import React from 'react';
-import { CaretDownIcon } from '@radix-ui/react-icons';
-import { styled } from '../../../theme/global';
+import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
+import { breakpoints, styled } from '../../../theme/global';
 import Text from '../Text';
 import Container, { HorizontalContainer } from '../Container';
+import { Column, Row } from '../Layouts';
 
 export default function NavigationMenu() {
-  let router = useRouter();
-  let pathname = usePathname();
+  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <StyledRoot>
       <HorizontalContainer verticalPadding='12px'>
         <StyledList>
           <NavigationMenuPrimitive.Item>
-            <StyledLink
+            <Tab
               selected={pathname == "/"}
               size={{ '@initial': 'mobile', '@md': 'desktop' }}
               color="accent"
               onSelect={() => router.push('/')}
             >
               <Text style="subtitle">Home</Text>
-            </StyledLink>
+            </Tab>
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
-            <StyledLink
+            <Tab
               selected={pathname == "/roster"}
               size={{ '@initial': 'mobile', '@md': 'desktop' }}
               color="neutral"
               onSelect={() => router.push('/roster')}
             >
               <Text style="subtitle">Roster</Text>
-            </StyledLink>
+            </Tab>
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
-            <StyledTrigger
+            <Trigger
               selected={pathname != "/" && pathname != "/roster"}
               size={{ '@initial': 'mobile', '@md': 'desktop' }}
               color="neutral"
             >
               <Text style="subtitle">More</Text>
               <StyledCaret />
-            </StyledTrigger>
-            <NavigationMenuPrimitive.Content>
-              <StyledLink />
-            </NavigationMenuPrimitive.Content>
+            </Trigger>
+            <Popup size={{ '@initial': 'mobile', "@md": "desktop" }}>
+              <Column>
+                <MenuItem title='Zip’s Tips' selected={pathname == "/zipstips"} onSelect={() => router.push('/zipstips')} />
+                <MenuItem title='Videos' selected={pathname == "/videos"} onSelect={() => router.push('/videos')} />
+                <MenuItem title='Photos' selected={pathname == "/photos"} onSelect={() => router.push('/photos')} />
+                <MenuItem title='News' selected={pathname == "/news"} onSelect={() => router.push('/news')} />
+              </Column>
+            </Popup>
           </NavigationMenuPrimitive.Item>
         </StyledList>
       </HorizontalContainer>
+      {window.innerWidth < breakpoints[0] && <NavigationMenuPrimitive.Viewport />}
     </StyledRoot>
   )
 }
@@ -121,13 +128,74 @@ const itemStyles = {
 };
 
 
-const StyledLink = styled(NavigationMenuPrimitive.Link, {
+const Tab = styled(NavigationMenuPrimitive.Link, {
   ...itemStyles,
 });
 
-const StyledTrigger = styled(NavigationMenuPrimitive.Trigger, {
+const Trigger = styled(NavigationMenuPrimitive.Trigger, {
   all: 'unset',
   ...itemStyles,
+});
+
+const Popup = styled(NavigationMenuPrimitive.Content, {
+  variants: {
+    size: {
+      mobile: {
+        width: "100%",
+      },
+      desktop: {
+        position: 'absolute',
+        // top: 0,
+        // left: 0,
+        backgroundColor: "$gray1",
+        width: "fit-content",
+        padding: "8px",
+        borderRadius: "16px",
+        border: "solid 1px $gray7"
+        // width: "100%",
+      },
+    },
+  },
+})
+
+function MenuItem({ title, selected, onSelect }: { title: string, selected: boolean, onSelect: () => void }) {
+  return (
+    <MenuItemBase onSelect={() => onSelect()} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+      <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
+        <Text
+          style={(selected) ? "subtitle" : "body"}
+          color={(selected) ? "primary" : "secondary"}
+        >
+          {title}
+        </Text>
+        {selected && <CheckIcon />}
+      </Row>
+    </MenuItemBase>
+  )
+}
+
+const MenuItemBase = styled(NavigationMenuPrimitive.Link, {
+  display: 'flex',
+  alignItems: 'center',
+  width: "100%",
+  boxSizing: "border-box",
+  cursor: "pointer",
+
+  '&:hover': { backgroundColor: "$gray4", },
+  '&:focus': { backgroundColor: "$gray5", },
+
+  variants: {
+    size: {
+      mobile: {
+        padding: "12px 16px",
+      },
+      desktop: {
+        padding: "12px 16px",
+        borderRadius: "8px",
+        minWidth: "196px",
+      }
+    },
+  },
 });
 
 const StyledCaret = styled(CaretDownIcon, {
@@ -139,23 +207,3 @@ const StyledCaret = styled(CaretDownIcon, {
     transition: 'transform 250ms ease',
   },
 })
-
-const StyledIndicator = styled(NavigationMenuPrimitive.Indicator, {
-  display: 'flex',
-  alignItems: 'flex-end',
-  justifyContent: 'center',
-  height: 10,
-  top: '100%',
-  overflow: 'hidden',
-  zIndex: 1,
-});
-
-const StyledArrow = styled('div', {
-  position: 'relative',
-  top: '70%',
-  backgroundColor: 'white',
-  width: 10,
-  height: 10,
-  transform: 'rotate(45deg)',
-  borderTopLeftRadius: 2,
-});

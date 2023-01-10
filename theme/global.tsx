@@ -3,16 +3,18 @@ import { createStitches, globalCss } from "@stitches/react";
 
 export const globalStyles = globalCss({
     '*': { margin: 0, padding: 0 },
-
+    'button, input': { fontFamily: 'inherit', }
     // '*, p, h1, h2, h3, h4, h5, h6, span': {
     //     fontFamily: 'Aeonik, Inter, sans-serif',
     // }
 });
 
+export const breakpoints = [620, 1024]
+
 export const { styled, css } = createStitches({
     media: {
-        md: '(min-width: 620px)',
-        lg: '(min-width: 1024px)',
+        md: `(min-width: ${breakpoints[0]}px)`,
+        lg: `(min-width: ${breakpoints[1]}px)`,
     },
     theme: {
         colors: {
@@ -68,6 +70,9 @@ export const BaseText = styled('p', {
 export const Button = styled('button', {
     border: 'none',
     cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: "center",
 
     variants: {
         size: {
@@ -76,12 +81,14 @@ export const Button = styled('button', {
                 padding: '8px',
                 borderRadius: '16px',
                 fontSize: '100%',
+                gap: '8px',
             },
             desktop: {
                 height: '56px',
                 padding: '8px',
                 borderRadius: '16px',
                 fontSize: '100%',
+                gap: '8px',
             },
         },
 
