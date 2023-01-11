@@ -8,7 +8,7 @@ import Container from "../common/Container"
 import { Column, Row } from "../common/Layouts"
 import Text from "../common/Text"
 import { Player } from "./Player"
-import { hasBioJSON } from "./PlayerBioRepository"
+import { allRosters } from "./RosterRepository"
 import RosterCard from "./RosterCard"
 import { RosterYearText } from "./RosterComponents"
 import RosterGrid from "./RosterGrid"
@@ -24,11 +24,13 @@ class PopupInfo {
 export default function RosterPage() {
     const [popupPlayer, setPopupPlayer] = useState<PopupInfo | null>(null)
 
-    const rosters = [2022, 2020, 2019].map(year =>
-        (hasBioJSON(year))
-            ? <RosterGrid year={year} onPopupPlayer={p => setPopupPlayer(new PopupInfo(p, year))} />
-            : <RosterImage year={year} />
-    )
+
+    const rosters = [...allRosters()].sort((a, b) => b[0] - a[0]).map(entry => {
+        const [year, value] = entry
+        return (typeof value == "string")
+            ? <RosterImage key={year} year={year} />
+            : <RosterGrid key={year} year={year} players={value} onPopupPlayer={p => setPopupPlayer(new PopupInfo(p, year))} />
+    })
 
     return (
         <Container>

@@ -15,6 +15,7 @@ import { ContentCard } from './cards/ContentCard';
 import { TipItem } from '../zipstips/TipItem';
 import { getTips, randomTip } from '../zipstips/Tips';
 import { ZipsTip } from '../zipstips/ZipsTip';
+import aboutUs from "../../public/content/home/aboutus.json"
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -35,7 +36,7 @@ export default function HomePage() {
       <LandingHeader />
       <LandingImage src="/images/team_crump_2022.jpg" />
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
-      <TextCard title="About Us" text="For over 40 years, the Brown Ultimate program has churned out elite players and coaches all across the country. Brown Ultimate, commonly referred to as “The Program,” claims three men’s national titles (2000, 2005, and 2019) and four Callahan winners. This year’s BMo has relied on contributions from a strong Senior class headed by 2022 Callahan Award winnner John Randolph and a standout sophomore class. BMo returned to the College Championships in 2018 after a 10-year hiatus, thanks to the superior coaching of Sam Lehman and Jake Smart, whose commitment and acuity have taken BMo from kangaroo court to nationals contender." />
+      <TextCard title={aboutUs.title} text={aboutUs.text} />
       <LinkCard
         title="Interested in trying out or playing ultimate at Brown?"
         links={[

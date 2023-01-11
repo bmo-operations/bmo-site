@@ -11,7 +11,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
     return (
         <RosterCardBase>
             <Image
-                src={`/roster/${year}/pics/${player.id}.jpg`}
+                src={`/content/roster/${year}/${player.id}.jpg`}
                 alt={`Picture of ${player.name}`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 width={0}

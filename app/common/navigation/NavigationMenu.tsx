@@ -67,7 +67,7 @@ export default function NavigationMenu() {
 }
 
 const StyledRoot = styled(NavigationMenuPrimitive.Root, {
-  borderBottom: `solid 1px ${blackA.blackA3}`
+  borderBottom: `solid 1px $gray7`
 })
 
 const StyledList = styled(NavigationMenuPrimitive.List, {
