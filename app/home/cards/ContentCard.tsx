@@ -7,7 +7,7 @@ import { HomeCard } from "../HomeCard";
 export function ContentCard({ title, onMore, children }: { title: string, onMore: () => void, children: React.ReactNode }) {
     return (
         <ContentCardBase align="stretch">
-            <Row justify="space-between" align="center">
+            <Row justify="space-between" align="center" gap="16px">
                 <Text style="h3">{title}</Text>
                 <MoreButton onClick={onMore} />
             </Row>

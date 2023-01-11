@@ -17,7 +17,7 @@ export function LinkCard({ title, description, links }: { title: string, descrip
         <LinkCardBase style="outlined" align="stretch">
             <Text style="h3">{title}</Text>
             <Column gap="16px" gapMobile="12px" align="stretch" style={{ height: '-webkit-fill-available', }}>
-                {links.map(info => <LinkItem info={info} />)}
+                {links.map(info => <LinkItem key={info.text} info={info} />)}
             </Column>
         </LinkCardBase>
     )

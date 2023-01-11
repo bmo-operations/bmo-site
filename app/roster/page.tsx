@@ -10,6 +10,7 @@ import Text from "../common/Text"
 import { Player } from "./Player"
 import { hasBioJSON } from "./PlayerBioRepository"
 import RosterCard from "./RosterCard"
+import { RosterYearText } from "./RosterComponents"
 import RosterGrid from "./RosterGrid"
 import RosterPopup from "./RosterPopup"
 
@@ -66,14 +67,5 @@ function RosterImage({ year }: { year: number }) {
                 style={{ width: '100%', height: 'auto', borderRadius: '24px' }}
             />
         </Column>
-    )
-}
-
-export function RosterYearText({ year }: { year: number }) {
-    return (
-        <Row gap="12px" gapMobile="8px">
-            <Text style="h2">{`${year}`}</Text>
-            <Text style="h2" color='secondary'>{`Roster`}</Text>
-        </Row>
     )
 }

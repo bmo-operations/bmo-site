@@ -1,7 +1,9 @@
+"use client"
+
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
 import { usePathname, useRouter } from 'next/navigation';
 import { red, gray, blackA } from '@radix-ui/colors';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
 import { breakpoints, styled } from '../../../theme/global';
 import Text from '../Text';
@@ -11,6 +13,9 @@ import { Column, Row } from '../Layouts';
 export default function NavigationMenu() {
   const router = useRouter();
   const pathname = usePathname();
+  const [loadedWindow, setLoadedWindow] = useState<Window | undefined>()
+
+  useEffect(() => setLoadedWindow(window), [])
 
   return (
     <StyledRoot>
@@ -56,7 +61,7 @@ export default function NavigationMenu() {
           </NavigationMenuPrimitive.Item>
         </StyledList>
       </HorizontalContainer>
-      {window.innerWidth < breakpoints[0] && <NavigationMenuPrimitive.Viewport />}
+      {(loadedWindow?.innerWidth ?? 0) < breakpoints[0] && <NavigationMenuPrimitive.Viewport />}
     </StyledRoot>
   )
 }

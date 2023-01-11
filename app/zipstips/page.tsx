@@ -5,13 +5,13 @@ import { styled } from "../../theme/global";
 import Container from "../common/Container";
 import { Column, Row } from "../common/Layouts";
 import Text from "../common/Text";
+import { SearchBar } from "./SearchBar";
 import { TipItem } from "./TipItem";
 import { getTips } from "./Tips";
 
-const allTips = getTips()
-
 export default function ZipsTips() {
     const [searchTerm, setSearchTerm] = useState("")
+    const allTips = getTips()
     const filteredTips = allTips.filter(t => t.title.toLowerCase().includes(searchTerm.toLowerCase()) || t.text.toLowerCase().includes(searchTerm.toLowerCase()))
 
     return (
@@ -31,27 +31,3 @@ export default function ZipsTips() {
         </Container>
     );
 }
-
-export function SearchBar({ value, placeholder, onChange }: { value: string, placeholder: string, onChange: (value: string) => void }) {
-    useEffect(() => console.log("remounted search bar"), [])
-    return (<SearchBarBase placeholder={placeholder} value={value} onChange={e => onChange(e.target.value)} />)
-}
-
-const SearchBarBase = styled('input', {
-    padding: '16px',
-    backgroundColor: '$gray3',
-    borderRadius: '9999px',
-    border: 'none',
-    width: '100%',
-
-    variants: {
-        size: {
-            mobile: {
-                fontSize: "$bodyMobile",
-            },
-            desktop: {
-                fontSize: "$bodyDesktop",
-            },
-        },
-    }
-})

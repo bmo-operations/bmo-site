@@ -43,3 +43,13 @@ export function NumberCircle({ number }: { number: number }) {
     })
     return (<Base><NumberText number={number} /></Base>)
 }
+
+
+export function RosterYearText({ year }: { year: number }) {
+    return (
+        <Row gap="12px" gapMobile="8px">
+            <Text style="h2">{`${year}`}</Text>
+            <Text style="h2" color='secondary'>{`Roster`}</Text>
+        </Row>
+    )
+}
