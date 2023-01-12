@@ -5,14 +5,15 @@ import { usePathname, useRouter } from 'next/navigation';
 import { red, gray, blackA } from '@radix-ui/colors';
 import React, { useEffect, useState } from 'react';
 import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
-import { breakpoints, styled } from '../../../theme/global';
+import { breakpoints, styled, UndecoratedLink } from '../../../theme/global';
 import Text from '../Text';
 import Container, { HorizontalContainer } from '../Container';
 import { Column, Row } from '../Layouts';
+import Link from 'next/link';
 
 export default function NavigationMenu() {
   const router = useRouter();
-  const pathname = usePathname();
+  const currentPath = usePathname();
   const [loadedWindow, setLoadedWindow] = useState<Window | undefined>()
 
   useEffect(() => setLoadedWindow(window), [])
@@ -22,28 +23,14 @@ export default function NavigationMenu() {
       <HorizontalContainer verticalPadding='12px'>
         <StyledList>
           <NavigationMenuPrimitive.Item>
-            <Tab
-              selected={pathname == "/"}
-              size={{ '@initial': 'mobile', '@md': 'desktop' }}
-              color="accent"
-              onSelect={() => router.push('/')}
-            >
-              <Text style="subtitle">Home</Text>
-            </Tab>
+            <Tab title="Home" selectedPath={currentPath} pathname="/" />
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
-            <Tab
-              selected={pathname == "/roster"}
-              size={{ '@initial': 'mobile', '@md': 'desktop' }}
-              color="neutral"
-              onSelect={() => router.push('/roster')}
-            >
-              <Text style="subtitle">Roster</Text>
-            </Tab>
+            <Tab title="Roster" selectedPath={currentPath} pathname="/roster" />
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
             <Trigger
-              selected={pathname != "/" && pathname != "/roster"}
+              selected={currentPath != "/" && currentPath != "/roster"}
               size={{ '@initial': 'mobile', '@md': 'desktop' }}
               color="neutral"
             >
@@ -52,10 +39,10 @@ export default function NavigationMenu() {
             </Trigger>
             <Popup size={{ '@initial': 'mobile', "@md": "desktop" }}>
               <Column>
-                <MenuItem title='Zip’s Tips' selected={pathname == "/zipstips"} onSelect={() => router.push('/zipstips')} />
-                <MenuItem title='Videos' selected={pathname == "/videos"} onSelect={() => router.push('/videos')} />
-                <MenuItem title='Photos' selected={pathname == "/photos"} onSelect={() => router.push('/photos')} />
-                <MenuItem title='News' selected={pathname == "/news"} onSelect={() => router.push('/news')} />
+                <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
+                <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
+                <MenuItem title='Photos' pathname="/photos" selectedPath={currentPath} />
+                <MenuItem title='News' pathname="/news" selectedPath={currentPath} />
               </Column>
             </Popup>
           </NavigationMenuPrimitive.Item>
@@ -119,6 +106,7 @@ const itemStyles = {
       color: 'neutral',
       selected: true,
       css: {
+        color: gray.gray11,
         backgroundColor: gray.gray3,
       }
     },
@@ -126,14 +114,27 @@ const itemStyles = {
       color: 'accent',
       selected: true,
       css: {
+        color: red.red11,
         backgroundColor: red.red3,
       }
     },
   ],
 };
 
+interface LinkProps { title: string, pathname: string, selectedPath: string | null }
 
-const Tab = styled(NavigationMenuPrimitive.Link, {
+function Tab({ title, pathname, selectedPath }: LinkProps) {
+  const isSelected = pathname == selectedPath
+  return (
+    <UndecoratedLink href={pathname}>
+      <TabBase color={pathname == "/" ? "accent" : "neutral"} selected={isSelected} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+        <Text style="subtitle">{title}</Text>
+      </TabBase>
+    </UndecoratedLink>
+  )
+}
+
+const TabBase = styled(NavigationMenuPrimitive.Link, {
   ...itemStyles,
 });
 
@@ -163,19 +164,22 @@ const Popup = styled(NavigationMenuPrimitive.Content, {
   },
 })
 
-function MenuItem({ title, selected, onSelect }: { title: string, selected: boolean, onSelect: () => void }) {
+function MenuItem({ title, pathname, selectedPath }: LinkProps) {
+  const isSelected = pathname == selectedPath
   return (
-    <MenuItemBase onSelect={() => onSelect()} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
-      <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
-        <Text
-          style={(selected) ? "subtitle" : "body"}
-          color={(selected) ? "primary" : "secondary"}
-        >
-          {title}
-        </Text>
-        {selected && <CheckIcon />}
-      </Row>
-    </MenuItemBase>
+    <UndecoratedLink href={pathname}>
+      <MenuItemBase size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+        <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
+          <Text
+            style={(isSelected) ? "subtitle" : "body"}
+            color={(isSelected) ? "primary" : "secondary"}
+          >
+            {title}
+          </Text>
+          {isSelected && <CheckIcon />}
+        </Row>
+      </MenuItemBase>
+    </UndecoratedLink>
   )
 }
 

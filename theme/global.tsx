@@ -1,5 +1,6 @@
 import { blackA, gray, red } from "@radix-ui/colors";
 import { createStitches, globalCss } from "@stitches/react";
+import Link from "next/link";
 
 export const globalStyles = globalCss({
     '*': { margin: 0, padding: 0 },
@@ -119,4 +120,19 @@ export const Button = styled('button', {
     defaultVariants: {
         color: 'neutral',
     },
+})
+
+const undecoratedLinkStyles = {
+    '&:link': { textDecoration: 'none', },
+    '&:visited': { textDecoration: 'none', },
+    '&:hover': { textDecoration: 'none', },
+    '&:active': { textDecoration: 'none', },
+}
+
+export const UndecoratedA = styled('a', {
+    ...undecoratedLinkStyles
+})
+
+export const UndecoratedLink = styled(Link, {
+    ...undecoratedLinkStyles
 })

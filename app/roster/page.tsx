@@ -5,14 +5,12 @@ import Image from "next/image"
 import { useState } from "react"
 import { styled } from "../../theme/global"
 import Container from "../common/Container"
-import { Column, Row } from "../common/Layouts"
-import Text from "../common/Text"
+import { Column } from "../common/Layouts"
 import { Player } from "./Player"
 import { allRosters } from "./RosterRepository"
 import RosterCard from "./RosterCard"
-import { RosterYearText } from "./RosterComponents"
-import RosterGrid from "./RosterGrid"
 import RosterPopup from "./RosterPopup"
+import { ContentLayout, ContentGrid, HeaderText } from "../common/ContentLayout"
 
 class PopupInfo {
     constructor(
@@ -24,19 +22,29 @@ class PopupInfo {
 export default function RosterPage() {
     const [popupPlayer, setPopupPlayer] = useState<PopupInfo | null>(null)
 
-
-    const rosters = [...allRosters()].sort((a, b) => b[0] - a[0]).map(entry => {
-        const [year, value] = entry
-        return (typeof value == "string")
-            ? <RosterImage key={year} year={year} />
-            : <RosterGrid key={year} year={year} players={value} onPopupPlayer={p => setPopupPlayer(new PopupInfo(p, year))} />
-    })
-
     return (
         <Container>
-            <Column gap="64px" align="stretch">
-                {rosters}
-            </Column>
+            <ContentLayout
+                content={allRosters()}
+                element={(year, value) =>
+                    (typeof value == "string")
+                        ? <RosterImage key={year} year={year} />
+                        : <ContentGrid
+                            key={year}
+                            year={year}
+                            contentName="Roster"
+                            content={value}
+                            element={p =>
+                                <RosterCard
+                                    key={p.id}
+                                    player={p}
+                                    year={year}
+                                    onMore={() => setPopupPlayer(new PopupInfo(p, year))}
+                                />
+                            }
+                        />
+                }
+            />
             {popupPlayer !== null &&
                 <Dialog.Root defaultOpen onOpenChange={o => setPopupPlayer(null)}>
                     <Dialog.Portal>
@@ -59,7 +67,7 @@ const DialogOverlay = styled(Dialog.Overlay, {
 function RosterImage({ year }: { year: number }) {
     return (
         <Column gap="32px" gapMobile="16px">
-            <RosterYearText year={year} />
+            <HeaderText first={`${year}`} second="Roster" />
             <Image
                 src={`/roster/${year}/roster${year}.jpg`}
                 alt={`Image of the ${year} BMo roster`}

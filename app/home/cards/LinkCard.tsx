@@ -1,5 +1,5 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { styled } from "../../../theme/global";
+import { styled, UndecoratedA } from "../../../theme/global";
 import { Column, Row } from "../../common/Layouts";
 import Text from "../../common/Text";
 import { HomeCard } from "../HomeCard";
@@ -61,9 +61,9 @@ function LinkItem({ info }: { info: LinkInfo }) {
         </LinkItemBase>
     )
     return (info.link != undefined)
-        ? (<UndecoratedA href={info.link} target="_blank" rel="noopener noreferrer">
+        ? (<LinkA href={info.link} target="_blank" rel="noopener noreferrer">
             {content}
-        </UndecoratedA>)
+        </LinkA>)
         : content
 }
 
@@ -84,14 +84,9 @@ const LinkItemBase = styled(Row, {
     },
 })
 
-const UndecoratedA = styled('a', {
+const LinkA = styled(UndecoratedA, {
     height: '-webkit-fill-available',
     width: '100%',
     display: 'flex',
     justifyContent: 'stretch',
-
-    '&:link': { textDecoration: 'none', },
-    '&:visited': { textDecoration: 'none', },
-    '&:hover': { textDecoration: 'none', },
-    '&:active': { textDecoration: 'none', },
 })
