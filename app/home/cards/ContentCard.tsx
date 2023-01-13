@@ -1,5 +1,5 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { Button, styled } from "../../../theme/global";
+import { Button, styled } from "../../common/theme/global";
 import { Row } from "../../common/Layouts";
 import Text from "../../common/Text";
 import { HomeCard } from "../HomeCard";

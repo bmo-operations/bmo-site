@@ -5,7 +5,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { red, gray, blackA } from '@radix-ui/colors';
 import React, { useEffect, useState } from 'react';
 import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
-import { breakpoints, styled, UndecoratedLink } from '../../../theme/global';
+import { breakpoints, styled, UndecoratedLink } from '../theme/global';
 import Text from '../Text';
 import Container, { HorizontalContainer } from '../Container';
 import { Column, Row } from '../Layouts';
@@ -125,16 +125,17 @@ interface LinkProps { title: string, pathname: string, selectedPath: string | nu
 
 function Tab({ title, pathname, selectedPath }: LinkProps) {
   const isSelected = pathname == selectedPath
+  const router = useRouter()
+  // <UndecoratedLink href={pathname}>
   return (
-    <UndecoratedLink href={pathname}>
-      <TabBase color={pathname == "/" ? "accent" : "neutral"} selected={isSelected} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
-        <Text style="subtitle">{title}</Text>
-      </TabBase>
-    </UndecoratedLink>
+    <TabBase href={pathname} color={pathname == "/" ? "accent" : "neutral"} selected={isSelected} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+      <Text style="subtitle">{title}</Text>
+    </TabBase>
   )
+  // </UndecoratedLink>
 }
 
-const TabBase = styled(NavigationMenuPrimitive.Link, {
+const TabBase = styled(UndecoratedLink, {
   ...itemStyles,
 });
 
@@ -167,23 +168,21 @@ const Popup = styled(NavigationMenuPrimitive.Content, {
 function MenuItem({ title, pathname, selectedPath }: LinkProps) {
   const isSelected = pathname == selectedPath
   return (
-    <UndecoratedLink href={pathname}>
-      <MenuItemBase size={{ '@initial': 'mobile', '@md': 'desktop' }}>
-        <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
-          <Text
-            style={(isSelected) ? "subtitle" : "body"}
-            color={(isSelected) ? "primary" : "secondary"}
-          >
-            {title}
-          </Text>
-          {isSelected && <CheckIcon />}
-        </Row>
-      </MenuItemBase>
-    </UndecoratedLink>
+    <MenuItemBase href={pathname} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+      <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
+        <Text
+          style={(isSelected) ? "subtitle" : "body"}
+          color={(isSelected) ? "primary" : "secondary"}
+        >
+          {title}
+        </Text>
+        {isSelected && <CheckIcon />}
+      </Row>
+    </MenuItemBase>
   )
 }
 
-const MenuItemBase = styled(NavigationMenuPrimitive.Link, {
+const MenuItemBase = styled(UndecoratedLink, {
   display: 'flex',
   alignItems: 'center',
   width: "100%",

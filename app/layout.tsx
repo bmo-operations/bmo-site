@@ -1,10 +1,10 @@
 'use client';
 
 import { Inter } from '@next/font/google';
-import { styled } from '../theme/global';
+import { styled } from './common/theme/global';
 import { Column } from './common/Layouts';
 import NavigationMenu from './common/navigation/NavigationMenu';
-import { globalStyles } from '../theme/global';
+import { globalStyles } from './common/theme/global';
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })

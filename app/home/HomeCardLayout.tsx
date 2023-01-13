@@ -1,4 +1,4 @@
-import { styled } from "../../theme/global";
+import { styled } from "../common/theme/global";
 import Container from "../common/Container";
 
 export default function HomeCardLayout({ children }: { children: React.ReactNode }) {

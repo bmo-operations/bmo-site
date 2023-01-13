@@ -1,4 +1,4 @@
-import { styled } from "../../theme/global";
+import { styled } from "./theme/global";
 import { Column, Row } from "./Layouts";
 import Text from "./Text";
 

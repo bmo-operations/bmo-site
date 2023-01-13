@@ -1,4 +1,4 @@
-import { BaseText } from "../../theme/global";
+import { BaseText } from "./theme/global";
 
 export interface TextProps {
     style: 'h1' | 'h2' | 'h3' | 'h6' | 'subtitle' | 'body' | 'paragraph' | 'caption',

@@ -1,4 +1,4 @@
-import { styled } from "../../theme/global"
+import { styled } from "./theme/global"
 
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> { }
 

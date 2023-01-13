@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { styled } from "../../theme/global"
+import { styled } from "../common/theme/global"
 import BaseHellfish from "../../public/images/BlackHellfish.svg"
 import { Column } from "../common/Layouts"
 import Text from "../common/Text"

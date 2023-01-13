@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { styled } from "../../theme/global";
+import { styled } from "../common/theme/global";
 import Container from "../common/Container";
 import { Column, Row } from "../common/Layouts";
 import Text from "../common/Text";

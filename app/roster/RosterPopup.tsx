@@ -1,7 +1,7 @@
 import { Player } from "./Player";
 import Image from "next/image";
 import { BookmarkIcon, CalendarIcon, Cross1Icon, HomeIcon, Pencil2Icon, PersonIcon, PilcrowIcon, StackIcon } from "@radix-ui/react-icons";
-import { styled } from "../../theme/global";
+import { styled } from "../common/theme/global";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Column, Row } from "../common/Layouts";
 import { NumberCircle, RosterNickname } from "./RosterComponents";
@@ -15,7 +15,7 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
             <ModalContent>
                 <div className="popup-image-container">
                     <Image
-                        src={`/roster/${year}/pics/${player.id}.jpg`}
+                        src={`/content/roster/${year}/${player.id}.jpg`}
                         alt={`Picture of ${player.name}`}
                         sizes="100vw"
                         width={0}

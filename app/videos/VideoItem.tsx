@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { styled, UndecoratedA } from "../../theme/global";
+import { styled, UndecoratedA } from "../common/theme/global";
 import { Column } from "../common/Layouts";
 import Text from "../common/Text";
 import { Video, videoThumbnail } from "./Video";
@@ -15,7 +15,7 @@ export default function VideoItem({ video, onClick }: { video: Video, onClick: (
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     width={0}
                     height={0}
-                    style={{ width: '100%', height: 'auto', borderRadius: '16px' }}
+                    style={{ width: '100%', height: 'auto', borderRadius: '16px', aspectRatio: "calc(16/9)", objectFit: "cover" }}
                 />
                 <Column>
                     <Text style="subtitle" color="primary">{video.title}</Text>

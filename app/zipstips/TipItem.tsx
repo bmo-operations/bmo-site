@@ -1,4 +1,4 @@
-import { styled } from "../../theme/global";
+import { styled } from "../common/theme/global";
 import { Column, Row } from "../common/Layouts";
 import Text from "../common/Text";
 import { ZipsTip } from "./ZipsTip";

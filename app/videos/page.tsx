@@ -16,7 +16,7 @@ export default function VideoPage() {
                         year={year}
                         contentName="Videos"
                         content={value}
-                        element={v => <VideoItem video={v} onClick={() => false} />}
+                        element={v => <VideoItem key={v.link} video={v} onClick={() => false} />}
                     />
                 }
             />

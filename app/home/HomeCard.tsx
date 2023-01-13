@@ -1,4 +1,4 @@
-import { styled } from '../../theme/global';
+import { styled } from '../common/theme/global';
 import { Column, LayoutProps } from '../common/Layouts';
 
 

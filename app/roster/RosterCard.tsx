@@ -1,6 +1,6 @@
 import { CalendarIcon, HomeIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import { Button, styled } from "../../theme/global";
+import { Button, styled } from "../common/theme/global";
 import { Column, Row } from "../common/Layouts";
 import InfoItem from "./InfoItem";
 import { Player } from "./Player";

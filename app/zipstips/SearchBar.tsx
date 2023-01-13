@@ -1,4 +1,4 @@
-import { styled } from "../../theme/global"
+import { styled } from "../common/theme/global"
 
 export function SearchBar({ value, placeholder, onChange }: { value: string, placeholder: string, onChange: (value: string) => void }) {
     return (<SearchBarBase placeholder={placeholder} value={value} onChange={e => onChange(e.target.value)} />)
