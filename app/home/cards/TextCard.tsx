@@ -6,7 +6,7 @@ export default function TextCard({ title, text }: { title: string, text: string 
     return (
         <AboutCardLayout>
             <Text style='h3'>{title}</Text>
-            <Text style='body'>{text}</Text>
+            <Text style='paragraph'>{text}</Text>
         </AboutCardLayout>
     )
 }

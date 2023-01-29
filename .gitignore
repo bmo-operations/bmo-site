@@ -2,3 +2,4 @@ node_modules
 .next
 .vscode
 bmosite_vscode_workspace.code-workspace
+out

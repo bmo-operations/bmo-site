@@ -21,7 +21,7 @@ export default function NewsPage() {
                         content={items}
                         element={item =>
                             (isArticle(item))
-                                ? <ArticleItem key={item.link} article={item} />
+                                ? <ArticleItem key={item.link} article={item} style={value.articles.length > 1 ? "card" : "feature"} />
                                 : <RankingsItem key={`${year}rankings`} rankings={item} />
                         }
                     />

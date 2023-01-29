@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Button, UndecoratedA } from "../common/theme/global";
+import { Button, styled, UndecoratedA } from "../common/theme/global";
 import { Column } from "../common/Layouts";
 import Text from "../common/Text";
 import { Article } from "./News";
 
-export function ArticleItem({ article }: { article: Article }) {
+export function ArticleItem({ article, style }: { article: Article, style?: "card" | "feature" }) {
     return (
-        <Column gap="16px" align="stretch">
+        <ArticleItemBase gap="16px" align="stretch" style={style}>
             <Image
                 src={article.image}
                 alt={`Image for ${article.headline}`}
@@ -27,6 +27,20 @@ export function ArticleItem({ article }: { article: Article }) {
                     </Button>
                 </UndecoratedA>
             }
-        </Column>
+        </ArticleItemBase>
     )
 }
+
+const ArticleItemBase = styled(Column, {
+    variants: {
+        style: {
+            card: {},
+            feature: {
+                gridColumnEnd: "span 2",
+            },
+        },
+    },
+    defaultVariants: {
+        style: "card",
+    }
+})
