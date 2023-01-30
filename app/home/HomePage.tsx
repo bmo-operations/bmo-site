@@ -9,8 +9,8 @@ import { useRouter } from 'next/navigation';
 import ImageCard from './cards/ImageCard';
 import TextCard from './cards/TextCard';
 import { LinkCard } from './cards/LinkCard';
-import { blue, indigo, red } from '@radix-ui/colors';
-import { EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import { blue, indigo, orange, red } from '@radix-ui/colors';
+import { ArchiveIcon, EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, Link1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { ContentCard } from './cards/ContentCard';
 import { TipItem } from '../zipstips/TipItem';
 import { getTips, randomTip } from '../zipstips/Tips';
@@ -52,6 +52,12 @@ export default function HomePage() {
       <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')}>
         {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}
       </ContentCard>
+      <LinkCard
+        title="Support Us"
+        links={[
+          { icon: (<ArchiveIcon />), text: "Buy team merch on Etsy", description: "These items are sold at cost, so feel free to donate as well!", colorPalette: Object.values(orange), link: "https://www.etsy.com/shop/bmomerchandise" },
+          { icon: (<Link1Icon />), text: "Donate to the team", colorPalette: Object.values(red), link: "https://www.facebook.com/bmoultimate/" },
+        ]} />
     </HomeCardLayout>
   );
 }

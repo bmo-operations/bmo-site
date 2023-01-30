@@ -7,6 +7,7 @@ import { HomeCard } from "../HomeCard";
 export interface LinkInfo {
     icon: React.ReactNode,
     text: string,
+    description?: string,
     colorPalette: string[],
     onClick?: () => void,
     link?: string,
@@ -54,11 +55,19 @@ function LinkItem({ info }: { info: LinkInfo }) {
         >
             <Row align="center" gap="16px" style={{ width: '100%' }}>
                 {info.icon}
-                <Text style="subtitle">{info.text}</Text>
+                <Column
+                    gap="4px"
+                    style={{
+                        flexGrow: "1",
+                        flexBasis: "fit-content",
+                    }}>
+                    <Text style="subtitle">{info.text}</Text>
+                    {info.description != undefined && <Text style="body">{info.description}</Text>}
+                </Column>
                 <div style={{ flexGrow: 1 }} />
                 <ArrowRightIcon />
             </Row>
-        </LinkItemBase>
+        </LinkItemBase >
     )
     return (info.link != undefined)
         ? (<LinkA href={info.link} target="_blank" rel="noopener noreferrer">
