@@ -62,8 +62,7 @@ export function LinkItem({ info }: { info: LinkInfo }) {
                 <Column
                     gap="4px"
                     style={{
-                        flexGrow: "1",
-                        flexBasis: "fit-content",
+                        flex: "1 4 fit-content",
                     }}>
                     { info.text != undefined && <Text style="subtitle">{info.text}</Text> }
                     { info.textNode != undefined && info.textNode }
