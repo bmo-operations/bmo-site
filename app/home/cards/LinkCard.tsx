@@ -61,9 +61,7 @@ export function LinkItem({ info }: { info: LinkInfo }) {
                 {info.icon != undefined && info.icon}
                 <Column
                     gap="4px"
-                    style={{
-                        flex: "1 4 fit-content",
-                    }}>
+                    style={{ flex: "1 4 fit-content", }}>
                     { info.text != undefined && <Text style="subtitle">{info.text}</Text> }
                     { info.textNode != undefined && info.textNode }
                     {info.description != undefined && <Text style="body">{info.description}</Text>}

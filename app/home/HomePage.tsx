@@ -16,9 +16,11 @@ import { TipItem } from '../zipstips/TipItem';
 import { getTips, randomTip } from '../zipstips/Tips';
 import { ZipsTip } from '../zipstips/ZipsTip';
 import aboutUs from "../../public/content/home/aboutus.json"
+import homeVideos from "../../public/content/home/homeVideos.json"
 import * as Dialog from '@radix-ui/react-dialog';
 import { DialogOverlay } from '../common/Dialog';
 import { SupportPopup } from './SupportPopup';
+import VideoItem from "../videos/VideoItem";
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -69,6 +71,12 @@ export default function HomePage() {
                 <SupportPopup onClose={() => setSupportPopupOpen(false)}/>
             </Dialog.Portal>
         </Dialog.Root>}
+        <ContentCard title="Watch" onMore={() => router.push('/videos')}>
+            {homeVideos.videos.map((v) => <VideoItem video={v} onClick={() => false} direction="horizontal"/>)}
+        </ContentCard>
+        <ContentCard title="News" onMore={() => router.push('/news')}>
+
+        </ContentCard>
         <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}
         </ContentCard>

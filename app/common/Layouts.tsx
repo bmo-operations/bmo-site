@@ -17,11 +17,11 @@ export function Column(props: LayoutProps) {
     return (<Flex {...{ direction: 'column', ...props }} />)
 }
 
-interface FlexProps extends LayoutProps {
+export interface FlexProps extends LayoutProps {
     direction: 'row' | 'column'
 }
 
-function Flex(props: FlexProps) {
+export function Flex(props: FlexProps) {
 
     const {
         direction,
