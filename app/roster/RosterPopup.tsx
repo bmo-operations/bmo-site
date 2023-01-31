@@ -2,12 +2,12 @@ import { Player } from "./Player";
 import Image from "next/image";
 import { BookmarkIcon, CalendarIcon, Cross1Icon, HomeIcon, Pencil2Icon, PersonIcon, PilcrowIcon, StackIcon } from "@radix-ui/react-icons";
 import { styled } from "../common/theme/global";
-import * as Dialog from "@radix-ui/react-dialog";
 import { Column, Row } from "../common/Layouts";
 import { NumberCircle, RosterNickname } from "./RosterComponents";
 import InfoItem from "./InfoItem";
 import { BioQuestion } from "./BioQuestion";
 import Text from "../common/Text";
+import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
 
 export default function RosterPopup({ player, year, onClose }: { player: Player, year: number, onClose: () => void }) {
     return (
@@ -22,9 +22,9 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
                         height={0}
                         style={{ width: '100%', height: 'auto' }}
                     />
-                    <PopupClose onClick={e => onClose()}>
+                    <RosterPopupClose onClick={e => onClose()}>
                         <Cross1Icon />
-                    </PopupClose>
+                    </RosterPopupClose>
                 </div>
                 <PopupBottom player={player} />
             </ModalContent>
@@ -32,41 +32,7 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
     )
 }
 
-const ModalWrapper = styled('div', {
-    width: 'calc(100% - 10vh)',
-    // width: '100%',
-    height: 'calc(100% - 10vh)',
-    // height: '100%',
-    position: "fixed",
-    top: '0',
-    padding: '5vh',
-})
-
-const ModalContent = styled(Dialog.Content, {
-    borderRadius: '16px',
-    padding: '0px',
-    border: 'none',
-    overflow: 'hidden',
-    overflowY: 'scroll',
-    position: 'relative',
-    height: '90vh',
-    margin: '0 auto',
-    maxWidth: '85ch',
-    backgroundColor: '$gray1',
-    // top: '0',
-})
-
-const PopupClose = styled('div', {
-    borderRadius: '32px',
-    backgroundColor: '$blackA11',
-    width: '48px',
-    height: '48px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: 'white',
-    cursor: 'pointer',
-
+const RosterPopupClose = styled(PopupClose, {
     position: 'absolute',
     top: '16px',
     left: '16px',

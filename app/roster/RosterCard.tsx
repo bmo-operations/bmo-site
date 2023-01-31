@@ -9,7 +9,7 @@ import Text from "../common/Text";
 
 export default function RosterCard({ player, year, onMore }: { player: Player, year: number, onMore: () => void }) {
     return (
-        <RosterCardBase>
+        <RosterCardBase align="stretch">
             <Image
                 src={`/content/roster/${year}/${player.id}.jpg`}
                 alt={`Picture of ${player.name}`}
@@ -18,7 +18,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
                 height={0}
                 style={{ width: '100%', height: 'auto' }}
             />
-            <Column padding='16px' gap='16px' align="stretch">
+            <Column padding='16px' gap='16px' align="stretch" style={{ height: "100%" }}>
                 <Row gap='16px' justify="space-between" align="center">
                     <Column>
                         <Text style="subtitle">{player.name}</Text>
@@ -26,7 +26,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
                     </Column>
                     <NumberChip number={player.number} />
                 </Row>
-                <Column gap="8px">
+                <Column gap="8px" style={{ flexGrow: "1" }}>
                     <InfoItem icon={(<CalendarIcon />)} text={`Class of ${player.class}`} />
                     <InfoItem icon={(<HomeIcon />)} text={`${player.hometown}`} />
                 </Column>
@@ -36,7 +36,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
     )
 }
 
-const RosterCardBase = styled('div', {
+const RosterCardBase = styled(Column, {
     width: '100%',
     borderRadius: '24px',
     border: '1px solid rgba(0, 0, 0, 0.25)',

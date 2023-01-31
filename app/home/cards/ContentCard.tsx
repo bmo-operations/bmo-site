@@ -4,9 +4,9 @@ import { Row } from "../../common/Layouts";
 import Text from "../../common/Text";
 import { HomeCard } from "../HomeCard";
 
-export function ContentCard({ title, onMore, children }: { title: string, onMore: () => void, children: React.ReactNode }) {
+export function ContentCard({ title, onMore, children, spanDesktop }: { title: string, onMore: () => void, children: React.ReactNode, spanDesktop?: number }) {
     return (
-        <ContentCardBase align="stretch">
+        <ContentCardBase align="stretch" spanDesktop={spanDesktop}>
             <Row justify="space-between" align="center" gap="16px">
                 <Text style="h3">{title}</Text>
                 <MoreButton onClick={onMore} />

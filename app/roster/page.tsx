@@ -11,6 +11,7 @@ import { allRosters } from "./RosterRepository"
 import RosterCard from "./RosterCard"
 import RosterPopup from "./RosterPopup"
 import { ContentLayout, ContentGrid, HeaderText } from "../common/ContentLayout"
+import { DialogOverlay } from "../common/Dialog"
 
 class PopupInfo {
     constructor(
@@ -55,14 +56,6 @@ export default function RosterPage() {
         </Container>
     )
 }
-
-const DialogOverlay = styled(Dialog.Overlay, {
-    position: 'fixed',
-    top: '0',
-    backgroundColor: '$blackA11',
-    width: '100%',
-    height: '100%'
-})
 
 function RosterImage({ year }: { year: number }) {
     return (

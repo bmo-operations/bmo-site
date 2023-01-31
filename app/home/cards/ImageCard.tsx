@@ -21,10 +21,11 @@ const ImageCardLayout = styled(HomeCard, {
     background: '$red3',
     color: '$red11',
     cursor: 'pointer',
-    height: '-webkit-fill-available',
+    height: '100%',
+    boxSizing: "border-box",
     justifyContent: 'flex-end',
 })
 
 const ContentLayout = styled(Row, {
-    width: '-webkit-fill-available'
+    width: 'stretch'
 })
