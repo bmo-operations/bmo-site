@@ -39,7 +39,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
 const RosterCardBase = styled(Column, {
     width: '100%',
     borderRadius: '24px',
-    border: '1px solid rgba(0, 0, 0, 0.25)',
+    border: '1px solid $gray7',
     backgroundColor: 'white',
     overflow: 'hidden',
 })

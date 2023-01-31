@@ -18,7 +18,7 @@ export function ArticleItem({ article, style }: { article: Article, style?: "car
             <Column gap="8px">
                 <Text style="subtitle">{article.headline}</Text>
                 {article.dropline !== undefined && <Text style="subtitle" color="secondary">{article.dropline}</Text>}
-                <Text style="paragraph" color="secondary">{article.text}</Text>
+                <Text style="paragraph" color="secondary" maxLines={style == "card" ? 4 : 12}>{article.text}</Text>
             </Column>
             {article.link !== undefined &&
                 <UndecoratedA href={article.link} target="_blank" rel="noopener noreferrer" style={{ width: "100%" }}>

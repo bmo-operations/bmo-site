@@ -32,7 +32,7 @@ function RankingSourceItem({ imageSrc, name, rank, link }: { imageSrc: string, n
     return (
         <Row gap="16px" align="center">
             <Image src={imageSrc} alt={`${name} logo`} width={40} height={40} />
-            <Text style="subtitle">{name}</Text>
+            <Text style="subtitle" css={{ flex: "1 1 100%" }}>{name}</Text>
             <RankCircle justify="center" align="center">
                 <Text style="subtitle" color="secondary">#</Text>
                 <Text style="subtitle" color="primary">{`${rank}`}</Text>
@@ -44,6 +44,8 @@ function RankingSourceItem({ imageSrc, name, rank, link }: { imageSrc: string, n
 const RankCircle = styled(Row, {
     width: "40px",
     height: "40px",
+    minWidth: "40px",
+    minHeight: "40px",
     borderRadius: "24px",
     backgroundColor: "$gray3",
 })

@@ -13,7 +13,7 @@ export function HomeCard(props: HomeCardProps) {
       padding='32px'
       paddingMobile='24px'
       size={{ '@initial': 'mobile', '@md': 'desktop' }}
-        span={{ '@initial': 'one', '@md': props.spanDesktop == 2 ? "two" : "one" }}
+        span={{ '@initial': 'one', '@lg': props.spanDesktop == 2 ? "two" : "one" }}
       {...props}
     />
   )

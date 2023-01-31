@@ -11,16 +11,19 @@ import TextCard from './cards/TextCard';
 import { LinkCard } from './cards/LinkCard';
 import { blue, indigo, orange, red } from '@radix-ui/colors';
 import { ArchiveIcon, EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, Link1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
-import { ContentCard } from './cards/ContentCard';
+import {ContentCard, ContentItem} from './cards/ContentCard';
 import { TipItem } from '../zipstips/TipItem';
 import { getTips, randomTip } from '../zipstips/Tips';
 import { ZipsTip } from '../zipstips/ZipsTip';
 import aboutUs from "../../public/content/home/aboutus.json"
 import homeVideos from "../../public/content/home/homeVideos.json"
+import homeNews from "../../public/content/home/homeNews.json"
 import * as Dialog from '@radix-ui/react-dialog';
 import { DialogOverlay } from '../common/Dialog';
 import { SupportPopup } from './SupportPopup';
 import VideoItem from "../videos/VideoItem";
+import {ArticleItem} from "../news/ArticleItem";
+import {videoThumbnail} from "../videos/Video";
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -72,10 +75,10 @@ export default function HomePage() {
             </Dialog.Portal>
         </Dialog.Root>}
         <ContentCard title="Watch" onMore={() => router.push('/videos')}>
-            {homeVideos.videos.map((v) => <VideoItem video={v} onClick={() => false} direction="horizontal"/>)}
+            {homeVideos.videos.map((v) => <ContentItem title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
-
+            {homeNews.news.map((a) => <ContentItem title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={a.image}/>)}
         </ContentCard>
         <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}
