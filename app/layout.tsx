@@ -1,6 +1,6 @@
 'use client';
 
-import { Inter } from '@next/font/google';
+import { Inter } from "next/font/google";
 import { styled } from './common/theme/global';
 import { Column } from './common/Layouts';
 import NavigationMenu from './common/navigation/NavigationMenu';
