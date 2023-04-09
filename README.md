@@ -4,7 +4,8 @@ The website for the Brown Men's Club Ultimate Team
 ## User Guide
 To test changes on the development server, run `npm run dev`. (*Note: the development server can have very poor performance, but most issues should go away on the production server.*)
 
-To test them on the production server, run `npm run build`, then `npm run start`
+The Brown Club Sports website platform only supports static sites, so to export the site run `npm run export` (which does `next build` plus an image optimization step), and the resulting files will be available in the `out` directory.
+To test the production site, launch an HTTP server in the `out` directory (this can be easily done by globally installing `http-server` from npm).
 
 ## Updating content
 The site can be driven off of a series of JSON files found in the `public/content` folders. Most files should be straightforward, but here are instructions for some of the trickier ones:
