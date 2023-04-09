@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withExportImages = require('next-export-optimize-images')
+
+const nextConfig = withExportImages({
     output: 'export',
     experimental: {
         appDir: true,
@@ -22,7 +24,8 @@ const nextConfig = {
                 hostname: "img.youtube.com"
             }
         ]
-    }
-};
+    },
+    // distDir: "_next",
+});
 
 module.exports = nextConfig;
