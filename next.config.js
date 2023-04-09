@@ -25,7 +25,6 @@ const nextConfig = withExportImages({
             }
         ]
     },
-    // distDir: "_next",
 });
 
 module.exports = nextConfig;

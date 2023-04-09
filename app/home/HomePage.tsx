@@ -24,8 +24,18 @@ import { SupportPopup } from './SupportPopup';
 import VideoItem from "../videos/VideoItem";
 import {ArticleItem} from "../news/ArticleItem";
 import {videoThumbnail} from "../videos/Video";
+import Image from 'next/image';
 
-const LandingImage = styled('img', {
+const LandingImage = styled(Image, {
+  flexGrow: 1,
+  maxHeight: '100%',
+  objectFit: 'cover',
+  width: '100%',
+  borderRadius: '24px',
+  alignSelf: "stretch",
+})
+
+const LandingImage2 = styled('img', {
   flexGrow: 1,
   maxHeight: '100%',
   objectFit: 'cover',
@@ -43,7 +53,14 @@ export default function HomePage() {
   return (
     <HomeCardLayout>
       <LandingHeader />
-      <LandingImage src="/images/team_crump_2022.jpg" />
+      {/* <LandingImage 
+        src="/images/team_crump_2022.jpg" 
+        alt="2022 team photo"
+        width={0}
+        height={0}/> */}
+      <LandingImage2
+        src="/images/team_crump_2022.jpg" 
+        alt="2022 team photo"/>
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
       <TextCard title={aboutUs.title} text={aboutUs.text} />
       <LinkCard

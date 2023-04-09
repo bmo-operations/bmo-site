@@ -2,8 +2,7 @@
  * @type {import('next-export-optimize-images').Config}
  */
 const config = {
-    imageDir: '../_next/static/chunks/images',
-    outDir: 'public'
+    imageDir: 'optimized',
 }
 
 module.exports = config
