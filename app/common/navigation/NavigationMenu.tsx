@@ -29,8 +29,11 @@ export default function NavigationMenu() {
             <Tab title="Roster" selectedPath={currentPath} pathname="/roster" />
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
+            <Tab title="Support" selectedPath={currentPath} pathname="/support" />
+          </NavigationMenuPrimitive.Item>
+          <NavigationMenuPrimitive.Item>
             <Trigger
-              selected={currentPath != "/" && currentPath != "/roster"}
+              selected={!["/", "/roster", "/support"].includes(currentPath)}
               size={{ '@initial': 'mobile', '@md': 'desktop' }}
               color="neutral"
             >

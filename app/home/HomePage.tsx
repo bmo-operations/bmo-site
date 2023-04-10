@@ -20,7 +20,7 @@ import homeVideos from "../../public/content/home/homeVideos.json"
 import homeNews from "../../public/content/home/homeNews.json"
 import * as Dialog from '@radix-ui/react-dialog';
 import { DialogOverlay } from '../common/Dialog';
-import { SupportPopup } from './SupportPopup';
+import { SupportPopup } from '../support/SupportPopup';
 import VideoItem from "../videos/VideoItem";
 import {ArticleItem} from "../news/ArticleItem";
 import {videoThumbnail} from "../videos/Video";
