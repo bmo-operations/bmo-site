@@ -15,6 +15,7 @@ export default function NavigationMenu() {
   const router = useRouter();
   const currentPath = usePathname();
   const [loadedWindow, setLoadedWindow] = useState<Window | undefined>()
+  const moreSelected = !["/", "/roster", "/support"].includes(currentPath)
 
   useEffect(() => setLoadedWindow(window), [])
 
@@ -33,11 +34,11 @@ export default function NavigationMenu() {
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
             <Trigger
-              selected={!["/", "/roster", "/support"].includes(currentPath)}
+              selected={moreSelected}
               size={{ '@initial': 'mobile', '@md': 'desktop' }}
               color="neutral"
             >
-              <Text style="subtitle">More</Text>
+              <Text style="subtitle">{"More"}</Text>
               <StyledCaret />
             </Trigger>
             <Popup size={{ '@initial': 'mobile', "@md": "desktop" }}>

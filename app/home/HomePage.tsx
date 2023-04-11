@@ -92,10 +92,10 @@ export default function HomePage() {
             </Dialog.Portal>
         </Dialog.Root>}
         <ContentCard title="Watch" onMore={() => router.push('/videos')}>
-            {homeVideos.videos.map((v) => <ContentItem title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
+            {homeVideos.videos.map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
-            {homeNews.news.map((a) => <ContentItem title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={a.image}/>)}
+            {homeNews.news.map((a) => <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={a.image}/>)}
         </ContentCard>
         <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}

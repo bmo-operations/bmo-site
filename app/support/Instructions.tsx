@@ -5,6 +5,7 @@ import { Row, Column } from "../common/Layouts"
 import { LinkItem } from "../home/cards/LinkCard"
 import Text from "../common/Text";
 import {gray, green} from "@radix-ui/colors";
+import Link from "next/link";
 
 export const donationDescription = "As a club sport, we are completely reliant on the generous donations we get from alumni and friends. These donations are essential in allowing us to compete at the highest level while ensuring that the season’s cost is never a barrier to any player. Please consider making a donation to our team! \n \n You can donate to the endowment (where we access the spinoff each year), to our gift account (where we access the full amount next season), or to both."
 

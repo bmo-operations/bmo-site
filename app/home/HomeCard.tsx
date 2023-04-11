@@ -6,6 +6,7 @@ export interface HomeCardProps extends LayoutProps {
 }
 
 export function HomeCard(props: HomeCardProps) {
+  const { spanDesktop, ...layoutProps } = props
   return (
     <HomeCardBase
       gap='16px'
@@ -13,8 +14,8 @@ export function HomeCard(props: HomeCardProps) {
       padding='32px'
       paddingMobile='24px'
       size={{ '@initial': 'mobile', '@md': 'desktop' }}
-        span={{ '@initial': 'one', '@lg': props.spanDesktop == 2 ? "two" : "one" }}
-      {...props}
+      span={{ '@initial': 'one', '@lg': spanDesktop == 2 ? "two" : "one" }}
+      {...layoutProps}
     />
   )
 }
