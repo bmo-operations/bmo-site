@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 import ImageCard from './cards/ImageCard';
 import TextCard from './cards/TextCard';
 import { LinkCard } from './cards/LinkCard';
-import { blue, indigo, orange, red } from '@radix-ui/colors';
+import { blue, green, indigo, orange, red } from '@radix-ui/colors';
 import { ArchiveIcon, EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, Link1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import {ContentCard, ContentItem} from './cards/ContentCard';
 import { TipItem } from '../zipstips/TipItem';
@@ -80,7 +80,7 @@ export default function HomePage() {
           title="Support Us"
         links={[
           { icon: (<ArchiveIcon />), text: "Buy team merch on Etsy", description: "These items are sold at cost, so feel free to donate as well!", colorPalette: Object.values(orange), link: "https://www.etsy.com/shop/bmomerchandise" },
-          { icon: (<Link1Icon />), text: "Donate to the team", colorPalette: Object.values(red), onClick: () => {
+          { icon: (<Link1Icon />), text: "Donate to the team", colorPalette: Object.values(green), onClick: () => {
               console.log("opening support popup")
               setSupportPopupOpen(true)
           } },

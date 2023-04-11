@@ -22,8 +22,8 @@ export default function SupportPage() {
                         <DonationInstructions/>
                     </InstructionCard>
                 </Column>
-                <Column gap="32px">
-                    <Column gap="8px">
+                <Column gap="32px" align="stretch">
+                    <Column gap="8px" align="stretch">
                         <Text style="h2">Team Store</Text>
                         <Text style="body" color="primary">Buy gear from our team store! These items are sold at cost, so feel free to donate as well!</Text>
                     </Column>
@@ -31,21 +31,6 @@ export default function SupportPage() {
                 </Column>
             </Column>
         </Container>
-    )
-}
-
-function SupportSection({ title, description }: { title: string, description: string }) {
-    return (
-        <Column gap="32px">
-            <Column gap="8px">
-                <Text style="h2">{title}</Text>
-                <Text style="body" color="primary">{description}</Text>
-            </Column>
-            <InstructionCard gap="16px" padding="24px" size={{ '@initial': 'mobile', '@md': 'desktop' }}>
-                <Text style="subtitle">Instructions</Text>
-                <DonationInstructions/>
-            </InstructionCard>
-        </Column>
     )
 }
 
@@ -73,6 +58,7 @@ const TeamStoreLinkBase = styled(Column, {
     border: "solid 1px $gray7",
     backgroundColor: "$gray3",
     overflow: "clip",
+    width: "100%",
 
     variants: {
         size: {
