@@ -41,12 +41,12 @@ function TeamStoreLink() {
                 <Image 
                 src="images/team_store.png" 
                 alt="Picture of the team store"
-                width={0}
+                width={1200}
                 height={0}
                 style={{ width: '100%', height: 'auto' }}
                 />
                 <Row justify="space-between" padding="16px" align="center">
-                    <Text style="subtitle">Visit the Etsy Store</Text>
+                    <Text style="subtitle" color="primary">Visit the Etsy Store</Text>
                     <ArrowRightIcon/>
                 </Row>
             </TeamStoreLinkBase>
