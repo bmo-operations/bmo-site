@@ -5,8 +5,9 @@ const nextConfig = withExportImages({
     output: 'export',
     experimental: {
         appDir: true,
-        basePath: '/Athletics/Mens_Ultimate',
     },
+
+    basePath: process.env.NEXT_PUBLIC_BASE_PATH,
 
     webpack(config) {
         config.module.rules.push({

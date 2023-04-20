@@ -42,7 +42,7 @@ export default function HomePage() {
     <HomeCardLayout>
       <LandingHeader />
       <LandingImage
-        src="/images/team_crump_2022.jpg" 
+        src={process.env.NEXT_PUBLIC_BASE_PATH + "/images/team_crump_2022.jpg"}
         alt="2022 team photo"/>
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
       <TextCard title={aboutUs.title} text={aboutUs.text} />

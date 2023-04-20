@@ -16,7 +16,7 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
             <ModalContent>
                 <div className="popup-image-container">
                     <Image
-                        src={`/content/roster/${year}/${player.id}.jpg`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/content/roster/${year}/${player.id}.jpg`}
                         alt={`Picture of ${player.name}`}
                         sizes="100vw"
                         width={0}
