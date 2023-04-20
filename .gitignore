@@ -3,3 +3,4 @@ node_modules
 .vscode
 bmosite_vscode_workspace.code-workspace
 out
+.DS_Store
