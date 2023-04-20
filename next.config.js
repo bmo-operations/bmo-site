@@ -5,6 +5,7 @@ const nextConfig = withExportImages({
     output: 'export',
     experimental: {
         appDir: true,
+        basePath: '/Athletics/Mens_Ultimate',
     },
 
     webpack(config) {
