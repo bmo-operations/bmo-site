@@ -8,6 +8,7 @@ import InfoItem from "./InfoItem";
 import { BioQuestion } from "./BioQuestion";
 import Text from "../common/Text";
 import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
+import { GraduationCap } from "phosphor-react";
 
 export default function RosterPopup({ player, year, onClose }: { player: Player, year: number, onClose: () => void }) {
     return (
@@ -54,7 +55,7 @@ function PopupBottom({ player }: { player: Player }) {
                 <InfoItem icon={(<CalendarIcon />)} text={`Class of ${player.class}`} />
                 <InfoItem icon={(<Pencil2Icon />)} text={player.concentration} />
                 <InfoItem icon={(<HomeIcon />)} text={player.hometown} />
-                <InfoItem icon={(<StackIcon />)} text={player.highschool} />
+                <InfoItem icon={(<GraduationCap />)} text={player.highschool} />
             </Column>
             <Column gap="16px">
                 <Text style="subtitle" color="secondary">Bio</Text>
