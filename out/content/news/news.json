@@ -1,0 +1,39 @@
+{
+    "2022": {
+        "rankings": {
+            "ultiworld": 2,
+            "usaultimate": 1
+        },
+        "articles": [
+            {
+                "image": "/images/willis_nationals.jpg",
+                "headline": "Triple Crown Champs",
+                "dropline": "BMo finishes 2nd at nationals, wins all regular season tournaments",
+                "text": "We really began this season at the end of January, without the usual October to December tinkering and bonding that the team goes through absent a fall championship. It would have made sense for this team, with all 12 (?) of its rookies, to be a little rough around the edges. Maybe even serving more as a development year. Instead, we swept our regular season tournaments: Florida Warmup, Smoky Mountain Invite, and Easterns. We then walked through sectionals and regionals, taking care of business against the region’s best. It wasn’t always pretty (needing to break somewhere between 2 and a million times in a row to beat NC State on double game point), but we usually got lucky and found a way to win – every game in fact, except our first of the season, against Minnesota. Arriving at Nationals, we knew we had put in the work to be able to beat any team in the field. After an up and down opening win against Cal Poly, things started clicking. While Evan Lepler will tell you all about Jacques’ pinpoint blades and John’s first step, our undefeated run to the final was fueled by the contributions of the entirety of our roster...",
+                "link": "https://docs.google.com/document/d/1LBJ9QVeEHWyV3eiZ6MZDjgbbf7JAS89b1NKCk_IPCas/edit?usp=sharing"
+            }
+        ]
+    },
+    "2020": {
+        "articles": [
+            {
+                "image": "/images/azeez_flowo_2020.jpg",
+                "headline": "Florida Warmup Recap",
+                "text": "BMo kicked off its season at the aptly-named Florida Warm Up. The tournament’s ~strange~ format pitted us against a series of elite opponents, as well as some underrated competition eager to take a shot at the defending champs...",
+                "link": "https://docs.google.com/document/d/1JOI1KxAVJXCwgTzd38V48uBKIqlB3_Cj1awIuHOkOWQ/edit?usp=sharing"
+            },
+            {
+                "image": "/images/ccc_2019_team.jpg",
+                "headline": "Classic City Classic Recap",
+                "text": "BMo traveled south to the Classic City Classic Nov the weekend of Nov 16 eager for some out-of region play against a field riddled with natties teams. We struggled Saturday, failing to bring the energy and intensity that it takes to compete at a high level...",
+                "link": "https://docs.google.com/document/d/1BWJ2mrtT1zqYxTbNN9JAefMbVGv_ag1EzugER6XDtoo/edit?usp=sharing"
+            },
+            {
+                "image": "/images/lobby_p_2019_team.jpg",
+                "headline": "Lobster Pot Champs!",
+                "text": "A brave band of hellfish travelled up to Portland for our second appearance at the Lobster Pot. Keeping our eyes on the ($1000 first-place) prize all weekend, we cruised through pools on Saturday despite having under two lines of active players...",
+                "link": "https://docs.google.com/document/d/1lZPt2M_HkpA4NenhPlx3be_EYXyGhefE_zz6T33MDjQ/edit?usp=sharing"
+            }
+        ]
+    }
+}

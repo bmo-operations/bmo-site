@@ -45,7 +45,7 @@ export default function NavigationMenu() {
               <Column>
                 <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
                 <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
-                <MenuItem title='Photos' pathname="/photos" selectedPath={currentPath} />
+                <MenuItem title='Photos' pathname="https://photos.app.goo.gl/U1kvAPF6PReKE6nY6" selectedPath={currentPath} />
                 <MenuItem title='News' pathname="/news" selectedPath={currentPath} />
               </Column>
             </Popup>
