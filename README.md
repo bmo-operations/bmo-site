@@ -22,5 +22,5 @@ For future reference, here are the instructions for updating the production serv
 2. Download and run the Brown VPN using the instructions [here](https://ithelp.brown.edu/kb/articles/connect-to-brown-s-vpn-pc-mac). Despite what the OIT says, it seems like you need this even if you're on the Brown wifi network.
 3. In a command line, connect to the webpub server with the command `ssh <username>@webpub.brown.edu`. If it errors with `no matching host key type found`, try running the command with `ssh -oHostKeyAlgorithms=+ssh-rsa <username>@webpub.brown.edu`. Your password should be in the message sent to you by OIT.
 4. Once on the server, clone the repository down using `git clone https://<github-username>@github.com/CalNightingale/bmo-site.git`
-5. From your home directory (`~`) the `www` directory using `rm -rf www/*`, and copy the static site using `cp -R bmo-site/out/* www/`.
+5. From your home directory (`~`) clear the `www` directory using `rm -rf www/*`, and copy the static site using `cp -R bmo-site/out/* www/`.
 6. At this point, you should see the updated site at https://brown.edu/Athletics/Mens_Ultimate/
