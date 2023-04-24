@@ -18,7 +18,7 @@ Since we are in the `/Athletics/Mens_Ultimate` directory on the production serve
 
 ## Web publishing
 For future reference, here are the instructions for updating the production server with any website updates:
-1. Get access to the webpub.brown.edu server. Currently [@andyburris](github.com/andyburris) and [@cnightin](github.com/cnightin) have access and can get you access if you want it, but in case this document gets out of date, contact the Office of Information Technology to regain access.
+1. Get access to the webpub.brown.edu server. Currently [@andyburris](https://github.com/andyburris) and [@cnightin](https://github.com/cnightin) have access and can get you access if you want it, but in case this document gets out of date, contact the Office of Information Technology to regain access.
 2. Download and run the Brown VPN using the instructions [here](https://ithelp.brown.edu/kb/articles/connect-to-brown-s-vpn-pc-mac). Despite what the OIT says, it seems like you need this even if you're on the Brown wifi network.
 3. In a command line, connect to the webpub server with the command `ssh <username>@webpub.brown.edu`. If it errors with `no matching host key type found`, try running the command with `ssh -oHostKeyAlgorithms=+ssh-rsa <username>@webpub.brown.edu`. Your password should be in the message sent to you by OIT.
 4. Once on the server, clone the repository down using `git clone https://<github-username>@github.com/CalNightingale/bmo-site.git`
