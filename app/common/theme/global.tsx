@@ -12,7 +12,7 @@ export const globalStyles = globalCss({
 
 export const breakpoints = [620, 1024]
 
-export const { styled, css } = createStitches({
+export const { styled, css, getCssText } = createStitches({
     media: {
         md: `(min-width: ${breakpoints[0]}px)`,
         lg: `(min-width: ${breakpoints[1]}px)`,

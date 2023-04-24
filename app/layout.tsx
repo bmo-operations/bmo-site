@@ -4,7 +4,8 @@ import { Inter } from "next/font/google";
 import { styled } from './common/theme/global';
 import { Column } from './common/Layouts';
 import NavigationMenu from './common/navigation/NavigationMenu';
-import { globalStyles } from './common/theme/global';
+import { globalStyles, getCssText } from './common/theme/global';
+import Head from "./head";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({ subsets: ['latin'] })
@@ -20,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <head>
-        <title>Brownian Motion</title>
-        <link rel="icon" href="images/BlackHellfish.svg" type="image/svg+xml"></link>
+        <Head/>
+        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }}/>
       </head>
       <body>
-        <Column style={{ height: '100vh', width: '100vw' }} align="stretch">
+        <Column style={{ height: '100%', width: '100vw' }} align="stretch">
           <NavigationMenu />
           <ScrollableContent>
             {children}
