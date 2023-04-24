@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <head>
         <Head/>
-        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }}/>
+        {/* <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }}/> */}
       </head>
       <body>
         <Column style={{ height: '100%', width: '100vw' }} align="stretch">
