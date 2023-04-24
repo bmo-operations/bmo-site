@@ -19,6 +19,10 @@ export default function RootLayout({
   globalStyles();
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        <title>Brownian Motion</title>
+        <link rel="icon" href="images/BlackHellfish.svg" type="image/svg+xml"></link>
+      </head>
       <body>
         <Column style={{ height: '100vh', width: '100vw' }} align="stretch">
           <NavigationMenu />
