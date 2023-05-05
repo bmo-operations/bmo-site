@@ -16,7 +16,7 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 width={0}
                 height={0}
-                style={{ width: '100%', height: 'auto' }}
+                style={{ width: '100%', height: 'auto', aspectRatio: "16/9" }}
             />
             <Column padding='16px' gap='16px' align="stretch" style={{ height: "100%" }}>
                 <Row gap='16px' justify="space-between" align="center">

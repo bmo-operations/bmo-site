@@ -13,5 +13,5 @@ export interface Article {
     headline: string,
     dropline?: string,
     text: string,
-    link?: string,
+    link: string,
 }

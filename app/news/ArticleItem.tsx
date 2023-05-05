@@ -4,11 +4,11 @@ import { Column } from "../common/Layouts";
 import Text from "../common/Text";
 import { Article } from "./News";
 
-export function ArticleItem({ article, style }: { article: Article, style?: "card" | "feature" }) {
+export function ArticleItem({ article, year, style }: { article: Article, year: number, style?: "card" | "feature" }) {
     return (
         <ArticleItemBase gap="16px" align="stretch" style={style}>
             <Image
-                src={article.image}
+                src={`content/news/${year}/${article.image}`}
                 alt={`Image for ${article.headline}`}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 width={0}

@@ -2,7 +2,6 @@
 
 import { globalCss, styled } from '@stitches/react';
 import { useEffect, useState } from 'react';
-import NavigationMenu from '../common/navigation/NavigationMenu';
 import HomeCardLayout from './HomeCardLayout';
 import LandingHeader from './LandingHeader';
 import { useRouter } from 'next/navigation';
@@ -17,11 +16,11 @@ import { randomTip } from '../zipstips/Tips';
 import { ZipsTip } from '../zipstips/ZipsTip';
 import aboutUs from "../../public/content/home/aboutus.json"
 import homeVideos from "../../public/content/home/homeVideos.json"
-import homeNews from "../../public/content/home/homeNews.json"
 import * as Dialog from '@radix-ui/react-dialog';
 import { DialogOverlay } from '../common/Dialog';
 import { SupportPopup } from '../support/SupportPopup';
 import {videoThumbnail} from "../videos/Video";
+import { allNews } from '../news/NewsRepository';
 
 const LandingImage = styled('img', {
   flexGrow: 1,
@@ -78,7 +77,7 @@ export default function HomePage() {
             {homeVideos.videos.map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
-            {homeNews.news.map((a) => <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={a.image}/>)}
+            {allNews(3).map((a) => <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={a.image}/>)}
         </ContentCard>
         <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}

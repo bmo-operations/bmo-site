@@ -6,7 +6,7 @@ The site can be driven off of a series of JSON files found in the `public/conten
 #### `roster`:
 Each year can either have an image or a roster list with player bios. 
 - For just an image, put the image file in the corresponding year folder and set the JSON entry in `rosters.json` to the file name.
-- For the bios, add the JSON data in `rosters.json` (the same structure as used for 2022), and in the corresponding year folder, put an image for each player with the name `<id>.jpg`, where `<id>` is replaced with that player's `id` field from the JSON file.
+- For the bios, add the JSON data in `rosters.json` (the same structure as used for 2022), and in the corresponding year folder, put an image for each player with the name `<id>.jpg`, where `<id>` is replaced with that player's `id` field from the JSON file. Try to get the images to be the same aspect ratio (generally 16:9) per year, since the grid will look misaligned if not.
 
 ## Updating website code
 To test changes on the development server, run `npm run dev`. (*Note: the development server can have very poor performance, but most issues should go away on the production server.*)

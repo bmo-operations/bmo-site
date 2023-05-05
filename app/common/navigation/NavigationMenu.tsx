@@ -58,7 +58,8 @@ export default function NavigationMenu() {
 }
 
 const StyledRoot = styled(NavigationMenuPrimitive.Root, {
-  borderBottom: `solid 1px $gray7`
+  borderBottom: `solid 1px $gray7`,
+  overflowX: "scroll",
 })
 
 const StyledList = styled(NavigationMenuPrimitive.List, {

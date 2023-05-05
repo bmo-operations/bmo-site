@@ -4,14 +4,14 @@ import Container from "../common/Container";
 import { ContentGrid, ContentLayout } from "../common/ContentLayout";
 import { ArticleItem } from "./ArticleItem";
 import { Rankings, Article } from "./News";
-import { allNews } from "./NewsRepository";
+import { allNewsYears } from "./NewsRepository";
 import { RankingsItem } from "./RankingsItem";
 
 export default function NewsPage() {
     return (
         <Container>
             <ContentLayout
-                content={allNews()}
+                content={allNewsYears()}
                 element={(year, value) => {
                     const items: (Rankings | Article)[] = [value.rankings, ...value.articles].filter(i => i !== undefined).map(i => i!)
                     return <ContentGrid
@@ -21,7 +21,7 @@ export default function NewsPage() {
                         content={items}
                         element={item =>
                             (isArticle(item))
-                                ? <ArticleItem key={item.link} article={item} style={value.articles.length > 1 ? "card" : "feature"} />
+                                ? <ArticleItem key={item.link} year={year} article={item} style={value.articles.length > 1 ? "card" : "feature"} />
                                 : <RankingsItem key={`${year}rankings`} rankings={item} />
                         }
                     />
