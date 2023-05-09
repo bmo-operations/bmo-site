@@ -77,7 +77,10 @@ export default function HomePage() {
             {homeVideos.videos.map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
-            {allNews(3).map((a) => <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={a.image}/>)}
+            {allNews(3).map(pair => {
+              const [a, year] = pair
+              return <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={`content/news/${year}/${a.image}`}/>
+            })}
         </ContentCard>
         <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}

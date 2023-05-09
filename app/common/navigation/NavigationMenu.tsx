@@ -59,7 +59,7 @@ export default function NavigationMenu() {
 
 const StyledRoot = styled(NavigationMenuPrimitive.Root, {
   borderBottom: `solid 1px $gray7`,
-  overflowX: "scroll",
+  // overflowX: "scroll", // fixes container scrolling issues on safari but breaks popup, need to find better solution (maybe wrapper div?)
 })
 
 const StyledList = styled(NavigationMenuPrimitive.List, {
