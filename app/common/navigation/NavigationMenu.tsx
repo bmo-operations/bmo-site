@@ -10,6 +10,7 @@ import Text from '../Text';
 import Container, { HorizontalContainer } from '../Container';
 import { Column, Row } from '../Layouts';
 import Link from 'next/link';
+import { env } from 'process';
 
 export default function NavigationMenu() {
   const router = useRouter();
@@ -133,7 +134,7 @@ function Tab({ title, pathname, selectedPath }: LinkProps) {
   const router = useRouter()
   // <UndecoratedLink href={pathname}>
   return (
-    <TabBase href={pathname} color={pathname == "/" ? "accent" : "neutral"} selected={isSelected} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+    <TabBase href={pathname} color={pathname == `${process.env.NEXT_PUBLIC_BASE_PATH}/` ? "accent" : "neutral"} selected={isSelected} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
       <Text style="subtitle">{title}</Text>
     </TabBase>
   )
