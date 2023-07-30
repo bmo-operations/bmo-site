@@ -1,6 +1,5 @@
 "use client"
 
-import { globalCss, styled } from '@stitches/react';
 import { useEffect, useState } from 'react';
 import HomeCardLayout from './HomeCardLayout';
 import LandingHeader from './LandingHeader';
@@ -21,14 +20,17 @@ import { DialogOverlay } from '../common/Dialog';
 import { SupportPopup } from '../support/SupportPopup';
 import {videoThumbnail} from "../videos/Video";
 import { allNews } from '../news/NewsRepository';
+import { styled } from "styled-system/jsx"
 
 const LandingImage = styled('img', {
-  flexGrow: 1,
-  maxHeight: '100%',
-  objectFit: 'cover',
-  width: '100%',
-  borderRadius: '24px',
-  alignSelf: "stretch",
+  base: {
+    flexGrow: 1,
+    maxHeight: '100%',
+    objectFit: 'cover',
+    width: '100%',
+    borderRadius: '24px',
+    alignSelf: "stretch",  
+  }
 })
 
 export default function HomePage() {
@@ -82,7 +84,7 @@ export default function HomePage() {
               return <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={`content/news/${year}/${a.image}`}/>
             })}
         </ContentCard>
-        <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
+        <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop="two">
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}
         </ContentCard>
     </HomeCardLayout>

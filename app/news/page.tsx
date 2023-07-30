@@ -1,6 +1,6 @@
 "use client"
 
-import Container from "../common/Container";
+import { Container } from "../common/Container";
 import { ContentGrid, ContentLayout } from "../common/ContentLayout";
 import { ArticleItem } from "./ArticleItem";
 import { Rankings, Article } from "./News";

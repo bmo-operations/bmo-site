@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button, styled, UndecoratedA } from "../common/theme/global";
-import { Column } from "../common/Layouts";
-import Text from "../common/Text";
+import { Button, UndecoratedA } from "../common/theme/global";
+import { styled, Column } from "styled-system/jsx";
+import { Text } from "../common/theme/global";
 import { Article } from "./News";
 
 export function ArticleItem({ article, year, style }: { article: Article, year: number, style?: "card" | "feature" }) {
@@ -22,7 +22,7 @@ export function ArticleItem({ article, year, style }: { article: Article, year: 
             </Column>
             {article.link !== undefined &&
                 <UndecoratedA href={article.link} target="_blank" rel="noopener noreferrer" style={{ width: "100%" }}>
-                    <Button size={{ '@initial': 'mobile', '@md': 'desktop' }} style={{ width: "100%" }}>
+                    <Button style={{ width: "100%" }}>
                         <Text style="subtitle" color="secondary">Full Recap</Text>
                     </Button>
                 </UndecoratedA>

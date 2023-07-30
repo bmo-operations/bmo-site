@@ -1,13 +1,11 @@
-import { styled } from "../common/theme/global";
-import { Column, Row } from "../common/Layouts";
-import Text from "../common/Text";
+import { styled, Row, Column } from 'styled-system/jsx';
+import { Text } from "../common/theme/global";
 import { ZipsTip } from "./ZipsTip";
 
 export function TipItem({ tip, style }: { tip: ZipsTip, style?: "default" | "tipCard" }) {
     return (
         <TipItemBase
-            gap="12px"
-            gapMobile="8px"
+            gap="sm"
             padding={(style == "tipCard") ? "24px 0px 0px 0px" : "0px 0px 32px 0px"}
             align="stretch"
             style={style}
@@ -24,8 +22,8 @@ export function TipItem({ tip, style }: { tip: ZipsTip, style?: "default" | "tip
 const TipItemBase = styled(Column, {
     variants: {
         style: {
-            default: { borderBottom: "solid 1px $gray7" },
-            tipCard: { borderTop: "solid 1px $gray7" },
+            default: { borderBottom: "solid 1px token(colors.gray.7)" },
+            tipCard: { borderTop: "solid 1px token(colors.gray.7)" },
         },
     },
 

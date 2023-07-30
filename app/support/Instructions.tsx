@@ -1,9 +1,8 @@
 "use client"
 
-import { styled } from "@stitches/react"
-import { Row, Column } from "../common/Layouts"
+import { styled, Row, Column } from 'styled-system/jsx';
 import { LinkItem } from "../home/cards/LinkCard"
-import Text from "../common/Text";
+import { Text } from "../common/theme/global";
 import {gray, green} from "@radix-ui/colors";
 import Link from "next/link";
 
@@ -33,8 +32,10 @@ export function InstructionItem({number, text, colorPalette, link}: {number: num
 }
 
 const InstructionNumber = styled(Column, {
-    width: "32px",
-    height: "32px",
-    backgroundColor: "$gray3",
-    borderRadius: "16px",
+    base: {
+        width: "32px",
+        height: "32px",
+        backgroundColor: "gray.3",
+        borderRadius: "16px",    
+    },
 })

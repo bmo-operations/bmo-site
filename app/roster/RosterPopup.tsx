@@ -1,12 +1,11 @@
 import { Player } from "./Player";
 import Image from "next/image";
 import { BookmarkIcon, CalendarIcon, Cross1Icon, HomeIcon, Pencil2Icon, PersonIcon, PilcrowIcon, StackIcon } from "@radix-ui/react-icons";
-import { styled } from "../common/theme/global";
-import { Column, Row } from "../common/Layouts";
+import { styled, Column, Row } from "styled-system/jsx";
 import { NumberCircle, RosterNickname } from "./RosterComponents";
 import InfoItem from "./InfoItem";
 import { BioQuestion } from "./BioQuestion";
-import Text from "../common/Text";
+import { Text } from "../common/theme/global";
 import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
 import { GraduationCap } from "phosphor-react";
 
@@ -34,9 +33,11 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
 }
 
 const RosterPopupClose = styled(PopupClose, {
-    position: 'absolute',
-    top: '16px',
-    left: '16px',
+    base: {
+        position: 'absolute',
+        top: '16px',
+        left: '16px',
+    }
 })
 
 function PopupBottom({ player }: { player: Player }) {

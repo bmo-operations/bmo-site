@@ -1,6 +1,6 @@
 "use client"
 
-import Container from "../common/Container";
+import { Container } from "../common/Container";
 import { ContentLayout, ContentGrid } from "../common/ContentLayout";
 import VideoItem from "./VideoItem";
 import { allVideos } from "./VideoRepository";

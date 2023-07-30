@@ -1,5 +1,5 @@
-import { styled } from "../../common/theme/global"
-import Text from "../../common/Text"
+import { styled } from 'styled-system/jsx';
+import { Text } from "../../common/theme/global"
 import { HomeCard } from "../HomeCard"
 
 export default function TextCard({ title, text }: { title: string, text: string }) {
@@ -12,5 +12,7 @@ export default function TextCard({ title, text }: { title: string, text: string 
 }
 
 const AboutCardLayout = styled(HomeCard, {
-    background: '$gray3',
+    base: {
+        background: 'gray.3',
+    }
 })

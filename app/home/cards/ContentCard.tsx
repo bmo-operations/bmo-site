@@ -1,11 +1,12 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import {Button, styled, UndecoratedA} from "../../common/theme/global";
-import {Column, Row} from "../../common/Layouts";
-import Text from "../../common/Text";
+import {Button, UndecoratedA} from "../../common/theme/global";
+import { styled, Column, Row } from "styled-system/jsx";
+import { css } from "styled-system/css";
+import { Text } from "../../common/theme/global";
 import { HomeCard } from "../HomeCard";
 import Image from "next/image";
 
-export function ContentCard({ title, onMore, children, spanDesktop }: { title: string, onMore: () => void, children: React.ReactNode, spanDesktop?: number }) {
+export function ContentCard({ title, onMore, children, spanDesktop }: { title: string, onMore: () => void, children: React.ReactNode, spanDesktop?: "one" | "two" | undefined }) {
     return (
         <ContentCardBase align="stretch" spanDesktop={spanDesktop}>
             <Row justify="space-between" align="center" gap="16px">
@@ -18,37 +19,49 @@ export function ContentCard({ title, onMore, children, spanDesktop }: { title: s
 }
 
 const ContentCardBase = styled(HomeCard, {
-    backgroundColor: "$gray3",
+    base: {
+        backgroundColor: "gray.3",
+    }
 })
 
 function MoreButton({ onClick }: { onClick: () => void }) {
-    return <MoreButtonBase size={{ '@initial': 'mobile', '@md': 'desktop' }} onClick={e => onClick()}>
+    return <MoreButtonBase onClick={e => onClick()}>
         <Text style="subtitle">More</Text>
         <ArrowRightIcon />
     </MoreButtonBase>
 }
 
 const MoreButtonBase = styled(Button, {
-    borderRadius: '9999px',
-    border: "solid 1px $gray7",
+    base: {
+        borderRadius: '9999px',
+        border: "solid 1px token(colors.gray.7)",
+    }
 })
 
 export function ContentItem({ imageSrc, title, description, link, }: { imageSrc: string, title: string, description?: string, link: string }) {
     return (
             <ContentItemBase href={link} target="_blank" rel="noopener noreferrer">
             <Row gap="16px" align="center">
-                <ContentImage
+                <Image
                     src={imageSrc}
                     alt={`thumbnail of ${title}`}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     width={0}
                     height={0}
-                    size={{ "@initial": "mobile", "@md": "desktop" }}
-                    style={{ height: 'auto', borderRadius: '8px', aspectRatio: "calc(16/9)", objectFit: "cover" }}
+                    className={css({ 
+                        height: 'auto', 
+                        borderRadius: '8px', 
+                        aspectRatio: "calc(16/9)", 
+                        objectFit: "cover",
+                        width: {
+                            base: "72px",
+                            md: "120px",
+                        }
+                    })}
                 />
                 <Column gap="4px">
                     <Text style="subtitle" color="primary">{title}</Text>
-                    {description !== undefined && <Text style="body" color="secondary" maxLines={2}>{description}</Text>}
+                    {description !== undefined && <Text style="body" color="secondary" maximumLines={2}>{description}</Text>}
                 </Column>
             </Row>
         </ContentItemBase>
@@ -56,19 +69,12 @@ export function ContentItem({ imageSrc, title, description, link, }: { imageSrc:
 }
 
 const ContentItemBase = styled(UndecoratedA, {
-    margin: "-12px",
-    padding: "12px",
-    borderRadius: "12px",
-
-    "&:hover": { backgroundColor: "$gray5", },
-    "&:focus": { backgroundColor: "$gray6", },
-})
-
-const ContentImage = styled(Image, {
-    variants: {
-        size: {
-            mobile: { width: "72px", },
-            desktop: { width: "120px", },
-        },
-    },
+    base: {
+        margin: "-12px",
+        padding: "12px",
+        borderRadius: "12px",
+    
+        "&:hover": { backgroundColor: "$gray5", },
+        "&:focus": { backgroundColor: "$gray6", },    
+    }
 })

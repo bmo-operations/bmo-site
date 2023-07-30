@@ -3,9 +3,8 @@
 import * as Dialog from "@radix-ui/react-dialog"
 import Image from "next/image"
 import { useState } from "react"
-import { styled } from "../common/theme/global"
-import Container from "../common/Container"
-import { Column } from "../common/Layouts"
+import { styled, Column } from 'styled-system/jsx';
+import { Container } from "../common/Container"
 import { Player } from "./Player"
 import { allRosters } from "./RosterRepository"
 import RosterCard from "./RosterCard"
@@ -59,7 +58,7 @@ export default function RosterPage() {
 
 function RosterImage({ year }: { year: number }) {
     return (
-        <Column gap="32px" gapMobile="16px">
+        <Column gap="xl">
             <HeaderText first={`${year}`} second="Roster" />
             <Image
                 src={`/content/roster/${year}/roster${year}.jpg`}
