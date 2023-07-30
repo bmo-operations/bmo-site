@@ -1,118 +1,111 @@
 import { blackA, gray, red } from "@radix-ui/colors";
-import { createStitches, globalCss } from "@stitches/react";
+import { styled } from 'styled-system/jsx';
 import Link from "next/link";
-
-export const globalStyles = globalCss({
-    '*': { margin: 0, padding: 0 },
-    'button, input': { fontFamily: 'inherit', }
-    // '*, p, h1, h2, h3, h4, h5, h6, span': {
-    //     fontFamily: 'Aeonik, Inter, sans-serif',
-    // }
-});
 
 export const breakpoints = [620, 1024]
 
-export const { styled, css, getCssText } = createStitches({
-    media: {
-        md: `(min-width: ${breakpoints[0]}px)`,
-        lg: `(min-width: ${breakpoints[1]}px)`,
-    },
-    theme: {
-        colors: {
-            ...gray,
-            ...blackA,
-            ...red,
-        },
-        fontSizes: {
-            h1Desktop: '108px',
-            h1Mobile: '48px',
-            h2Desktop: '48px',
-            h2Mobile: '32px',
-            h3Desktop: '36px',
-            h3Mobile: '24px',
-            h6Desktop: '32px',
-            h6Mobile: '20px',
-            bodyDesktop: '18px',
-            bodyMobile: '16px',
-            caption: '12px',
-        }
-    },
-});
+// @ts-ignore: "-webkit-box-orient" doesn't exist
+const MaxLinesStyles = {
+    textOverflow: "ellipsis",
+    overflow: "hidden",
+    display: "-webkit-box",
+    "-webkit-box-orient": "vertical",
+}
 
-export const BaseText = styled('p', {
+export const Text = styled('p', {
+    base: {
+        lineHeight: "normal",
+    },
     variants: {
         style: {
-            h1: { fontWeight: '800', lineHeight: '80%', letterSpacing: '-0.02em', },
-            h2: { fontWeight: '700', },
-            h3: { fontWeight: '700', },
-            h6: { fontWeight: '400', lineHeight: '1', },
-            subtitle: { fontWeight: '600', },
-            body: {},
-            paragraph: { lineHeight: '150%', whiteSpace: 'pre-line' },
-            caption: {},
+            h1: { fontWeight: '800', lineHeight: '80%', letterSpacing: '-0.02em', fontSize: "h1", },
+            h2: { fontWeight: '700', fontSize: "h2", },
+            h3: { fontWeight: '700', fontSize: "h3", },
+            h6: { fontWeight: '400', lineHeight: '1', fontSize: "h6", },
+            subtitle: { fontWeight: '600',  fontSize: "body", },
+            body: { fontSize: "body",},
+            paragraph: { lineHeight: '150%', whiteSpace: 'pre-line',  fontSize: "body", },
+            caption: { fontSize: "caption", },
         },
         color: {
             primary: {
-                color: "$gray12",
+                color: "gray.12",
             },
             secondary: {
-                color: "$gray11",
+                color: "gray.11",
             },
             tertiary: {
-                color: "$gray10",
+                color: "gray.10",
             },
             accent: {
-                color: "$red11",
+                color: "red.11",
             },
+        },
+        maxLines: {
+            one: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 1,
+            },
+            two: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 2,
+            },
+            four: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 4,
+            },
+            twelve: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 12,
+            }
         },
     },
 })
 
+
 export const Button = styled('button', {
-    border: 'none',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: "center",
-
-    variants: {
-        size: {
-            mobile: {
-                height: '44px',
-                padding: '8px',
-                borderRadius: '16px',
-                fontSize: '100%',
-                gap: '8px',
-            },
-            desktop: {
-                height: '56px',
-                padding: '8px',
-                borderRadius: '16px',
-                fontSize: '100%',
-                gap: '8px',
-            },
+    base: {
+        border: 'none',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: "center",
+        base: {
+            height: '44px',
+            padding: '8px',
+            borderRadius: '16px',
+            fontSize: '100%',
+            gap: '8px',
         },
-
+        md: {
+            height: '56px',
+            padding: '8px',
+            borderRadius: '16px',
+            fontSize: '100%',
+            gap: '8px',
+        },
+    },
+    variants: {
         color: {
             neutral: {
-                backgroundColor: '$gray3',
+                backgroundColor: 'gray.3',
                 '&:hover': {
-                    backgroundColor: '$gray4'
+                    backgroundColor: 'gray.4'
                 },
                 '&:focus': {
-                    backgroundColor: '$gray5'
+                    backgroundColor: 'gray.5'
                 },
-                color: '$gray11',
+                color: 'gray.11',
             },
             primary: {
-                backgroundColor: '$red3',
+                backgroundColor: 'red.3',
                 '&:hover': {
-                    backgroundColor: '$red4'
+                    backgroundColor: 'red.4'
                 },
                 '&:focus': {
-                    backgroundColor: '$red5'
+                    backgroundColor: 'red.5'
                 },
-                color: '$red11',
+                color: 'red.11',
             },
         },
     },
@@ -130,9 +123,13 @@ const undecoratedLinkStyles = {
 }
 
 export const UndecoratedA = styled('a', {
-    ...undecoratedLinkStyles
+    base: {
+        ...undecoratedLinkStyles
+    }
 })
 
 export const UndecoratedLink = styled(Link, {
-    ...undecoratedLinkStyles
+    base: {
+        ...undecoratedLinkStyles
+    }
 })

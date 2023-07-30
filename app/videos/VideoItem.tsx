@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { styled, UndecoratedA } from "../common/theme/global";
-import {Column, Flex} from "../common/Layouts";
-import Text from "../common/Text";
+import { UndecoratedA } from "../common/theme/global";
+import { styled, Column, Row } from "styled-system/jsx";
+import { Text } from "../common/theme/global";
 import { Video, videoThumbnail } from "./Video";
 
 export default function VideoItem({ video, onClick }: { video: Video, onClick: () => void }) {
@@ -27,7 +27,9 @@ export default function VideoItem({ video, onClick }: { video: Video, onClick: (
 }
 
 const VideoItemBase = styled(Column, {
-    pointer: 'cursor',
+    base: {
+        cursor: "pointer",
+    },
 })
 
 

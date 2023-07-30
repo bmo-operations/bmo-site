@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { Button, styled, UndecoratedA } from "../common/theme/global";
-import { Column } from "../common/Layouts";
-import Text from "../common/Text";
+import { Button, Text, UndecoratedA } from "../common/theme/global";
+import { styled, Column } from "styled-system/jsx";
 import { Article } from "./News";
 
 export function ArticleItem({ article, year, style }: { article: Article, year: number, style?: "card" | "feature" }) {
@@ -18,11 +17,11 @@ export function ArticleItem({ article, year, style }: { article: Article, year: 
             <Column gap="8px">
                 <Text style="subtitle">{article.headline}</Text>
                 {article.dropline !== undefined && <Text style="subtitle" color="secondary">{article.dropline}</Text>}
-                <Text style="paragraph" color="secondary" maxLines={style == "card" ? 4 : 12}>{article.text}</Text>
+                <Text style="paragraph" color="secondary" maxLines={style == "card" ? "four" : "twelve"}>{article.text}</Text>
             </Column>
             {article.link !== undefined &&
                 <UndecoratedA href={article.link} target="_blank" rel="noopener noreferrer" style={{ width: "100%" }}>
-                    <Button size={{ '@initial': 'mobile', '@md': 'desktop' }} style={{ width: "100%" }}>
+                    <Button style={{ width: "100%" }}>
                         <Text style="subtitle" color="secondary">Full Recap</Text>
                     </Button>
                 </UndecoratedA>

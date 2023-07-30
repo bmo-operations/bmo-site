@@ -5,12 +5,14 @@ import { usePathname, useRouter } from 'next/navigation';
 import { red, gray, blackA } from '@radix-ui/colors';
 import React, { useEffect, useState } from 'react';
 import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
-import { breakpoints, styled, UndecoratedLink } from '../theme/global';
-import Text from '../Text';
-import Container, { HorizontalContainer } from '../Container';
-import { Column, Row } from '../Layouts';
+import { breakpoints, UndecoratedLink } from '../theme/global';
+import { Text } from '../theme/global';
+import { Container } from '../Container';
+import { styled, Column, Row } from "styled-system/jsx";
 import Link from 'next/link';
 import { env } from 'process';
+import { RecipeDefinition, RecipeVariantRecord } from 'styled-system/types/recipe';
+import { css } from "styled-system/css"
 
 export default function NavigationMenu() {
   const router = useRouter();
@@ -22,7 +24,7 @@ export default function NavigationMenu() {
 
   return (
     <StyledRoot>
-      <HorizontalContainer verticalPadding='12px'>
+      <Container verticalPadding='none' className={css({ paddingY: "sm" })}>
         <StyledList>
           <NavigationMenuPrimitive.Item>
             <Tab title="Home" selectedPath={currentPath} pathname="/" />
@@ -35,14 +37,14 @@ export default function NavigationMenu() {
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
             <Trigger
-              selected={moreSelected}
-              size={{ '@initial': 'mobile', '@md': 'desktop' }}
+              //@ts-ignore selectState doesn't exist
+              selectState={moreSelected ? "selected" : "unselected"}
               color="neutral"
             >
               <Text style="subtitle">{"More"}</Text>
               <StyledCaret />
             </Trigger>
-            <Popup size={{ '@initial': 'mobile', "@md": "desktop" }}>
+            <Popup>
               <Column>
                 <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
                 <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
@@ -52,76 +54,76 @@ export default function NavigationMenu() {
             </Popup>
           </NavigationMenuPrimitive.Item>
         </StyledList>
-      </HorizontalContainer>
+      </Container>
       {(loadedWindow?.innerWidth ?? 0) < breakpoints[0] && <NavigationMenuPrimitive.Viewport />}
     </StyledRoot>
   )
 }
 
 const StyledRoot = styled(NavigationMenuPrimitive.Root, {
-  borderBottom: `solid 1px $gray7`,
-  // overflowX: "scroll", // fixes container scrolling issues on safari but breaks popup, need to find better solution (maybe wrapper div?)
+  base: {
+    borderBottom: `solid 1px token(colors.gray.7)`,
+    // overflowX: "scroll", // fixes container scrolling issues on safari but breaks popup, need to find better solution (maybe wrapper div?)  
+  },
 })
 
 const StyledList = styled(NavigationMenuPrimitive.List, {
-  all: 'unset',
-  display: 'flex',
-  listStyle: 'none',
-  gap: '4px',
+  base: {
+    all: 'unset',
+    display: 'flex',
+    listStyle: 'none',
+    gap: '4px',  
+  },
 });
 
 
-const itemStyles = {
-  outline: 'none',
-  userSelect: 'none',
-  borderRadius: '9999px',
-  display: 'flex',
-  alignItems: 'center',
-  gap: '4px',
-  cursor: 'pointer',
+const itemStyles: RecipeDefinition<RecipeVariantRecord> = {
+  base: {
+    outline: 'none',
+    userSelect: 'none',
+    borderRadius: '9999px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+    cursor: 'pointer',
+    px: "md",
+    py: "sm"
+  },
 
   variants: {
-    size: {
-      mobile: {
-        padding: '8px 12px',
-      },
-      desktop: {
-        padding: '12px 16px',
-      },
-    },
     color: {
       neutral: {
-        color: gray.gray11,
-        '&:focus': { position: 'relative', boxShadow: `0 0 0 2px ${gray.gray7}` },
-        '&:hover': { backgroundColor: gray.gray4 },
+        color: "gray.11",
+        '&:focus': { position: 'relative', boxShadow: `0 0 0 2px token(colors.gray.7)` },
+        '&:hover': { backgroundColor: "gray.4" },
       },
       accent: {
-        color: red.red11,
-        '&:focus': { position: 'relative', boxShadow: `0 0 0 2px ${red.red7}` },
-        '&:hover': { backgroundColor: red.red4 },
+        color: "red.11",
+        '&:focus': { position: 'relative', boxShadow: `0 0 0 2px token(colors.red.7)` },
+        '&:hover': { backgroundColor: "red.4" },
       }
     },
-    selected: {
-      true: {},
-      false: {},
+    selectState: {
+      selected: {},
+      unselected: {},
     }
   },
 
   compoundVariants: [
     {
       color: 'neutral',
-      selected: true,
+      selectState: "selected",
       css: {
-        color: gray.gray11,
-        backgroundColor: gray.gray3,
+        color: "gray.11",
+        backgroundColor: "gray.3",
       }
     },
     {
       color: 'accent',
-      selected: true,
+      selectState: "selected",
       css: {
-        color: red.red11,
-        backgroundColor: red.red3,
+        color: "red.11",
+        backgroundColor: "red.3",
       }
     },
   ],
@@ -134,7 +136,11 @@ function Tab({ title, pathname, selectedPath }: LinkProps) {
   const router = useRouter()
   // <UndecoratedLink href={pathname}>
   return (
-    <TabBase href={pathname} color={pathname == `${process.env.NEXT_PUBLIC_BASE_PATH}/` ? "accent" : "neutral"} selected={isSelected} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+    <TabBase 
+      href={pathname} 
+      color={pathname == `${process.env.NEXT_PUBLIC_BASE_PATH}/` ? "accent" : "neutral"} 
+      //@ts-ignore selectState doesn't exist
+      selectState={isSelected ? "selected" : "unselected"} >
       <Text style="subtitle">{title}</Text>
     </TabBase>
   )
@@ -146,7 +152,9 @@ const TabBase = styled(UndecoratedLink, {
 });
 
 const Trigger = styled(NavigationMenuPrimitive.Trigger, {
-  all: 'unset',
+  base: {
+    all: 'unset',
+  },
   ...itemStyles,
 });
 
@@ -160,11 +168,11 @@ const Popup = styled(NavigationMenuPrimitive.Content, {
         position: 'absolute',
         // top: 0,
         // left: 0,
-        backgroundColor: "$gray1",
+        backgroundColor: "gray.1",
         width: "fit-content",
         padding: "8px",
         borderRadius: "16px",
-        border: "solid 1px $gray7"
+        border: "solid 1px token(colors.gray.7)"
         // width: "100%",
       },
     },
@@ -174,7 +182,7 @@ const Popup = styled(NavigationMenuPrimitive.Content, {
 function MenuItem({ title, pathname, selectedPath }: LinkProps) {
   const isSelected = pathname == selectedPath
   return (
-    <MenuItemBase href={pathname} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+    <MenuItemBase href={pathname}>
       <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
         <Text
           style={(isSelected) ? "subtitle" : "body"}
@@ -189,35 +197,32 @@ function MenuItem({ title, pathname, selectedPath }: LinkProps) {
 }
 
 const MenuItemBase = styled(UndecoratedLink, {
-  display: 'flex',
-  alignItems: 'center',
-  width: "100%",
-  boxSizing: "border-box",
-  cursor: "pointer",
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    width: "100%",
+    boxSizing: "border-box",
+    cursor: "pointer",
+    padding: "12px 16px",
+  
+    '&:hover': { backgroundColor: "gray.4", },
+    '&:focus': { backgroundColor: "gray.5", },  
 
-  '&:hover': { backgroundColor: "$gray4", },
-  '&:focus': { backgroundColor: "$gray5", },
-
-  variants: {
-    size: {
-      mobile: {
-        padding: "12px 16px",
-      },
-      desktop: {
-        padding: "12px 16px",
-        borderRadius: "8px",
-        minWidth: "196px",
-      }
-    },
+    md: {
+      borderRadius: "8px",
+      minWidth: "196px",
+    }
   },
 });
 
 const StyledCaret = styled(CaretDownIcon, {
-  position: 'relative',
-  color: gray.gray10,
-  top: 1,
-  '[data-state=open] &': { transform: 'rotate(-180deg)' },
-  '@media (prefers-reduced-motion: no-preference)': {
-    transition: 'transform 250ms ease',
+  base: {
+    position: 'relative',
+    color: "gray.10",
+    top: 1,
+    '[data-state=open] &': { transform: 'rotate(-180deg)' },
+    '@media (prefers-reduced-motion: no-preference)': {
+      transition: 'transform 250ms ease',
+    },
   },
 })

@@ -1,8 +1,9 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { styled, UndecoratedA } from "../../common/theme/global";
-import { Column, Row } from "../../common/Layouts";
-import Text from "../../common/Text";
+import { UndecoratedA } from "../../common/theme/global";
+import { Text } from "../../common/theme/global";
 import { HomeCard } from "../HomeCard";
+import { styled, Column, Row } from "styled-system/jsx";
+import { css } from "styled-system/css";
 
 export interface LinkInfo {
     icon?: React.ReactNode,
@@ -16,9 +17,9 @@ export interface LinkInfo {
 
 export function LinkCard({ title, description, links, spanDesktop }: { title: string, description?: string, links: LinkInfo[], spanDesktop?: number }) {
     return (
-        <LinkCardBase style="outlined" align="stretch" gap="32px" gapMobile="24px" spanDesktop={spanDesktop}>
+        <LinkCardBase gap="lg" style="outlined" align="stretch" spanDesktop={spanDesktop == 2 ? "two" : "one"}>
             <Text style="h3">{title}</Text>
-            <Column gap="16px" gapMobile="12px" align="stretch" style={{ height: '100%', }}>
+            <Column gap="md" align="stretch" className={css({ height: '100%', })}>
                 {links.map(info => <LinkItem key={info.text} info={info} />)}
             </Column>
         </LinkCardBase>
@@ -26,17 +27,17 @@ export function LinkCard({ title, description, links, spanDesktop }: { title: st
 }
 
 const LinkCardBase = styled(HomeCard, {
-//    height: '-webkit-fill-available',
-    height: '100%',
-    boxSizing: "border-box",
-
+    base: {
+        height: '100%',
+        boxSizing: "border-box",
+    },
     variants: {
         style: {
             outlined: {
-                border: "solid 1px $gray7",
+                border: "solid 1px token(colors.gray.5)",
             },
             filled: {
-                backgroundColor: "$gray3",
+                backgroundColor: "gray.a.3",
             },
         },
     }
@@ -45,19 +46,16 @@ const LinkCardBase = styled(HomeCard, {
 export function LinkItem({ info }: { info: LinkInfo }) {
     const content = (
         <LinkItemBase
-            align="flex-end"
-            size={{ '@initial': 'mobile', '@md': 'desktop' }}
-            padding="24px"
-            paddingMobile="16px"
+            align="end"
+            padding="lg"
             style={{
                 color: info.colorPalette[10],
                 backgroundColor: info.colorPalette[2],
             }}
-            justify="stretch"
             link={info.link != undefined || info.onClick != undefined }
             onClick={e => { if (info.onClick != undefined) info.onClick() }}
         >
-            <Row align="center" gap="16px" style={{ width: '100%' }}>
+            <Row align="center" gap="16px" className={css({ width: "100%", height: "fit-content"})}>
                 {info.icon != undefined && info.icon}
                 <Column
                     gap="4px"
@@ -79,21 +77,15 @@ export function LinkItem({ info }: { info: LinkInfo }) {
 }
 
 const LinkItemBase = styled(Row, {
-//    height: '-webkit-fill-available',
-    height: '100%',
-    boxSizing: "border-box",
-//    width: '100%',
-    width: 'stretch',
+    base: {
+        height: '100%',
+        boxSizing: "border-box",
+        width: '100%',
+        borderRadius: "lg",
+    },
+
 
     variants: {
-        size: {
-            mobile: {
-                borderRadius: '16px',
-            },
-            desktop: {
-                borderRadius: '24px',
-            },
-        },
         link: {
             true: { cursor: 'pointer', },
             false: {},
@@ -102,9 +94,11 @@ const LinkItemBase = styled(Row, {
 })
 
 const LinkA = styled(UndecoratedA, {
-    height: '100%',
-    boxSizing: "border-box",
-    width: '100%',
-    display: 'flex',
-    justifyContent: 'stretch',
+    base: {
+        height: '100%',
+        boxSizing: "border-box",
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'stretch',
+    }
 })

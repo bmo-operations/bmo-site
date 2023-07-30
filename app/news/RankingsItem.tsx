@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { styled } from "../common/theme/global";
-import { Column, Row } from "../common/Layouts";
-import Text from "../common/Text";
+import { styled, Row, Column } from 'styled-system/jsx';
+import { Text } from "../common/theme/global";
 import { Rankings } from "./News";
 
 export function RankingsItem({ rankings }: { rankings: Rankings }) {
@@ -23,9 +22,11 @@ export function RankingsItem({ rankings }: { rankings: Rankings }) {
 }
 
 const RankingsItemBase = styled(Column, {
-    borderRadius: "24px",
-    border: "solid 1px $gray7",
-    height: "fit-content",
+    base: {
+        borderRadius: "24px",
+        border: "solid 1px token(colors.gray.7)",
+        height: "fit-content",
+    }
 })
 
 function RankingSourceItem({ imageSrc, name, rank, link }: { imageSrc: string, name: string, rank: number, link: string }) {
@@ -42,10 +43,12 @@ function RankingSourceItem({ imageSrc, name, rank, link }: { imageSrc: string, n
 }
 
 const RankCircle = styled(Row, {
-    width: "40px",
-    height: "40px",
-    minWidth: "40px",
-    minHeight: "40px",
-    borderRadius: "24px",
-    backgroundColor: "$gray3",
+    base: {
+        width: "40px",
+        height: "40px",
+        minWidth: "40px",
+        minHeight: "40px",
+        borderRadius: "24px",
+        backgroundColor: "gray.3",
+    },
 })

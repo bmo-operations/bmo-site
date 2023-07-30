@@ -1,6 +1,5 @@
 "use client"
 
-import { globalCss, styled } from '@stitches/react';
 import { useEffect, useState } from 'react';
 import HomeCardLayout from './HomeCardLayout';
 import LandingHeader from './LandingHeader';
@@ -21,15 +20,9 @@ import { DialogOverlay } from '../common/Dialog';
 import { SupportPopup } from '../support/SupportPopup';
 import {videoThumbnail} from "../videos/Video";
 import { allNews } from '../news/NewsRepository';
-
-const LandingImage = styled('img', {
-  flexGrow: 1,
-  maxHeight: '100%',
-  objectFit: 'cover',
-  width: '100%',
-  borderRadius: '24px',
-  alignSelf: "stretch",
-})
+import { styled } from "styled-system/jsx"
+import Image from 'next/image';
+import { css } from 'styled-system/css';
 
 export default function HomePage() {
   const router = useRouter();
@@ -40,9 +33,20 @@ export default function HomePage() {
   return (
     <HomeCardLayout>
       <LandingHeader />
-      <LandingImage
-        src={process.env.NEXT_PUBLIC_BASE_PATH + "/images/team_crump_2022.jpg"}
-        alt="2022 team photo"/>
+      <Image
+        width={0}
+        height={0}
+        src="/images/team_crump_2022.jpg"
+        alt="2022 team photo"
+        sizes="100vw"
+        className={css({
+          flexGrow: 1,
+          maxHeight: '100%',
+          objectFit: 'cover',
+          width: '100%',
+          borderRadius: '24px',
+          alignSelf: "stretch",  
+        })} />
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
       <TextCard title={aboutUs.title} text={aboutUs.text} />
       <LinkCard
@@ -82,7 +86,7 @@ export default function HomePage() {
               return <ContentItem key={a.link} title={a.headline} description={a.dropline ?? a.text} link={a.link} imageSrc={`content/news/${year}/${a.image}`}/>
             })}
         </ContentCard>
-        <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop={2}>
+        <ContentCard title="Zip’s Tip of the Day" onMore={() => router.push('/zipstips')} spanDesktop="two">
             {tipOfTheDay !== undefined && <TipItem tip={tipOfTheDay} style="tipCard" />}
         </ContentCard>
     </HomeCardLayout>

@@ -1,6 +1,5 @@
-import { styled } from "./theme/global";
-import { Column, Row } from "./Layouts";
-import Text from "./Text";
+import { styled, Column, Row } from "styled-system/jsx";
+import { Text } from "./theme/global";
 
 export interface ContentProps<T> {
     content: Map<number, T>,
@@ -30,11 +29,11 @@ export function ContentGrid<T>({ year, contentName, content, element }: ContentG
 
     const contentCards = content.map(c => element(c))
     return (
-        <Column gap="32px" gapMobile="16px" align="stretch">
+        <Column gap="xl" align="stretch">
             <Row justify="space-between">
                 <HeaderText first={`${year}`} second={contentName} />
             </Row>
-            <ContentGridBase columns={{ '@initial': '1', '@md': '2', '@lg': '3' }}>
+            <ContentGridBase>
                 {contentCards}
             </ContentGridBase>
         </Column>
@@ -42,22 +41,21 @@ export function ContentGrid<T>({ year, contentName, content, element }: ContentG
 }
 
 const ContentGridBase = styled('div', {
-    display: 'grid',
-    columnGap: '16px',
-    rowGap: '16px',
-
-    variants: {
-        columns: {
-            '1': { gridTemplateColumns: '1fr', },
-            '2': { gridTemplateColumns: '1fr 1fr', },
-            '3': { gridTemplateColumns: '1fr 1fr 1fr', },
+    base: {
+        display: 'grid',
+        columnGap: 'lg',
+        rowGap: 'lg',
+        gridTemplateColumns: {
+            base: '1fr',
+            md: '1fr 1fr',
+            lg: '1fr 1fr 1fr'
         }
-    }
+    },
 })
 
 export function HeaderText({ first, second }: { first: string, second: string }) {
     return (
-        <Row gap="12px" gapMobile="8px">
+        <Row gap="sm">
             <Text style="h2">{`${first}`}</Text>
             <Text style="h2" color='secondary'>{`${second}`}</Text>
         </Row>

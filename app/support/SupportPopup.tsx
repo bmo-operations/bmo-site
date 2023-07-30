@@ -1,7 +1,7 @@
 import { Cross1Icon } from "@radix-ui/react-icons";
 import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
-import {Column, Row} from "../common/Layouts";
-import Text from "../common/Text";
+import { Row, Column } from 'styled-system/jsx';
+import { Text } from "../common/theme/global";
 import { donationDescription, DonationInstructions } from "./Instructions";
 
 export function SupportPopup({ onClose }: {onClose: () => void}) {

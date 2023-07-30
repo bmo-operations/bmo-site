@@ -1,10 +1,8 @@
-'use client';
-
+import './global.css'
 import { Inter } from "next/font/google";
-import { styled } from './common/theme/global';
-import { Column } from './common/Layouts';
+import { styled, Column } from 'styled-system/jsx';
+import { css } from 'styled-system/css';
 import NavigationMenu from './common/navigation/NavigationMenu';
-import { globalStyles, getCssText } from './common/theme/global';
 import Head from "./head";
 
 // If loading a variable font, you don't need to specify the font weight
@@ -17,15 +15,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  globalStyles();
   return (
     <html lang="en" className={inter.className}>
       <head>
         <Head/>
-        {/* <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText() }}/> */}
       </head>
       <body>
-        <Column style={{ height: '100%', width: '100vw' }} align="stretch">
+        <Column className={css({ height: '100%', width: '100vw' })} align="stretch">
           <NavigationMenu />
           <ScrollableContent>
             {children}
@@ -37,7 +33,9 @@ export default function RootLayout({
 }
 
 const ScrollableContent = styled('div', {
-  overflowY: 'scroll',
-  width: '-webkit-fill-available',
-  height: '-webkit-fill-available',
+  base: {
+    overflowY: 'scroll',
+    width: '-webkit-fill-available',
+    height: '-webkit-fill-available',
+  },
 })

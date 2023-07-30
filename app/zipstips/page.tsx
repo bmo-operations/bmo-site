@@ -1,10 +1,9 @@
 "use client"
 
 import { useEffect, useState } from "react";
-import { styled } from "../common/theme/global";
-import Container from "../common/Container";
-import { Column, Row } from "../common/Layouts";
-import Text from "../common/Text";
+import { styled, Row, Column } from 'styled-system/jsx';
+import { Container } from "../common/Container";
+import { Text } from "../common/theme/global";
 import { SearchBar } from "./SearchBar";
 import { TipItem } from "./TipItem";
 import { getTips } from "./Tips";

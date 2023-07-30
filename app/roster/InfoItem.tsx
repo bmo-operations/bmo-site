@@ -1,5 +1,5 @@
-import { Row } from "../common/Layouts";
-import Text from "../common/Text";
+import { styled, Row } from 'styled-system/jsx';
+import { Text } from "../common/theme/global";
 
 export default function InfoItem({ icon, text }: { icon: React.ReactNode, text: string }) {
     return (

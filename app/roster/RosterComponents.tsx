@@ -1,6 +1,5 @@
-import { styled } from "../common/theme/global";
-import { Row } from "../common/Layouts";
-import Text from "../common/Text";
+import { styled, Row } from 'styled-system/jsx';
+import { Text } from "../common/theme/global";
 
 export function RosterNickname({ nickname }: { nickname: string }) {
     return (
@@ -22,24 +21,28 @@ function NumberText({ number }: { number: number }) {
 
 export function NumberChip({ number }: { number: number }) {
     const Base = styled('div', {
-        backgroundColor: '$gray3',
-        borderRadius: '32px',
-        padding: '2px 8px',
-        height: 'min-content'
+        base: {
+            backgroundColor: 'gray.3',
+            borderRadius: '32px',
+            padding: '2px 8px',
+            height: 'min-content'    
+        }
     })
     return (<Base><NumberText number={number} /></Base>)
 }
 
 export function NumberCircle({ number }: { number: number }) {
     const Base = styled('div', {
-        backgroundColor: '$gray3',
-        borderRadius: '32px',
-        width: '48px',
-        maxWidth: '48px',
-        height: '48px',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        base: {
+            backgroundColor: 'gray.3',
+            borderRadius: '32px',
+            width: '48px',
+            maxWidth: '48px',
+            height: '48px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',    
+        }
     })
     return (<Base><NumberText number={number} /></Base>)
 }

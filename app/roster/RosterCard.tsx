@@ -1,11 +1,11 @@
 import { CalendarIcon, HomeIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import { Button, styled } from "../common/theme/global";
-import { Column, Row } from "../common/Layouts";
+import { Button } from "../common/theme/global";
 import InfoItem from "./InfoItem";
 import { Player } from "./Player";
 import { NumberChip, RosterNickname } from "./RosterComponents";
-import Text from "../common/Text";
+import { Text } from "../common/theme/global";
+import { styled, Column, Row } from "styled-system/jsx";
 
 export default function RosterCard({ player, year, onMore }: { player: Player, year: number, onMore: () => void }) {
     return (
@@ -30,16 +30,18 @@ export default function RosterCard({ player, year, onMore }: { player: Player, y
                     <InfoItem icon={(<CalendarIcon />)} text={`Class of ${player.class}`} />
                     <InfoItem icon={(<HomeIcon />)} text={`${player.hometown}`} />
                 </Column>
-                <Button size={{ '@initial': 'mobile', '@md': 'desktop' }} onClick={e => onMore()}><Text style="subtitle" color="secondary">More</Text></Button>
+                <Button onClick={e => onMore()}><Text style="subtitle" color="secondary">More</Text></Button>
             </Column>
         </RosterCardBase>
     )
 }
 
 const RosterCardBase = styled(Column, {
-    width: '100%',
-    borderRadius: '24px',
-    border: '1px solid $gray7',
-    backgroundColor: 'white',
-    overflow: 'hidden',
+    base: {
+        width: '100%',
+        borderRadius: '24px',
+        border: '1px solid token(colors.gray.a.5)',
+        backgroundColor: 'white',
+        overflow: 'hidden',
+    }
 })

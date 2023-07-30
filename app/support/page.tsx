@@ -1,10 +1,10 @@
 "use client"
 
 import { ArrowRightIcon } from '@radix-ui/react-icons';
-import Container from "../common/Container";
-import { Column, Row } from "../common/Layouts";
-import Text from "../common/Text";
-import { UndecoratedA, styled } from "../common/theme/global";
+import { Container } from "../common/Container";
+import { styled, Row, Column } from 'styled-system/jsx';
+import { Text } from "../common/theme/global";
+import { UndecoratedA } from "../common/theme/global";
 import { DonationInstructions, donationDescription } from "./Instructions";
 import Image from "next/image"
 
@@ -37,7 +37,7 @@ export default function SupportPage() {
 function TeamStoreLink() {
     return (
         <UndecoratedA href="https://www.etsy.com/shop/bmomerchandise" target="_blank" rel="noopener noreferrer">
-            <TeamStoreLinkBase align="stretch" size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+            <TeamStoreLinkBase align="stretch">
                 <Image 
                 src="images/team_store.png" 
                 alt="Picture of the team store"
@@ -55,26 +55,23 @@ function TeamStoreLink() {
 }
 
 const TeamStoreLinkBase = styled(Column, {
-    border: "solid 1px $gray7",
-    backgroundColor: "$gray3",
-    overflow: "clip",
-    width: "100%",
-
-    variants: {
-        size: {
-            mobile: {
-                borderRadius: "16px",
-            },
-            desktop: {
-                borderRadius: "32px",
-            },
+    base: {
+        border: "solid 1px $gray7",
+        backgroundColor: "$gray3",
+        overflow: "clip",
+        width: "100%",    
+        borderRadius: {
+            base: "16px",
+            md: "32px",
         }
     },
 })
 
 const InstructionCard = styled(Column, {
-    boxShadow: "0px 0px 24px rgba(39, 174, 96, 0.25);",
-    borderRadius: "24px",
+    base: {
+        boxShadow: "0px 0px 24px rgba(39, 174, 96, 0.25);",
+        borderRadius: "24px",    
+    },
 
     variants: {
         size: {

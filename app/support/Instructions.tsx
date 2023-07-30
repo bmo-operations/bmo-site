@@ -1,11 +1,11 @@
 "use client"
 
-import { styled } from "@stitches/react"
-import { Row, Column } from "../common/Layouts"
+import { styled, Row, Column } from 'styled-system/jsx';
 import { LinkItem } from "../home/cards/LinkCard"
-import Text from "../common/Text";
+import { Text } from "../common/theme/global";
 import {gray, green} from "@radix-ui/colors";
 import Link from "next/link";
+import { css } from 'styled-system/css';
 
 export const donationDescription = "As a club sport, we are completely reliant on the generous donations we get from alumni and friends. These donations are essential in allowing us to compete at the highest level while ensuring that the season’s cost is never a barrier to any player. Please consider making a donation to our team! \n \n You can donate to the endowment (where we access the spinoff each year), to our gift account (where we access the full amount next season), or to both."
 
@@ -33,8 +33,10 @@ export function InstructionItem({number, text, colorPalette, link}: {number: num
 }
 
 const InstructionNumber = styled(Column, {
-    width: "32px",
-    height: "32px",
-    backgroundColor: "$gray3",
-    borderRadius: "16px",
+    base: {
+        width: "32px",
+        height: "32px",
+        backgroundColor: "gray.3",
+        borderRadius: "16px",    
+    },
 })
