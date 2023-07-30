@@ -37,6 +37,7 @@ export default function NavigationMenu() {
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
             <Trigger
+              //@ts-ignore selectState doesn't exist
               selectState={moreSelected ? "selected" : "unselected"}
               color="neutral"
             >
@@ -135,7 +136,11 @@ function Tab({ title, pathname, selectedPath }: LinkProps) {
   const router = useRouter()
   // <UndecoratedLink href={pathname}>
   return (
-    <TabBase href={pathname} color={pathname == `${process.env.NEXT_PUBLIC_BASE_PATH}/` ? "accent" : "neutral"} selectState={isSelected ? "selected" : "unselected"} size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+    <TabBase 
+      href={pathname} 
+      color={pathname == `${process.env.NEXT_PUBLIC_BASE_PATH}/` ? "accent" : "neutral"} 
+      //@ts-ignore selectState doesn't exist
+      selectState={isSelected ? "selected" : "unselected"} >
       <Text style="subtitle">{title}</Text>
     </TabBase>
   )

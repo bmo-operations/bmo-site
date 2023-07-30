@@ -37,7 +37,7 @@ export default function SupportPage() {
 function TeamStoreLink() {
     return (
         <UndecoratedA href="https://www.etsy.com/shop/bmomerchandise" target="_blank" rel="noopener noreferrer">
-            <TeamStoreLinkBase align="stretch" size={{ '@initial': 'mobile', '@md': 'desktop' }}>
+            <TeamStoreLinkBase align="stretch">
                 <Image 
                 src="images/team_store.png" 
                 alt="Picture of the team store"
@@ -60,16 +60,9 @@ const TeamStoreLinkBase = styled(Column, {
         backgroundColor: "$gray3",
         overflow: "clip",
         width: "100%",    
-    },
-
-    variants: {
-        size: {
-            mobile: {
-                borderRadius: "16px",
-            },
-            desktop: {
-                borderRadius: "32px",
-            },
+        borderRadius: {
+            base: "16px",
+            md: "32px",
         }
     },
 })

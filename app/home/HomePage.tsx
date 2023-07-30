@@ -21,17 +21,8 @@ import { SupportPopup } from '../support/SupportPopup';
 import {videoThumbnail} from "../videos/Video";
 import { allNews } from '../news/NewsRepository';
 import { styled } from "styled-system/jsx"
-
-const LandingImage = styled('img', {
-  base: {
-    flexGrow: 1,
-    maxHeight: '100%',
-    objectFit: 'cover',
-    width: '100%',
-    borderRadius: '24px',
-    alignSelf: "stretch",  
-  }
-})
+import Image from 'next/image';
+import { css } from 'styled-system/css';
 
 export default function HomePage() {
   const router = useRouter();
@@ -42,9 +33,20 @@ export default function HomePage() {
   return (
     <HomeCardLayout>
       <LandingHeader />
-      <LandingImage
-        src={process.env.NEXT_PUBLIC_BASE_PATH + "/images/team_crump_2022.jpg"}
-        alt="2022 team photo"/>
+      <Image
+        width={0}
+        height={0}
+        src="/images/team_crump_2022.jpg"
+        alt="2022 team photo"
+        sizes="100vw"
+        className={css({
+          flexGrow: 1,
+          maxHeight: '100%',
+          objectFit: 'cover',
+          width: '100%',
+          borderRadius: '24px',
+          alignSelf: "stretch",  
+        })} />
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
       <TextCard title={aboutUs.title} text={aboutUs.text} />
       <LinkCard
