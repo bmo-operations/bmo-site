@@ -1,10 +1,18 @@
 import { blackA, gray, red } from "@radix-ui/colors";
-import { BaseText, styled } from 'styled-system/jsx';
+import { styled } from 'styled-system/jsx';
 import Link from "next/link";
 
 export const breakpoints = [620, 1024]
 
-export const Text = styled(BaseText, {
+// @ts-ignore: "-webkit-box-orient" doesn't exist
+const MaxLinesStyles = {
+    textOverflow: "ellipsis",
+    overflow: "hidden",
+    display: "-webkit-box",
+    "-webkit-box-orient": "vertical",
+}
+
+export const Text = styled('p', {
     base: {
         lineHeight: "normal",
     },
@@ -33,8 +41,27 @@ export const Text = styled(BaseText, {
                 color: "red.11",
             },
         },
+        maxLines: {
+            one: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 1,
+            },
+            two: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 2,
+            },
+            four: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 4,
+            },
+            twelve: {
+                ...MaxLinesStyles,
+                WebkitLineClamp: 12,
+            }
+        },
     },
 })
+
 
 export const Button = styled('button', {
     base: {

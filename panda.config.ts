@@ -113,36 +113,12 @@ export default defineConfig({
             return {
               display: "flex",
               flexDirection: "row",
-              justifyContent: (justify ?? 'start'),
-              alignItems: (align ?? 'start'),
+              justifyContent: justify,
+              alignItems: align,
               gap: gap,
               padding: padding,
               ...divProps
             }
-          }
-        },
-        baseText: {
-          description: "A base text component",
-          properties: {
-            maximumLines: { type: 'number' },
-          },
-          transform(props: any) {
-            const {
-              maximumLines,
-              ...divProps
-            } = props
-            if(maximumLines != undefined) {
-              return {
-                lineClamp: maximumLines,
-                WebkitLineClamp: maximumLines,
-                textOverflow: "ellipsis",
-                overflow: "hidden",
-                display: "-webkit-box",
-                "-webkit-box-orient": "vertical",
-                ...divProps
-              }
-            }
-            return props
           }
         },
       },

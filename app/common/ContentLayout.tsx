@@ -43,8 +43,8 @@ export function ContentGrid<T>({ year, contentName, content, element }: ContentG
 const ContentGridBase = styled('div', {
     base: {
         display: 'grid',
-        columnGap: '16px',
-        rowGap: '16px',
+        columnGap: 'lg',
+        rowGap: 'lg',
         gridTemplateColumns: {
             base: '1fr',
             md: '1fr 1fr',

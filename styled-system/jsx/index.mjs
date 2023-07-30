@@ -20,4 +20,3 @@ export * from './divider.mjs';
 export * from './float.mjs';
 export * from './column.mjs';
 export * from './row.mjs';
-export * from './base-text.mjs';

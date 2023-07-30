@@ -17,8 +17,8 @@ transform(props) {
   return __spreadValues({
     display: "flex",
     flexDirection: "row",
-    justifyContent: justify != null ? justify : "start",
-    alignItems: align != null ? align : "start",
+    justifyContent: justify,
+    alignItems: align,
     gap,
     padding
   }, divProps);

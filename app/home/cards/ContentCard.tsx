@@ -1,8 +1,7 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import {Button, UndecoratedA} from "../../common/theme/global";
+import {Button, Text, UndecoratedA} from "../../common/theme/global";
 import { styled, Column, Row } from "styled-system/jsx";
 import { css } from "styled-system/css";
-import { Text } from "../../common/theme/global";
 import { HomeCard } from "../HomeCard";
 import Image from "next/image";
 
@@ -60,8 +59,15 @@ export function ContentItem({ imageSrc, title, description, link, }: { imageSrc:
                     })}
                 />
                 <Column gap="4px">
-                    <Text style="subtitle" color="primary">{title}</Text>
-                    {description !== undefined && <Text style="body" color="secondary" maximumLines={2}>{description}</Text>}
+                    <Text style="subtitle" color="primary" maxLines="one">{title}</Text>
+                    {description !== undefined && 
+                        <Text 
+                            style="body" 
+                            color="secondary"
+                            maxLines="two">
+                            {description}
+                        </Text>
+                    }
                 </Column>
             </Row>
         </ContentItemBase>
@@ -74,7 +80,7 @@ const ContentItemBase = styled(UndecoratedA, {
         padding: "12px",
         borderRadius: "12px",
     
-        "&:hover": { backgroundColor: "$gray5", },
-        "&:focus": { backgroundColor: "$gray6", },    
+        "&:hover": { backgroundColor: "gray.5", },
+        "&:focus": { backgroundColor: "gray.6", },    
     }
 })
