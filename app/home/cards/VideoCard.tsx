@@ -12,7 +12,7 @@ export function VideoCard({ videoSrc, coverImageSrc }: { videoSrc: string, cover
         loop={true}
         muted={true}
         autoPlay={true}
-        poster={coverImageSrc}
+        // poster={coverImageSrc}
         onLoadedData={e => setFrameLoaded(true)}
         onPlay={e => setVideoLoaded(true)}
         className={MediaItemStyle}/>
