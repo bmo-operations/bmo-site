@@ -2,20 +2,16 @@
 
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
 import { usePathname, useRouter } from 'next/navigation';
-import { red, gray, blackA } from '@radix-ui/colors';
 import React, { useEffect, useState } from 'react';
 import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
 import { breakpoints, UndecoratedLink } from '../theme/global';
 import { Text } from '../theme/global';
 import { Container } from '../Container';
 import { styled, Column, Row } from "styled-system/jsx";
-import Link from 'next/link';
-import { env } from 'process';
 import { RecipeDefinition, RecipeVariantRecord } from 'styled-system/types/recipe';
 import { css } from "styled-system/css"
 
 export default function NavigationMenu() {
-  const router = useRouter();
   const currentPath = usePathname();
   const [loadedWindow, setLoadedWindow] = useState<Window | undefined>()
   const moreSelected = !["/", "/roster", "/support"].includes(currentPath)
@@ -159,22 +155,20 @@ const Trigger = styled(NavigationMenuPrimitive.Trigger, {
 });
 
 const Popup = styled(NavigationMenuPrimitive.Content, {
-  variants: {
-    size: {
-      mobile: {
-        width: "100%",
-      },
-      desktop: {
-        position: 'absolute',
-        // top: 0,
-        // left: 0,
-        backgroundColor: "gray.1",
-        width: "fit-content",
-        padding: "8px",
-        borderRadius: "16px",
-        border: "solid 1px token(colors.gray.7)"
-        // width: "100%",
-      },
+  base: {
+    width: {
+      base: "100%",
+    },
+    md: {
+      position: 'absolute',
+      // top: 0,
+      // left: 0,
+      backgroundColor: "gray.1",
+      width: "fit-content",
+      padding: "8px",
+      borderRadius: "16px",
+      border: "solid 1px token(colors.gray.7)",
+      // width: "inherit",
     },
   },
 })

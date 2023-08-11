@@ -22,7 +22,7 @@ import {videoThumbnail} from "../videos/Video";
 import { allNews } from '../news/NewsRepository';
 import { styled } from "styled-system/jsx"
 import Image from 'next/image';
-import { css } from 'styled-system/css';
+import { VideoCard } from './cards/VideoCard';
 
 export default function HomePage() {
   const router = useRouter();
@@ -33,20 +33,7 @@ export default function HomePage() {
   return (
     <HomeCardLayout>
       <LandingHeader />
-      <Image
-        width={0}
-        height={0}
-        src="/images/team_crump_2022.jpg"
-        alt="2022 team photo"
-        sizes="100vw"
-        className={css({
-          flexGrow: 1,
-          maxHeight: '100%',
-          objectFit: 'cover',
-          width: '100%',
-          borderRadius: '24px',
-          alignSelf: "stretch",  
-        })} />
+      <VideoCard videoSrc='images/BMo 2023 Postseason.mp4' coverImageSrc='images/BMo 2023 Postseason Frame 1.png'/>
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
       <TextCard title={aboutUs.title} text={aboutUs.text} />
       <LinkCard

@@ -12,7 +12,9 @@ export function ContentCard({ title, onMore, children, spanDesktop }: { title: s
                 <Text style="h3">{title}</Text>
                 <MoreButton onClick={onMore} />
             </Row>
-            {children}
+            <Column gap="lg" align="stretch">
+                {children}
+            </Column>
         </ContentCardBase>
     )
 }
