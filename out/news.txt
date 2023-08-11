@@ -1,5 +1,5 @@
 1:HL["/Athletics/Mens_Ultimate/_next/static/css/c8a36bf42ed916fa.css",{"as":"style"}]
-0:["3BYk4IFfiBn5FX3ZXII_v",[[["",{"children":["news",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Athletics/Mens_Ultimate/_next/static/css/c8a36bf42ed916fa.css","precedence":"next"}]],"$L3"]]]]
+0:["ocO6DjS_Np-bo68VU4o4u",[[["",{"children":["news",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/Athletics/Mens_Ultimate/_next/static/css/c8a36bf42ed916fa.css","precedence":"next"}]],"$L3"]]]]
 4:I{"id":6951,"chunks":["310:static/chunks/0e5ce63c-2494bf72f9a1de64.js","176:static/chunks/176-5b86532ed3162432.js","316:static/chunks/316-6d520d52a79af0b5.js","605:static/chunks/605-37c2c925957d2d0a.js","298:static/chunks/298-979e89c29fd9c70e.js","185:static/chunks/app/layout-9e747316f43d798d.js"],"name":"","async":false}
 5:I{"id":7767,"chunks":["272:static/chunks/webpack-4613566b6009225b.js","971:static/chunks/fd9d1056-f26dbd97d49dacb4.js","596:static/chunks/596-11203898e98b2183.js"],"name":"default","async":false}
 6:I{"id":7920,"chunks":["272:static/chunks/webpack-4613566b6009225b.js","971:static/chunks/fd9d1056-f26dbd97d49dacb4.js","596:static/chunks/596-11203898e98b2183.js"],"name":"default","async":false}
