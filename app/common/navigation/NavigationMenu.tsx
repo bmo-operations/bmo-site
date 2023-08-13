@@ -128,7 +128,7 @@ const itemStyles: RecipeDefinition<RecipeVariantRecord> = {
 interface LinkProps { title: string, pathname: string, selectedPath: string | null }
 
 function Tab({ title, pathname, selectedPath }: LinkProps) {
-  const isSelected = pathname == selectedPath
+  const isSelected = selectedPath?.endsWith(pathname)
   const router = useRouter()
   // <UndecoratedLink href={pathname}>
   return (
