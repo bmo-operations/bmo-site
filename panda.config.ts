@@ -58,7 +58,7 @@ export default defineConfig({
           h3: { value: { base: '24px', md: '36px'} },
           h6: { value: { base: '20px', md: '32px'} },
           body: { value: { base: '16px', md: '18px'} },
-          caption: { value: '12px' },
+          caption: { value: { base: '16px', md: '12px'} },
         },
         spacing: { ...sizes },
         radii: { ...sizes }

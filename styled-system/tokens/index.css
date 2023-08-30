@@ -1383,7 +1383,7 @@
   --font-sizes-h3: 24px;
   --font-sizes-h6: 20px;
   --font-sizes-body: 16px;
-  --font-sizes-caption: 12px;
+  --font-sizes-caption: 16px;
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 12px;
@@ -1403,6 +1403,7 @@
     --font-sizes-h3: 36px;
     --font-sizes-h6: 32px;
     --font-sizes-body: 18px;
+    --font-sizes-caption: 12px;
     --spacing-xs: 8px;
     --spacing-sm: 12px;
     --spacing-md: 16px;

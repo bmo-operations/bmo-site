@@ -1,4 +1,5 @@
-import { styled, Column, Row } from "styled-system/jsx";
+import { useMemo } from "react";
+import { styled, Column, Row, Flex } from "styled-system/jsx";
 import { Text } from "./theme/global";
 
 export interface ContentProps<T> {
@@ -23,16 +24,18 @@ interface ContentGridProps<T> {
     contentName: string,
     content: T[],
     element: (item: T) => JSX.Element,
+    headerWidget?: JSX.Element,
 }
 
-export function ContentGrid<T>({ year, contentName, content, element }: ContentGridProps<T>) {
+export function ContentGrid<T>({ year, contentName, content, element, headerWidget }: ContentGridProps<T>) {
 
-    const contentCards = content.map(c => element(c))
+    const contentCards = useMemo(() => content.map(c => element(c)), [content])
     return (
         <Column gap="xl" align="stretch">
-            <Row justify="space-between">
+            <ResponsiveFlex justify="space-between">
                 <HeaderText first={`${year}`} second={contentName} />
-            </Row>
+                {headerWidget ?? headerWidget}
+            </ResponsiveFlex>
             <ContentGridBase>
                 {contentCards}
             </ContentGridBase>
@@ -52,6 +55,14 @@ const ContentGridBase = styled('div', {
         }
     },
 })
+
+const ResponsiveFlex = styled(Flex, {
+    base: {
+        flexDirection: { base: "column", md: "row" },
+        gap: { base: "sm", md: "0" },
+    },
+})
+
 
 export function HeaderText({ first, second }: { first: string, second: string }) {
     return (

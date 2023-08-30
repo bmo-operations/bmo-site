@@ -8,7 +8,7 @@ import ImageCard from './cards/ImageCard';
 import TextCard from './cards/TextCard';
 import { LinkCard } from './cards/LinkCard';
 import { blue, green, indigo, orange, red } from '@radix-ui/colors';
-import { ArchiveIcon, EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, Link1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import { ArchiveIcon, EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, InstagramLogoIcon, Link1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import {ContentCard, ContentItem} from './cards/ContentCard';
 import { TipItem } from '../zipstips/TipItem';
 import { randomTip } from '../zipstips/Tips';
@@ -23,6 +23,7 @@ import { allNews } from '../news/NewsRepository';
 import { styled } from "styled-system/jsx"
 import Image from 'next/image';
 import { VideoCard } from './cards/VideoCard';
+import { FacebookLogo } from 'phosphor-react';
 
 export default function HomePage() {
   const router = useRouter();
@@ -46,7 +47,8 @@ export default function HomePage() {
         title="Follow Us"
         links={[
           { icon: (<TwitterLogoIcon />), text: "Twitter", colorPalette: Object.values(blue), link: "https://twitter.com/BMoUltimate" },
-          { icon: (<FramerLogoIcon />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
+          { icon: (<InstagramLogoIcon />), text: "Instagram", colorPalette: Object.values(orange), link: "https://instagram.com/bmoultimate" },
+          { icon: (<FacebookLogo  />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
         ]} />
       <LinkCard
         title="Support Us"
