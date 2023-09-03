@@ -14,11 +14,11 @@ import { TipItem } from '../zipstips/TipItem';
 import { randomTip } from '../zipstips/Tips';
 import { ZipsTip } from '../zipstips/ZipsTip';
 import aboutUs from "../../public/content/home/aboutus.json"
-import homeVideos from "../../public/content/home/homeVideos.json"
 import * as Dialog from '@radix-ui/react-dialog';
 import { DialogOverlay } from '../common/Dialog';
 import { SupportPopup } from '../support/SupportPopup';
 import {videoThumbnail} from "../videos/Video";
+import { allVideos } from '../videos/VideoRepository';
 import { allNews } from '../news/NewsRepository';
 import { styled } from "styled-system/jsx"
 import Image from 'next/image';
@@ -67,7 +67,7 @@ export default function HomePage() {
             </Dialog.Portal>
         </Dialog.Root>}
         <ContentCard title="Watch" onMore={() => router.push('/videos')}>
-            {homeVideos.videos.map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
+            {[...allVideos().entries()].sort(e => e[0]).map(e => e[1]).flat().slice(0, 3).map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
             {allNews(3).map(pair => {
