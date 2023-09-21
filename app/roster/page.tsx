@@ -2,7 +2,7 @@
 
 import * as Dialog from "@radix-ui/react-dialog"
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { styled, Column } from 'styled-system/jsx';
 import { Container } from "../common/Container"
 import { Player } from "./Player"
@@ -11,6 +11,7 @@ import RosterCard from "./RosterCard"
 import RosterPopup from "./RosterPopup"
 import { ContentLayout, ContentGrid, HeaderText } from "../common/ContentLayout"
 import { DialogOverlay } from "../common/Dialog"
+import { RosterSort, SortMethod, SortState } from "./RosterSort";
 
 class PopupInfo {
     constructor(
@@ -20,12 +21,15 @@ class PopupInfo {
 }
 
 export default function RosterPage() {
+    const rosters = useMemo(() => allRosters(), [])
     const [popupPlayer, setPopupPlayer] = useState<PopupInfo | null>(null)
+    const [sortState, setSortState] = useState<SortState>({ method: SortMethod.Name, isAscending: true })
+
 
     return (
         <Container>
             <ContentLayout
-                content={allRosters()}
+                content={rosters}
                 element={(year, value) =>
                     (typeof value == "string")
                         ? <RosterImage key={year} year={year} />
@@ -33,6 +37,7 @@ export default function RosterPage() {
                             key={year}
                             year={year}
                             contentName="Roster"
+                            // content={[...value].sort((p1, p2) => sortPlayers(sortState, p1, p2))}
                             content={value}
                             element={p =>
                                 <RosterCard
@@ -42,6 +47,7 @@ export default function RosterPage() {
                                     onMore={() => setPopupPlayer(new PopupInfo(p, year))}
                                 />
                             }
+                            // headerWidget={<RosterSort currentSortState={sortState} onSort={s => setSortState(s)}/>}
                         />
                 }
             />
@@ -70,4 +76,11 @@ function RosterImage({ year }: { year: number }) {
             />
         </Column>
     )
+}
+
+function sortPlayers(sortState: SortState, p1: Player, p2: Player): number {
+    switch(sortState.method) {
+        case SortMethod.Name: return (sortState.isAscending ? p1.name.localeCompare(p2.name) : p2.name.localeCompare(p1.name))
+        case SortMethod.Number: return (sortState.isAscending ? p1.number - p2.number : p2.number - p1.number)
+    }
 }
