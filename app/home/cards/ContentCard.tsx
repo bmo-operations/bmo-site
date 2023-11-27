@@ -80,7 +80,7 @@ const ContentItemBase = styled(UndecoratedA, {
     base: {
         margin: "-12px",
         padding: "12px",
-        borderRadius: "12px",
+        borderRadius: "16px",
     
         "&:hover": { backgroundColor: "gray.5", },
         "&:focus": { backgroundColor: "gray.6", },    
