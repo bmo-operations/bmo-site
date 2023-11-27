@@ -11,7 +11,7 @@ import { blue, green, indigo, orange, red } from '@radix-ui/colors';
 import { ArchiveIcon, EnvelopeClosedIcon, EnvelopeOpenIcon, FramerLogoIcon, InstagramLogoIcon, Link1Icon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import {ContentCard, ContentItem} from './cards/ContentCard';
 import { TipItem } from '../zipstips/TipItem';
-import { randomTip } from '../zipstips/Tips';
+import { randomTip, todaysTip } from "../zipstips/Tips";
 import { ZipsTip } from '../zipstips/ZipsTip';
 import aboutUs from "../../public/content/home/aboutus.json"
 import * as Dialog from '@radix-ui/react-dialog';
@@ -29,7 +29,7 @@ export default function HomePage() {
   const router = useRouter();
   const [tipOfTheDay, setTipOfTheDay] = useState<ZipsTip>();
   const [isSupportPopupOpen, setSupportPopupOpen] = useState(false);
-  useEffect(() => setTipOfTheDay(randomTip()), []) //need to set using effect for SSR to work
+  useEffect(() => setTipOfTheDay(todaysTip() ?? randomTip()), []) //need to set using effect for SSR to work
   useEffect(() => console.log("isSupportPopupOpen = ", isSupportPopupOpen), [isSupportPopupOpen])
   return (
     <HomeCardLayout>

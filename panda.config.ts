@@ -63,6 +63,25 @@ export default defineConfig({
         spacing: { ...sizes },
         radii: { ...sizes }
       },
+		keyframes: {
+		  boomerang: {
+			  '0%': { opacity: '1', transform: 'scale(1)', bottom: "-64px" },
+			  '50%': {  opacity: '0.8', transform: 'scale(0.65)', bottom: "64px", left: "calc(50% - 36px)" },
+			  '100%': { opacity: '1', transform: 'scale(1)', bottom: "-64px", left: "calc(100% + 72px)" },
+		  },
+		 	moveLeft: {
+		  		'0%': { left: "-144px" },
+	 	 		'100%': { left: "calc(100% + 72px)" },
+		  	},
+			fadeIn: {
+		  		'0%': { opacity: "0"},
+				'100%': { opacity: "1" },
+		  	},
+			fadeOut: {
+			  	'0%': { opacity: "1"},
+				'100%': { opacity: "0" },
+			},
+		},
     },
 
     patterns: {

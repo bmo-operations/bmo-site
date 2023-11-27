@@ -24,7 +24,7 @@ export default function ZipsTips() {
                     <SearchBar key="ztips-search-bar" placeholder="Search tips" value={searchTerm} onChange={value => setSearchTerm(value)} />
                 </Row>
                 <Column gap="32px" align="stretch">
-                    {filteredTips.map(t => <TipItem tip={t} />)}
+                    {filteredTips.map(t => <TipItem tip={t} key={t.date} />)}
                 </Column>
             </Column>
         </Container>
