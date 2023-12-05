@@ -72,14 +72,14 @@ export const Button = styled('button', {
         justifyContent: "center",
         base: {
             height: '44px',
-            padding: '8px',
+            padding: '8px 12px',
             borderRadius: '16px',
             fontSize: '100%',
             gap: '8px',
         },
         md: {
             height: '56px',
-            padding: '8px',
+            padding: '8px 12px',
             borderRadius: '16px',
             fontSize: '100%',
             gap: '8px',

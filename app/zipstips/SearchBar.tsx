@@ -7,8 +7,8 @@ export function SearchBar({ value, placeholder, onChange }: { value: string, pla
 const SearchBarBase = styled('input', {
     base: {
         padding: '16px',
-        backgroundColor: '$gray3',
-        borderRadius: '9999px',
+        backgroundColor: 'gray.3',
+        borderRadius: '16px',
         border: 'none',
         width: '100%',    
     },

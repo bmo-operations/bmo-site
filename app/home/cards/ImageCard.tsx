@@ -3,13 +3,14 @@ import React from 'react';
 import { styled, Row } from "styled-system/jsx";
 import { Text } from '../../common/theme/global';
 import { HomeCard } from '../HomeCard';
+import { ArrowRight } from 'phosphor-react';
 
 export default function ImageCard({ title, imageSrc, onClick }: { title: string, imageSrc: string, onClick: () => void }) {
     return (
         <ImageCardLayout onClick={e => onClick()}>
-            <ContentLayout justify='space-between' align='center'>
+            <ContentLayout justify='space-between' align='center' css={{ fontSize: "x-large" }}>
                 <Text style="h3" color="accent">{title}</Text>
-                <ArrowRightIcon width={30} height={30} />
+                <ArrowRight />
             </ContentLayout>
         </ImageCardLayout>
     )

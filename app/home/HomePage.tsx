@@ -23,7 +23,7 @@ import { allNews } from '../news/NewsRepository';
 import { styled } from "styled-system/jsx"
 import Image from 'next/image';
 import { VideoCard } from './cards/VideoCard';
-import { FacebookLogo } from 'phosphor-react';
+import { ArchiveBox, EnvelopeOpen, EnvelopeSimple, FacebookLogo, InstagramLogo, Link, Package, TwitterLogo } from 'phosphor-react';
 
 export default function HomePage() {
   const router = useRouter();
@@ -38,24 +38,11 @@ export default function HomePage() {
       <ImageCard title="Roster" imageSrc="/images/team_crump_2022.jpg" onClick={() => router.push('/roster')} />
       <TextCard title={aboutUs.title} text={aboutUs.text} />
       <LinkCard
-        title="Interested in trying out or playing ultimate at Brown?"
-        links={[
-          { icon: (<EnvelopeOpenIcon />), text: "Email the captains", colorPalette: Object.values(red), link: "mailto:bmo.captains@gmail.com" },
-          { icon: (<EnvelopeClosedIcon />), text: "Join the listserv", colorPalette: Object.values(red), link: "https://listserv.brown.edu/cgi-bin/wa?SUBED1=BMOTION" },
-        ]} />
-      <LinkCard
-        title="Follow Us"
-        links={[
-          { icon: (<TwitterLogoIcon />), text: "Twitter", colorPalette: Object.values(blue), link: "https://twitter.com/BMoUltimate" },
-          { icon: (<InstagramLogoIcon />), text: "Instagram", colorPalette: Object.values(orange), link: "https://instagram.com/bmoultimate" },
-          { icon: (<FacebookLogo  />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
-        ]} />
-      <LinkCard
         title="Support Us"
         spanDesktop={2}
         links={[
-          { icon: (<ArchiveIcon />), text: "Buy team merch on Etsy", description: "These items are sold at cost, so feel free to donate as well!", colorPalette: Object.values(orange), link: "https://www.etsy.com/shop/bmomerchandise" },
-          { icon: (<Link1Icon />), text: "Donate to the team", colorPalette: Object.values(green), onClick: () => {
+          { icon: (<Package />), text: "Buy team merch on Etsy", description: "These items are sold at cost, so feel free to donate as well!", colorPalette: Object.values(orange), link: "https://www.etsy.com/shop/bmomerchandise" },
+          { icon: (<Link />), text: "Donate to the team", colorPalette: Object.values(green), onClick: () => {
               console.log("opening support popup")
               setSupportPopupOpen(true)
           } },
@@ -66,8 +53,21 @@ export default function HomePage() {
                 <SupportPopup onClose={() => setSupportPopupOpen(false)}/>
             </Dialog.Portal>
         </Dialog.Root>}
+        <LinkCard
+          title="Interested in trying out or playing ultimate at Brown?"
+          links={[
+            { icon: (<EnvelopeOpen />), text: "Email the captains", colorPalette: Object.values(red), link: "mailto:bmo.captains@gmail.com" },
+            { icon: (<EnvelopeSimple />), text: "Join the listserv", colorPalette: Object.values(red), link: "https://listserv.brown.edu/cgi-bin/wa?SUBED1=BMOTION" },
+        ]} />
+        <LinkCard
+          title="Follow Us"
+          links={[
+            { icon: (<TwitterLogo />), text: "Twitter", colorPalette: Object.values(blue), link: "https://twitter.com/BMoUltimate" },
+            { icon: (<InstagramLogo />), text: "Instagram", colorPalette: Object.values(orange), link: "https://instagram.com/bmoultimate" },
+            { icon: (<FacebookLogo  />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
+        ]} />
         <ContentCard title="Watch" onMore={() => router.push('/videos')}>
-            {[...allVideos().entries()].sort(e => e[0]).map(e => e[1]).flat().slice(0, 3).map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
+            {[...allVideos().entries()].sort(e => e[0]).reverse().map(e => e[1]).flat().slice(0, 3).map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
             {allNews(3).map(pair => {

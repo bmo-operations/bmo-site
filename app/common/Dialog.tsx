@@ -17,7 +17,7 @@ export const ModalWrapper = styled('div', {
         height: '100%',
         position: "fixed",
         top: '0',
-        padding: '5vh',
+        padding: '32px',
         display: "flex",
     }
 })
@@ -29,7 +29,7 @@ export const ModalContent = styled(Dialog.Content, {
         border: 'none',
         overflow: 'auto',
         position: 'relative',
-        maxHeight: '90vh',
+        maxHeight: 'calc(100vh - 64px)',
         margin: 'auto auto',
         maxWidth: '85ch',
         backgroundColor: 'gray.1',
@@ -48,5 +48,6 @@ export const PopupClose = styled('div', {
         alignItems: 'center',
         color: 'white',
         cursor: 'pointer',
+        fontSize: "x-large"
     }
 })

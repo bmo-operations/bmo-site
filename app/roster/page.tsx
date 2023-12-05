@@ -37,17 +37,17 @@ export default function RosterPage() {
                             key={year}
                             year={year}
                             contentName="Roster"
-                            // content={[...value].sort((p1, p2) => sortPlayers(sortState, p1, p2))}
-                            content={value}
+                            content={[...value].sort((p1, p2) => sortPlayers(sortState, p1, p2))}
+                            // content={value}
                             element={p =>
                                 <RosterCard
-                                    key={p.id}
+                                    key={p.id + `sort-${sortState.method}-${sortState.isAscending}`}
                                     player={p}
                                     year={year}
                                     onMore={() => setPopupPlayer(new PopupInfo(p, year))}
                                 />
                             }
-                            // headerWidget={<RosterSort currentSortState={sortState} onSort={s => setSortState(s)}/>}
+                            headerWidget={<RosterSort currentSortState={sortState} onSort={s => setSortState(s)}/>}
                         />
                 }
             />

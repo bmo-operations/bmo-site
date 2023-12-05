@@ -1,8 +1,8 @@
-import { Cross1Icon } from "@radix-ui/react-icons";
 import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
 import { Row, Column } from 'styled-system/jsx';
 import { Text } from "../common/theme/global";
 import { donationDescription, DonationInstructions } from "./Instructions";
+import { X } from "phosphor-react";
 
 export function SupportPopup({ onClose }: {onClose: () => void}) {
     return (
@@ -13,7 +13,7 @@ export function SupportPopup({ onClose }: {onClose: () => void}) {
                         <Row justify="space-between" gap="16px">
                             <Text style="h3">Donate</Text>
                             <PopupClose onClick={e => onClose()}>
-                                <Cross1Icon />
+                                <X />
                             </PopupClose>
                         </Row>
                         <Text style="body" color="secondary">{donationDescription}</Text>

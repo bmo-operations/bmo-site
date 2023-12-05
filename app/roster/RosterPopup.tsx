@@ -1,13 +1,13 @@
 import { Player } from "./Player";
 import Image from "next/image";
-import { BookmarkIcon, CalendarIcon, Cross1Icon, HomeIcon, Pencil2Icon, PersonIcon, PilcrowIcon, StackIcon } from "@radix-ui/react-icons";
+import { CalendarIcon, HomeIcon, Pencil2Icon, PersonIcon } from "@radix-ui/react-icons";
 import { styled, Column, Row } from "styled-system/jsx";
 import { NumberCircle, RosterNickname } from "./RosterComponents";
 import InfoItem from "./InfoItem";
 import { BioQuestion } from "./BioQuestion";
 import { Text } from "../common/theme/global";
 import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
-import { GraduationCap } from "phosphor-react";
+import { GraduationCap, X } from "phosphor-react";
 
 export default function RosterPopup({ player, year, onClose }: { player: Player, year: number, onClose: () => void }) {
     return (
@@ -23,7 +23,7 @@ export default function RosterPopup({ player, year, onClose }: { player: Player,
                         style={{ width: '100%', height: 'auto' }}
                     />
                     <RosterPopupClose onClick={e => onClose()}>
-                        <Cross1Icon />
+                        <X />
                     </RosterPopupClose>
                 </div>
                 <PopupBottom player={player} />
@@ -70,7 +70,7 @@ function BioQuestionItem({ bioQuestion }: { bioQuestion: BioQuestion }) {
     return (
         <Column gap="4px">
             <Text style="subtitle">{bioQuestion.question}</Text>
-            <Text style="body" color="secondary">{bioQuestion.answer}</Text>
+            <Text style="body" color="secondary" css={{ whiteSpace: "pre-wrap" }}>{bioQuestion.answer}</Text>
         </Column>
     )
 }

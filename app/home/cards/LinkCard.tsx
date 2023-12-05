@@ -1,9 +1,9 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { UndecoratedA } from "../../common/theme/global";
 import { Text } from "../../common/theme/global";
 import { HomeCard } from "../HomeCard";
 import { styled, Column, Row } from "styled-system/jsx";
 import { css } from "styled-system/css";
+import { ArrowRight } from "phosphor-react";
 
 export interface LinkInfo {
     icon?: React.ReactNode,
@@ -55,7 +55,7 @@ export function LinkItem({ info }: { info: LinkInfo }) {
             link={info.link != undefined || info.onClick != undefined }
             onClick={e => { if (info.onClick != undefined) info.onClick() }}
         >
-            <Row align="center" gap="16px" className={css({ width: "100%", height: "fit-content"})}>
+            <Row align="center" gap="16px" className={css({ width: "100%", height: "fit-content", fontSize: "18px"})}>
                 {info.icon != undefined && info.icon}
                 <Column
                     gap="4px"
@@ -65,7 +65,7 @@ export function LinkItem({ info }: { info: LinkInfo }) {
                     {info.description != undefined && <Text style="body">{info.description}</Text>}
                 </Column>
                 <div style={{ flexGrow: 1 }} />
-                { (info.link != undefined || info.onClick != undefined) && <ArrowRightIcon /> }
+                { (info.link != undefined || info.onClick != undefined) && <ArrowRight /> }
             </Row>
         </LinkItemBase >
     )

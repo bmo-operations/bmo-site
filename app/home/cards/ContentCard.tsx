@@ -1,9 +1,9 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import {Button, Text, UndecoratedA} from "../../common/theme/global";
 import { styled, Column, Row } from "styled-system/jsx";
 import { css } from "styled-system/css";
 import { HomeCard } from "../HomeCard";
 import Image from "next/image";
+import { ArrowRight } from "phosphor-react";
 
 export function ContentCard({ title, onMore, children, spanDesktop }: { title: string, onMore: () => void, children: React.ReactNode, spanDesktop?: "one" | "two" | undefined }) {
     return (
@@ -28,7 +28,7 @@ const ContentCardBase = styled(HomeCard, {
 function MoreButton({ onClick }: { onClick: () => void }) {
     return <MoreButtonBase onClick={e => onClick()}>
         <Text style="subtitle">More</Text>
-        <ArrowRightIcon />
+        <ArrowRight />
     </MoreButtonBase>
 }
 

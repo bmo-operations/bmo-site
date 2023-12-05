@@ -16,7 +16,7 @@ export function DonationInstructions() {
             <InstructionItem number={2} text={<Text style="subtitle">Select “Search for a Fund”</Text>} colorPalette={Object.values(gray)}/>
             <InstructionItem number={3} text={<Text style="subtitle">Search “Ultimate”</Text>} colorPalette={Object.values(gray)}/>
             <InstructionItem number={4} text={<Text style="subtitle">Select “Club Ultimate Frisbee (Men's)” or “Michael Franz '03 Endowment”</Text>} colorPalette={Object.values(gray)}/>
-            <InstructionItem number={5} text={<Text style="subtitle">If you have any questions, please reach out to bmo.captains@gmail.com</Text>} colorPalette={Object.values(gray)} link="mailto:bmo.captains@gmail.com"/>
+            <InstructionItem number={5} text={<Text css={{wordBreak: "break-word"}} style="subtitle">If you have any questions, please reach out to bmo.captains@gmail.com</Text>} colorPalette={Object.values(gray)} link="mailto:bmo.captains@gmail.com"/>
         </Column>
     )
 }

@@ -134,7 +134,7 @@ function Tab({ title, pathname, selectedPath }: LinkProps) {
   return (
     <TabBase 
       href={pathname} 
-      color={pathname == `${process.env.NEXT_PUBLIC_BASE_PATH}/` ? "accent" : "neutral"} 
+      color={pathname == `/` ? "accent" : "neutral"} 
       //@ts-ignore selectState doesn't exist
       selectState={isSelected ? "selected" : "unselected"} >
       <Text style="subtitle">{title}</Text>

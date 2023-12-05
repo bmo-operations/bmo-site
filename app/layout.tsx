@@ -21,7 +21,7 @@ export default function RootLayout({
         <Head/>
       </head>
       <body>
-        <Column className={css({ height: '100%', width: '100vw' })} align="stretch">
+        <Column className={css({ height: '100vh', width: '100vw' })} align="stretch">
           <NavigationMenu />
           <ScrollableContent>
             {children}

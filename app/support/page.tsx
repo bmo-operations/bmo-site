@@ -45,7 +45,7 @@ function TeamStoreLink() {
                 height={0}
                 style={{ width: '100%', height: 'auto' }}
                 />
-                <Row justify="space-between" padding="16px" align="center">
+                <Row justify="space-between" padding="16px 20px" align="center">
                     <Text style="subtitle" color="primary">Visit the Etsy Store</Text>
                     <ArrowRightIcon/>
                 </Row>
@@ -56,8 +56,8 @@ function TeamStoreLink() {
 
 const TeamStoreLinkBase = styled(Column, {
     base: {
-        border: "solid 1px $gray7",
-        backgroundColor: "$gray3",
+        border: "solid 1px token(colors.gray.7)",
+        backgroundColor: "gray.3",
         overflow: "clip",
         width: "100%",    
         borderRadius: {
