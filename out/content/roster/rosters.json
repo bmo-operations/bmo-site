@@ -520,29 +520,29 @@
                 }
               ]
         },
-        "riley": {
-            "id": "riley",
-            "name": "Riley Frey",
+        "emmett": {
+            "id": "emmett",
+            "name": "Emmett Young",
             "class": 2026,
-            "nickname": "Riles",
-            "height": "5′10″",
-            "hometown": "Washington, DC",
-            "highschool": "Jackson-Reed HS",
-            "concentration": "Literary Arts and photography",
-            "number": 67,
+            "nickname": "Stinkbug",
+            "height": "5′7″",
+            "hometown": "Burlington, VT",
+            "highschool": "Exeter Academy",
+            "concentration": "Geology",
+            "number": 15,
             "captain": false,
             "bioQuestions": [
                 {
                   "question": "A recent movie you saw + review",
-                  "answer": "Hunger Games Ballard of Songbirds and Snakes. This movie just added to the greatness the trilogy already is. If you didn't like it, watch it again. "
+                  "answer": "Saltburn. Too kid-friendly. I only watch serious movies."
                 },
                 {
                   "question": "What is one thing you will never do again?",
-                  "answer": "I willl never EVER take a math class again!"
+                  "answer": "Go back to the hellhole that is the state of Vermont"
                 },
                 {
                   "question": "What else?",
-                  "answer": "At CCC, Cam said he heard someone sleep-talking at 3 am. I made him tell me who it was and.....you guessed it, it was me. So I learned two things that night. 1. Cam doesn't sleep and 2. I sleep talk "
+                  "answer": "I might be the most gullible person on this team. Reflecting on it now, that's probably why I lose every argument with Jake."
                 }
               ]
         },
