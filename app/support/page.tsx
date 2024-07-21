@@ -1,12 +1,11 @@
 "use client"
 
 import { ArrowRightIcon } from '@radix-ui/react-icons';
+import Image from "next/image";
+import { Column, Row, styled } from 'styled-system/jsx';
 import { Container } from "../common/Container";
-import { styled, Row, Column } from 'styled-system/jsx';
-import { Text } from "../common/theme/global";
-import { UndecoratedA } from "../common/theme/global";
+import { Text, UndecoratedA } from "../common/theme/global";
 import { DonationInstructions, donationDescription } from "./Instructions";
-import Image from "next/image"
 
 export default function SupportPage() {
     return (
@@ -15,7 +14,7 @@ export default function SupportPage() {
                 <Column gap="32px" align="stretch">
                     <Column gap="8px" align="stretch">
                         <Text style="h2">Donate</Text>
-                        <Text style="body" color="primary">{donationDescription}</Text>
+                        <Text style="body" color="primary" whiteSpace="pre-wrap">{donationDescription}</Text>
                     </Column>
                     <InstructionCard gap="16px" padding="32px" align="stretch">
                         <Text style="subtitle">Instructions</Text>

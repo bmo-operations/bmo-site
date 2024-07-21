@@ -1,15 +1,14 @@
 "use client"
 
+import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
 import { usePathname, useRouter } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
-import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
-import { breakpoints, UndecoratedLink } from '../theme/global';
-import { Text } from '../theme/global';
-import { Container } from '../Container';
-import { styled, Column, Row } from "styled-system/jsx";
+import { useEffect, useState } from 'react';
+import { css } from "styled-system/css";
+import { Column, Row, styled } from "styled-system/jsx";
 import { RecipeDefinition, RecipeVariantRecord } from 'styled-system/types/recipe';
-import { css } from "styled-system/css"
+import { Container } from '../Container';
+import { Text, UndecoratedLink, breakpoints } from '../theme/global';
 
 export default function NavigationMenu() {
   const currentPath = usePathname();
@@ -42,10 +41,11 @@ export default function NavigationMenu() {
             </Trigger>
             <Popup>
               <Column>
-                <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
+                <MenuItem title='News' pathname="/news" selectedPath={currentPath} />
+                <MenuItem title='Recruiting' pathname="/recruiting" selectedPath={currentPath} />
                 <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
                 <MenuItem title='Photos' pathname="https://photos.app.goo.gl/U1kvAPF6PReKE6nY6" selectedPath={currentPath} />
-                <MenuItem title='News' pathname="/news" selectedPath={currentPath} />
+                <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
               </Column>
             </Popup>
           </NavigationMenuPrimitive.Item>

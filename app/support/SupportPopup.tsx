@@ -1,8 +1,8 @@
-import {ModalContent, ModalWrapper, PopupClose} from "../common/Dialog";
-import { Row, Column } from 'styled-system/jsx';
-import { Text } from "../common/theme/global";
-import { donationDescription, DonationInstructions } from "./Instructions";
 import { X } from "phosphor-react";
+import { Column, Row } from 'styled-system/jsx';
+import { ModalContent, ModalWrapper, PopupClose } from "../common/Dialog";
+import { Text } from "../common/theme/global";
+import { DonationInstructions, donationDescription } from "./Instructions";
 
 export function SupportPopup({ onClose }: {onClose: () => void}) {
     return (
@@ -16,7 +16,7 @@ export function SupportPopup({ onClose }: {onClose: () => void}) {
                                 <X />
                             </PopupClose>
                         </Row>
-                        <Text style="body" color="secondary">{donationDescription}</Text>
+                        <Text style="body" color="secondary" whiteSpace="pre-wrap">{donationDescription}</Text>
                     </Column>
                     <Column gap="16px" align="stretch">
                         <Text style="subtitle">Instructions</Text>
