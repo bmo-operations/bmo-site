@@ -17,6 +17,7 @@ export default function RecruitingPage() {
                     alt="Picture of players at BMo tryouts"
                     width={0}
                     height={0}
+                    sizes="100vw, 50vw, 25vw"
                     style={{
                         width: "100%",
                         borderRadius: "24px",
