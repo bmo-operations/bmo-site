@@ -1,11 +1,11 @@
-import { styled, Row } from 'styled-system/jsx';
+import { Row, styled } from 'styled-system/jsx';
 import { Text } from "../common/theme/global";
 
 export function RosterNickname({ nickname }: { nickname: string }) {
     return (
         <Row gap="4px">
             <Text style="body" color="tertiary">aka</Text>
-            <Text style="body" color="secondary">{nickname}</Text>
+            <Text style="body" color="secondary" maxLines='one'>{nickname}</Text>
         </Row>
     )
 }

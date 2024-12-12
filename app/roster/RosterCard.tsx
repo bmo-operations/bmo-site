@@ -45,3 +45,11 @@ const RosterCardBase = styled(Column, {
         overflow: 'hidden',
     }
 })
+
+const RosterPlaceholder = styled('div', {
+    base: {
+        width: '100%',
+        aspectRatio: "16/9",
+        backgroundColor: 'token(colors.gray.a.3)',
+    }
+})

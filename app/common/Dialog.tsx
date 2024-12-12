@@ -7,7 +7,8 @@ export const DialogOverlay = styled(Dialog.Overlay, {
         top: '0',
         backgroundColor: 'black.a.11',
         width: '100%',
-        height: '100%'
+        height: '100%',
+        cursor: 'pointer',
     }
 })
 

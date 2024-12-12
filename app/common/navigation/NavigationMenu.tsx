@@ -46,6 +46,7 @@ export default function NavigationMenu() {
                 <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
                 <MenuItem title='Photos' pathname="https://photos.app.goo.gl/U1kvAPF6PReKE6nY6" selectedPath={currentPath} />
                 <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
+                <MenuItem title='Playbook' pathname="https://www.youtube.com/watch?v=dQw4w9WgXcQ" selectedPath={currentPath} />
               </Column>
             </Popup>
           </NavigationMenuPrimitive.Item>
