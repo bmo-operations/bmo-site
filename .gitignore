@@ -3,3 +3,5 @@ node_modules
 .vscode
 bmosite_vscode_workspace.code-workspace
 .DS_Store
+.opennext
+.wrangler
