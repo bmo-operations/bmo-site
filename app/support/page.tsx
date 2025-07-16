@@ -38,7 +38,7 @@ function TeamStoreLink() {
         <UndecoratedA href="https://www.etsy.com/shop/bmomerchandise" target="_blank" rel="noopener noreferrer">
             <TeamStoreLinkBase align="stretch">
                 <Image 
-                src="images/team_store.png" 
+                src="/images/team_store.png" 
                 alt="Picture of the team store"
                 width={1200}
                 height={0}

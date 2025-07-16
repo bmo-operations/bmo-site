@@ -1,14 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withExportImages = require('next-export-optimize-images')
 
-const nextConfig = withExportImages({
-    output: 'export',
-    experimental: {
-        appDir: true,
-    },
-
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH,
-
+const nextConfig = {
+    // output: 'export',
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/i,
@@ -27,6 +20,6 @@ const nextConfig = withExportImages({
             }
         ]
     },
-});
+};
 
 module.exports = nextConfig;

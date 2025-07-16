@@ -1,0 +1,2664 @@
+{
+    "2025": {
+      "aayush": {
+        "id": "aayush",
+        "name": "Aayush Muthuswamy",
+        "class": 2028,
+        "nickname": "Yoshi",
+        "height": "6′3″",
+        "hometown": "Seattle, WA",
+        "highschool": "Lincoln High School",
+        "concentration": "Undecided",
+        "captain": false,
+        "number": 40,
+        "bioQuestions": [
+          {
+            "question": "Who knows you the best?",
+            "answer": "Our son"
+          },
+          {
+            "question": "What about yourself do you hide from others?",
+            "answer": "When I'm nervous I do the macarena "
+          },
+          {
+            "question": "Do you consider yourself a free thinker? If yes, what's one true unpopular opinion you have? (not something meaningless like \"french toast is bad\")",
+            "answer": "a) No.\nb) French toast is bad"
+          }
+        ]
+      },
+      "adrian": {
+        "id": "adrian",
+        "name": "Adrian Lin",
+        "class": 2026,
+        "nickname": "Freckles",
+        "height": "6′4″",
+        "hometown": "Andover, MA",
+        "highschool": "Phillips Andover",
+        "concentration": "Neuroscience",
+        "captain": false,
+        "number": 6,
+        "bioQuestions": [
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "Ask chatgpt to fabricate fake siblings for me"
+          },
+          {
+            "question": "Which of the coaches is the most skibidi and why?",
+            "answer": "Jake introduced us to skibidi toilet at flo wo '24 claiming \"this is your generation's 'The Wire.'\" It seems he was trying to call us gen alpha (not true!) but the fact he knew about it before all of us surely implicates his skibidity."
+          },
+          {
+            "question": "Chart the course of your marriage",
+            "answer": "Picture a perfect marriage: that's Eli's.\nPicture a slightly more perfect one: that's mine."
+          }
+        ]
+      },
+      "alexander": {
+        "id": "alexander",
+        "name": "Alexander Paul Drogin",
+        "class": 2026,
+        "nickname": "Heliogabalus",
+        "height": "5′7″9”’14””",
+        "hometown": "Brooklyn, NY",
+        "highschool": "BARD Manhattan",
+        "concentration": "Classics, Economics",
+        "captain": false,
+        "number": 77,
+        "bioQuestions": [
+          {
+            "question": "Describe a time in your life when you felt",
+            "answer": "On Tuesday I walked to class with a cup of coffee and an apple. I ate the apple, I heard the birds singing. Some girls stopped and said “is that a ratty mug?” It was. “How’d you get that,” she asked. She has yet to live at Brown; she has yet to love at Brown; she has yet to steal mugs from the ratty and jump from the tops of trees. I felt profoundly sorry for this girl, and equally grateful for life as I experienced it."
+          },
+          {
+            "question": "Thoughts on Thayer Street?",
+            "answer": "Usually on Thayer street I think about that one pizza place with the 5$ pizza slices and I wonder who goes there and how regularly. Either they’ve never had really good well-priced pizza, or this is the single greatest pizza place that exists. But surely that can’t be true. Why wasn’t that place on Diners, Drive-Ins, and Dives? Where’s Guy Fieri nowadays? How’s he doing?"
+          },
+          {
+            "question": "Best argument you won in your head",
+            "answer": "Won an argument with myself about chickpeas once. Don’t ask me about it though, I’m a very bad loser."
+          }
+        ]
+      },
+      "amrik": {
+        "id": "amrik",
+        "name": "Amrik Eadara",
+        "class": 2026,
+        "nickname": "Rik",
+        "height": "6′1″",
+        "hometown": "Sharon, MA",
+        "highschool": "Sharon High School",
+        "concentration": "Health & Human Biology and Public Health",
+        "captain": false,
+        "number": 10,
+        "bioQuestions": [
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "Return to the hellhole that is Sharon, Massachusetts"
+          },
+          {
+            "question": "Chart the course of your marriage",
+            "answer": "Get married --> fail another eating contest against Henry Egan --> she leaves me for Henry Egan"
+          },
+          {
+            "question": "What reality TV show would you do the best on?",
+            "answer": "Hell's Kitchen (Gordon Ramsay would be delighted to experience the mastery of my pasta craftsmanship)"
+          }
+        ]
+      },
+      "andy": {
+        "id": "andy",
+        "name": "Andy Burris",
+        "class": 2025,
+        "nickname": "AB",
+        "height": "5′11″",
+        "hometown": "Washington, DC",
+        "highschool": "Jackson-Reed",
+        "concentration": "Computer Science",
+        "captain": false,
+        "number": 76,
+        "bioQuestions": [
+          {
+            "question": "Best argument you won in your head",
+            "answer": "the ancients said i had to. it was all according to their movements. what movements? i haven't seen those since you were the recents."
+          },
+          {
+            "question": "What's the rarest emotion in your life?",
+            "answer": "swagless"
+          },
+          {
+            "question": "What holiday gives you the most anxiety?",
+            "answer": "Presidents' Day. No one ever creates a gift guide or anything what am I supposed to get for George Washington? Not to mention Franklin Pierce."
+          }
+        ]
+      },
+      "caleb": {
+        "id": "caleb",
+        "name": "Caleb Moran",
+        "class": 2025,
+        "nickname": "Cleb",
+        "height": "5′11″",
+        "hometown": "Arlington, VA",
+        "highschool": "H-B Woodlawn",
+        "concentration": "APMA-CS",
+        "captain": false,
+        "number": 30,
+        "bioQuestions": [
+          {
+            "question": "Man I miss Matias standing on tables",
+            "answer": "A clear and direct consequence of the Biden presidency"
+          },
+          {
+            "question": "What's the smallest change you could make to your life right now that would result in meaningful improvement?",
+            "answer": "Getting rid of the bugs under my skin"
+          },
+          {
+            "question": "At what point in the abandoned railroad tunnel under the SciLi do you turn back?",
+            "answer": "After I plant the TNT"
+          }
+        ]
+      },
+      "camilo": {
+        "id": "camilo",
+        "name": "Camilo Tamayo-Rousseau",
+        "class": 2027,
+        "nickname": "Lolo",
+        "height": "6′",
+        "hometown": "Seattle, WA",
+        "highschool": "The Downtown School",
+        "concentration": "Computer Science",
+        "captain": false,
+        "number": 13,
+        "bioQuestions": [
+          {
+            "question": "Bro, I'm pissed! I'm so pissed!",
+            "answer": "The fire alarm went off again in Grad B"
+          },
+          {
+            "question": "What’s a thought you have often?",
+            "answer": "Where is Amrik?"
+          },
+          {
+            "question": "We all have that one friend",
+            "answer": "who secretly watches Kai Cenat"
+          }
+        ]
+      },
+      "chienyu": {
+        "id": "chienyu",
+        "name": "Chienyu Xiong",
+        "class": 2027,
+        "nickname": "chien sauce",
+        "height": "6′1″",
+        "hometown": "Bellevue, WA",
+        "highschool": "Interlake Senior High",
+        "concentration": "Math CS",
+        "captain": false,
+        "number": 28,
+        "bioQuestions": [
+          {
+            "question": "Chart the course of your marriage",
+            "answer": "i’m a bachelor until retirement 35. sell my business at 50. marry a hottie at 65. "
+          },
+          {
+            "question": "Life on the line, you need to be willingly invited into CPax's home by the end of the night. What's your plan?",
+            "answer": "dress up all sexy. wait outside."
+          },
+          {
+            "question": "We all have that one friend",
+            "answer": "who doesn’t shower before going to parties, but showers right before a game. priorities."
+          }
+        ]
+      },
+      "devan": {
+        "id": "devan",
+        "name": "Devan Hernandez",
+        "class": 2027,
+        "nickname": "Devski",
+        "height": "5′10″",
+        "hometown": "Newburyport, MA",
+        "highschool": "Phillips Academy Andover",
+        "concentration": "Engineering",
+        "captain": false,
+        "number": 23,
+        "bioQuestions": [
+          {
+            "question": "What will you do to get us out of this lame nickname era?",
+            "answer": "TRUNCATE EVERYTHIN"
+          },
+          {
+            "question": "Man I miss Matias standing on tables",
+            "answer": "Matias no elevated surface is like bread with no butter, ice with no spice, chicken with no bake. It just doesn’t comput"
+          },
+          {
+            "question": "What holiday gives you the most anxiety?",
+            "answer": "Ever since that one movie where the president only pardons one turkey and the rest have to fend for themselves it’s been thanksgivin"
+          }
+        ]
+      },
+      "eli": {
+        "id": "eli",
+        "name": "Eli Chang",
+        "class": 2027,
+        "nickname": "E",
+        "height": "5′3″",
+        "hometown": "Lexington, MA",
+        "highschool": "Lexington High School",
+        "concentration": "Plain ol' Biology",
+        "captain": false,
+        "number": 42,
+        "bioQuestions": [
+          {
+            "question": "Pet peeve ",
+            "answer": "Watching someone smush their bagel in the bagel slicer, rip it in half, put it in the toaster, and have it go up in flames"
+          },
+          {
+            "question": "Chart the course of your marriage",
+            "answer": "Married at 22"
+          },
+          {
+            "question": "Do you consider yourself a free thinker? If yes, what's one true unpopular opinion you have? (not something meaningless like \"french toast is bad\")",
+            "answer": "Jesus loves you so much that he willingly sacrificed his life so that you could be made pure in God's eyes despite your wicked sins and be in a relationship with him. There is nothing in the world you could do to make him love you more, and there is nothing you could do to make him love you less."
+          }
+        ]
+      },
+      "emmett": {
+        "id": "emmett",
+        "name": "Emmett Young",
+        "class": 2026,
+        "nickname": "Stinkbug",
+        "height": "5′8″",
+        "hometown": "Burlington, VT",
+        "highschool": "Exeter Academy",
+        "concentration": "Weak",
+        "captain": false,
+        "number": 15,
+        "bioQuestions": [
+          {
+            "question": "Bro, I'm pissed! I'm so pissed!",
+            "answer": "Evil Stout and Nate have stolen the gaze of my beloved Jake. "
+          },
+          {
+            "question": "What about yourself do you hide from others?",
+            "answer": "My USAU registration status"
+          },
+          {
+            "question": "What's the rarest emotion in your life?",
+            "answer": "Vermont love"
+          }
+        ]
+      },
+      "eric": {
+        "id": "eric",
+        "name": "Eric Du",
+        "class": 2028,
+        "nickname": "big guac",
+        "height": "7′",
+        "hometown": "Chapel Hill, NC",
+        "highschool": "Chapel Hill High School",
+        "concentration": "Apma Econ",
+        "captain": false,
+        "number": 2,
+        "bioQuestions": [
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "die"
+          },
+          {
+            "question": "Life on the line, you need to be willingly invited into CPax's home by the end of the night. What's your plan?",
+            "answer": "i can’t say what i want to say…"
+          },
+          {
+            "question": "What holiday gives you the most anxiety?",
+            "answer": "the one in february"
+          }
+        ]
+      },
+      "isaac": {
+        "id": "isaac",
+        "name": "Isaac Holtz",
+        "class": 2027,
+        "nickname": "sack",
+        "height": "6′1″",
+        "hometown": "New York, NY",
+        "highschool": "Fieldston",
+        "concentration": "Geo-bio",
+        "captain": false,
+        "number": 22,
+        "bioQuestions": [
+          {
+            "question": "What about yourself do you hide from others?",
+            "answer": "My fear of Jack Conroy."
+          },
+          {
+            "question": "Favorite Brown University art installation?",
+            "answer": "The freak show installation (Jack Conroy)."
+          },
+          {
+            "question": "Thoughts on Thayer Street?",
+            "answer": "Not sure about Thayer, but let me tell you, ask Caleb Moran to take you to his \"secret place.\""
+          }
+        ]
+      },
+      "jack": {
+        "id": "jack",
+        "name": "Jack Conroy",
+        "class": 2028,
+        "nickname": "Juka Juka",
+        "height": "6′3″",
+        "hometown": "New Rochelle, NY",
+        "highschool": "Fordham Prep",
+        "concentration": "Mechanical Engineering",
+        "captain": false,
+        "number": 0,
+        "bioQuestions": [
+          {
+            "question": "How's your relationship with the arts?",
+            "answer": "I know that we not in love, she don't love me either"
+          },
+          {
+            "question": "What about yourself do you hide from others?",
+            "answer": "My crippling desire to be the little spoon"
+          },
+          {
+            "question": "What's the smallest change you could make to your life right now that would result in meaningful improvement?",
+            "answer": "Stop sleeping to watch more Instagram reels for knowledge optimization"
+          }
+        ]
+      },
+      "jason": {
+        "id": "jason",
+        "name": "Jason Tapper",
+        "class": 2026,
+        "nickname": "Captain Ultimate",
+        "height": "6′0″",
+        "hometown": "Atlanta, GA",
+        "highschool": "Pace Academy ",
+        "concentration": "APMA-CS",
+        "captain": false,
+        "number": 9,
+        "bioQuestions": [
+          {
+            "question": "What else?",
+            "answer": "The human body did not evolve to sit "
+          },
+          {
+            "question": "At what point in the abandoned railroad tunnel under the SciLi do you turn back?",
+            "answer": "When my echolocation becomes better than my sight"
+          },
+          {
+            "question": "Do you trust me?",
+            "answer": "Only on prime number days of the month"
+          }
+        ]
+      },
+      "jem": {
+        "id": "jem",
+        "name": "Jem Wiener",
+        "class": 2028,
+        "nickname": "JWien, The Wiener, Wien, Wienerman, JWinkle",
+        "height": "7′8″",
+        "hometown": "Maplewood, NJ",
+        "highschool": "Columbia High School",
+        "concentration": "Engineering Physics",
+        "captain": false,
+        "number": 99,
+        "bioQuestions": [
+          {
+            "question": "What’s a thought you have often?",
+            "answer": "Whenever I'm riding down an escalator I wonder if I can push the person in front of me and watch everyone topple like dominoes"
+          },
+          {
+            "question": "What's the rarest emotion in your life?",
+            "answer": "Speaking of emotions I saw inside out 2 like a week ago and it's a scam. Not nearly as good as the first. I barely cried twice."
+          },
+          {
+            "question": "What reality TV show would you do the best on?",
+            "answer": "MILF Manor"
+          }
+        ]
+      },
+      "karl": {
+        "id": "karl",
+        "name": "Karl Hokkanen",
+        "class": 2028,
+        "nickname": "KB1",
+        "height": "6′4″",
+        "hometown": "Rockport, ME",
+        "highschool": "Camden Hills",
+        "concentration": "Undecided",
+        "captain": false,
+        "number": 4,
+        "bioQuestions": [
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "rim spike on a guy’s face after scoring in an unimportant game"
+          },
+          {
+            "question": "What's the smallest change you could make to your life right now that would result in meaningful improvement?",
+            "answer": "get a girlfriend"
+          },
+          {
+            "question": "Rank your inner monologue",
+            "answer": "Top tier. Can become very hostile at times but rarely attempts full takeover of vocal functions. Provides host brain with great trial data for conversations and social interactions."
+          }
+        ]
+      },
+      "luca": {
+        "id": "luca",
+        "name": "Luca Duclos-Orsello",
+        "class": 2024,
+        "nickname": "Luca Ducs",
+        "height": "6′2″",
+        "hometown": "Somerville, MA",
+        "highschool": "Somerville High School",
+        "concentration": "Master of Public Affairs",
+        "captain": false,
+        "number": 11,
+        "bioQuestions": [
+          {
+            "question": "How's your relationship with the arts?",
+            "answer": "While I love the arts, they don't love me back. Despite my perennial efforts, they have certified me as a bachelor of the arts, which is really sad."
+          },
+          {
+            "question": "What will you do to get us out of this lame nickname era?",
+            "answer": "The Big Guac and his shenanigans"
+          },
+          {
+            "question": "Thoughts on brutalism?",
+            "answer": "The lamest artistic style since petroglyphs"
+          }
+        ]
+      },
+      "matias": {
+        "id": "matias",
+        "name": "Matias Lee",
+        "class": 2025,
+        "nickname": "Teez",
+        "height": "6′",
+        "hometown": "Upper Valley, NH",
+        "highschool": "Hanover High School",
+        "concentration": "Applied Mathematics and Biology",
+        "captain": false,
+        "number": 19,
+        "bioQuestions": [
+          {
+            "question": "Do you consider yourself a free thinker? If yes, what's one true unpopular opinion you have? (not something meaningless like \"french toast is bad\")",
+            "answer": "Nutella on lettuce is an electric snack"
+          },
+          {
+            "question": "Thoughts on brutalism?",
+            "answer": "Gimme gimme gimme, something about the stone and the anger and sadness in the architecture that gets me going. "
+          },
+          {
+            "question": "Rank your inner monologue",
+            "answer": "#1 Me #2 Teez #3 The abyss "
+          }
+        ]
+      },
+      "noah": {
+        "id": "noah",
+        "name": "Noah Urrutia",
+        "class": 2025,
+        "nickname": "Fence",
+        "height": "5′7″",
+        "hometown": "Mountain Lakes, NJ",
+        "highschool": "Mountain Lakes High School",
+        "concentration": "Biochem",
+        "captain": false,
+        "number": 78,
+        "bioQuestions": [
+          {
+            "question": "Pet peeve ",
+            "answer": "People going over the speed limit"
+          },
+          {
+            "question": "Chart the course of your marriage",
+            "answer": "Get married, pit vipers get stolen, my girl gets stolen. Causation."
+          },
+          {
+            "question": "What's an early memory of confronting your own human weakness?",
+            "answer": "Chose to eat a spoonful of dirt instead of a bowl of tomatoes"
+          }
+        ]
+      },
+      "nolan": {
+        "id": "nolan",
+        "name": "Nolan McCloskey",
+        "class": 2028,
+        "nickname": "Nono",
+        "height": "6′0″",
+        "hometown": "Wayne, PA",
+        "highschool": "The Haverford School",
+        "concentration": "Math-CS",
+        "captain": false,
+        "number": 66,
+        "bioQuestions": [
+          {
+            "question": "Which of the coaches is the most skibidi and why?",
+            "answer": "At CCC I was sliding on the ground post-bid, I look up and make eye contact with Jake and it was then that I knew he was the most skibidi. We stare deep into each others souls (he was eye contact maxxing), and I daren't look away for fear he would Fanum Tax my playtime. His eyes were representative of the first and second Os in Ohio. It was beautiful."
+          },
+          {
+            "question": "Chart the course of your marriage",
+            "answer": "I'll get back to you after this weekend"
+          },
+          {
+            "question": "What's an early memory of confronting your own human weakness?",
+            "answer": "I remember when I was 6 or so years old I began to realize that eventually I would die, and eventually my family would die, and eventually everyone would die. I became very sad, and I cried. But then my mom gave me her iPod to play Doodle Jump on and I became less sad. Although we may die we cannot allow ourselves to squander life. "
+          }
+        ]
+      },
+      "oliver": {
+        "id": "oliver",
+        "name": "Oliver Kahn",
+        "class": 2027,
+        "nickname": "Big Dawg",
+        "height": "5′7″",
+        "hometown": "Chevy Chase, MD",
+        "highschool": "Bethesda Chevy Chase",
+        "concentration": "Math",
+        "captain": false,
+        "number": 32,
+        "bioQuestions": [
+          {
+            "question": "Pet peeve ",
+            "answer": "Fear of the unknown. Live vicariously."
+          },
+          {
+            "question": "What's an early memory of confronting your own human weakness?",
+            "answer": "Cremating my pet donkey"
+          },
+          {
+            "question": "What reality TV show would you do the best on?",
+            "answer": "The one where they have the boss who’s like chill and there’s a paper company"
+          }
+        ]
+      },
+      "oscar": {
+        "id": "oscar",
+        "name": "Oscar Low",
+        "class": 2025,
+        "nickname": "Bo",
+        "height": "5′11″",
+        "hometown": "The Purple Valley",
+        "highschool": "Mount Greylock",
+        "concentration": "International Politics and Math",
+        "captain": false,
+        "number": 7,
+        "bioQuestions": [
+          {
+            "question": "Pet peeve ",
+            "answer": "When Big Justice gets more aura points than the Rizzler"
+          },
+          {
+            "question": "How's your relationship with the arts?",
+            "answer": "I'm trying but it's more exclusive than I thought"
+          },
+          {
+            "question": "What’s a thought you have often?",
+            "answer": "Why did I choose to focus on Ultimate over my safe insurance day job?"
+          }
+        ]
+      },
+      "patrick": {
+        "id": "patrick",
+        "name": "Patrick Connor",
+        "class": 2025,
+        "nickname": "Krabby",
+        "height": "5′10″",
+        "hometown": "Dallas, TX",
+        "highschool": "LASA",
+        "concentration": "Contemplative Studies",
+        "captain": false,
+        "number": 35,
+        "bioQuestions": [
+          {
+            "question": "Favorite inanimate object?",
+            "answer": "I know my least favorite. The shower."
+          },
+          {
+            "question": "We all have that one friend",
+            "answer": "Who really thinks we'll believe he got arrested and deported in Moldova or Croatia or something"
+          },
+          {
+            "question": "What reality TV show would you do the best on?",
+            "answer": "Naked and Afraid"
+          }
+        ]
+      },
+      "ryan": {
+        "id": "ryan",
+        "name": "Ryan Hsi",
+        "class": 2027,
+        "nickname": "Swaggulator 3000",
+        "height": "5′9″",
+        "hometown": "Seattle, WA",
+        "highschool": "Mercer Island High School",
+        "concentration": "Chemical Biology",
+        "captain": false,
+        "number": 8,
+        "bioQuestions": [
+          {
+            "question": "Pet peeve ",
+            "answer": "When she beats me for not making her a sandwich"
+          },
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "Forget our anniversary"
+          },
+          {
+            "question": "Best argument you won in your head",
+            "answer": "None, she's always right"
+          }
+        ]
+      },
+      "siddharth": {
+        "id": "siddharth",
+        "name": "Siddharth Yende",
+        "class": 2026,
+        "nickname": "Rizzler",
+        "height": "5′6″",
+        "hometown": "Pittsburgh, PA",
+        "highschool": "Oxford University",
+        "concentration": "Still haven't decided",
+        "captain": false,
+        "number": 95,
+        "bioQuestions": [
+          {
+            "question": "How's your relationship with the arts?",
+            "answer": "My Notion template is the greatest work of art the world has experienced. It's over for Frida Kahlo."
+          },
+          {
+            "question": "What about yourself do you hide from others?",
+            "answer": "Dating their friend"
+          },
+          {
+            "question": "Do you trust me?",
+            "answer": "Clearly not enough to tell you I'm dating your friend"
+          }
+        ]
+      },
+      "teo": {
+        "id": "teo",
+        "name": "Teo Huson",
+        "class": 2028,
+        "nickname": "T'Swizzle",
+        "height": "5′ 10.333...″",
+        "hometown": "Arlington, VA",
+        "highschool": "Washington-Liberty HS",
+        "concentration": "APMA CS",
+        "captain": false,
+        "number": 44,
+        "bioQuestions": [
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "Act unprofessionally around Stout."
+          },
+          {
+            "question": "Which of the coaches is the most skibidi and why?",
+            "answer": "HElllo, Stout skibidiest ohio w rizzler, Fanum lookin' brainrot goofball ayo chat bow go brrrrrr."
+          },
+          {
+            "question": "What about yourself do you hide from others?",
+            "answer": "My secret family"
+          }
+        ]
+      },
+      "zach": {
+        "id": "zach",
+        "name": "Zach Bensky",
+        "class": 2028,
+        "nickname": "Bensky",
+        "height": "6′2″",
+        "hometown": "Washington, DC",
+        "highschool": "Jackson Reed High School",
+        "concentration": "APMA-CS",
+        "captain": false,
+        "number": 83,
+        "bioQuestions": [
+          {
+            "question": "What is one thing you will never do again?",
+            "answer": "Believe one of Pat's stories"
+          },
+          {
+            "question": "What's the smallest change you could make to your life right now that would result in meaningful improvement?",
+            "answer": "Wash my hat."
+          },
+          {
+            "question": "Thoughts on brutalism?",
+            "answer": "I prefer masochism"
+          }
+        ]
+      }
+    },
+    "2024": {
+        "adrian": {
+            "id": "adrian",
+            "name": "Adrian Lin",
+            "class": 2026,
+            "nickname": "Freckles",
+            "height": "6′4″",
+            "hometown": "Andover, MA",
+            "highschool": "Phillips Academy",
+            "concentration": "Neuroscience",
+            "number": 6,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Bro, I'm pissed! I'm so pissed!",
+                  "answer": "my name is the first one to show up on the roster page. get me out."
+                },
+                {
+                  "question": "What’s a thought you have often?",
+                  "answer": "is patty being fr?"
+                },
+                {
+                  "question": "Let’s be real for a second.",
+                  "answer": "is patty real?"
+                }
+              ]
+        },
+        "amrik": {
+            "id": "amrik",
+            "name": "Amrik Eadara",
+            "class": 2026,
+            "nickname": "Rik",
+            "height": "6′1″",
+            "hometown": "Sharon, MA",
+            "highschool": "Sharon High School",
+            "concentration": "Health & Human Biology (Global Health Track) + Business Economics",
+            "number": 10,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Let’s be real for a second.",
+                  "answer": "BE YOUR OWN HERO"
+                },
+                {
+                  "question": "What historical figure could you see yourself falling in love with?",
+                  "answer": "Wardell Stephen Curry II"
+                },
+                {
+                  "question": "If yes, what's one true unpopular opinion you have? (not something meaningless like \"french toast is bad\")",
+                  "answer": "Milk BEFORE Cereal --> milk is more filling than cereal so controlling the volume of milk is far more pivotal to craft the perfect milk to cereal ratio while also satiating one's hunger"
+                }
+              ]
+        },
+        "andy": {
+            "id": "andy",
+            "name": "Andy Burris",
+            "class": 2025,
+            "nickname": "AB",
+            "height": "5′11″",
+            "hometown": "The District",
+            "highschool": "Jackson-Reed HS",
+            "concentration": "Computer Science",
+            "number": 76,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "What about yourself do you hide from others?",
+                  "answer": "Nothing. I am an honest and vulnerable person. Except, of course, when when playing a game of peekaboo, where I deviously hide my eyes to bamboozle my unsuspecting opponent."
+                },
+                {
+                  "question": "Favorite Brown University art installation?",
+                  "answer": "The crayon drawings Caleb does on the wall in his sleep."
+                },
+                {
+                  "question": "What teammate catchphrase fills you with adrenaline?",
+                  "answer": "“I promise you I am not going to stand on the table this time” -Matias"
+                }
+              ]
+        },
+        "cal": {
+            "id": "cal",
+            "name": "Cal Nightingale",
+            "class": 2023,
+            "nickname": "Munch",
+            "height": "5′11″",
+            "hometown": "Durham, NC",
+            "highschool": "Charles E. Jordan 2024 High School",
+            "concentration": "APMA/CS",
+            "number": 2,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Let’s be real for a second.",
+                  "answer": "Is it time to BeReal already Oh god I left my phone in my room People will think I'm so fake when I post late this is a nightmare"
+                },
+                {
+                  "question": "What will you do to get us out of this lame nickname era?",
+                  "answer": "Cry"
+                },
+                {
+                  "question": "What's an early memory of confronting your own human weakness?",
+                  "answer": "Learning to walk without my push truck (when would I ever need to walk without it)"
+                }
+              ]
+        },
+        "caleb": {
+            "id": "caleb",
+            "name": "Caleb Moran",
+            "class": 2025,
+            "nickname": "Cleb",
+            "height": "5′11.5″",
+            "hometown": "Arlington, VA",
+            "highschool": "H-B Woodlawn",
+            "concentration": "APMA–CS",
+            "number": 30,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Chart the course of your marriage",
+                  "answer": "29.4260° N, 98.4861° W"
+                },
+                {
+                  "question": "Jake this jake that, what’s your take on NATE?",
+                  "answer": "The National Association of Tower Erectors is a non-profit trade association providing a unified voice for tower erection, maintenance and service companies. Without NATE, all of our towers would be un-erect, and that would be a crying shame. "
+                },
+                {
+                  "question": "What’s a thought you have often?",
+                  "answer": "I wish we didn't have adult teeth. Instead, your teeth fall out and get replaced every couple weeks"
+                }
+              ]
+        },
+        "cam": {
+            "id": "cam",
+            "name": "Cameron Curney",
+            "class": 2024,
+            "nickname": "Cam",
+            "height": "N/A",
+            "hometown": "Escambia County, FL ",
+            "highschool": "Abington High ",
+            "concentration": "Engineering ",
+            "number": 16,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Bro, I'm pissed! I'm so pissed!",
+                  "answer": "We're at the airport right now.  I told the tsa lady that I prolly shouldn’t go through the rotisserie security machine because it's gonna flag me because it's too small.  She agreed but still had me go through the machine.   Damn, the machine flagged me.  The dude next to her started asking me what did I have in my pockets.  I said nothing sometimes the machine just flags me because it's too small.  He told me to empty my pockets.  Damn, there was nothing in em.  Still hadda pat me down.  Minor inconvenience frankly"
+                },
+                {
+                  "question": "What's the craziest thing you've done in the name of love?",
+                  "answer": "You don’t wanna know pup"
+                },
+                {
+                  "question": "Who is Talon Johnson?",
+                  "answer": "I remember one time I said I like cooking, \"yeah I'm pretty good at cooking\"  Trails took personal offense to that.  He did not believe me.  Cool guy though "
+                }
+              ]
+        },
+        "camilo": {
+            "id": "camilo",
+            "name": "Camilo Tamayo-Rousseau",
+            "class": 2027,
+            "nickname": "The Combat Wombat",
+            "height": "6′1″",
+            "hometown": "Seattle, WA",
+            "highschool": "The Downtown School",
+            "concentration": "Computer Science",
+            "number": 13,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Pet peeve ",
+                  "answer": "When something gets scheduled during my daily napping timeslot"
+                },
+                {
+                  "question": "What motivates you?",
+                  "answer": "I play frisbee for the money and the fame."
+                },
+                {
+                  "question": "Deterministic universe… free will?",
+                  "answer": "The probabilistic and indeterminate behavior of particles imply that the universe is not deterministic and free will exists. Everything is inherently unpredictable."
+                }
+              ]
+        },
+        "devan": {
+            "id": "devan",
+            "name": "Devan Hernandez",
+            "class": 2027,
+            "nickname": "Sk8ter Boi",
+            "height": "5′10″",
+            "hometown": "Newburyport, MA",
+            "highschool": "Phillips Andover",
+            "concentration": "Engineering (Idk which one yet)",
+            "number": 23,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                  "answer": "definitely not. Every morning I wake up to another glorious in New Pembroke 4 with a dry ass throat and mouth. Great way to kick off the morning"
+                },
+                {
+                  "question": "Why don’t you floss?",
+                  "answer": "If we're referring to the popular hit dance, I do. Quite frequently, at inconvenient times. If we're referring to cleaning plaque between your teeth, I don't nearly enough. Probably because my mouth is so dry in the morning in New Pembroke 4."
+                },
+                {
+                  "question": "Deterministic universe… free will?",
+                  "answer": "free willy"
+                }
+              ]
+        },
+        "eli": {
+            "id": "eli",
+            "name": "Eli Chang",
+            "class": 2027,
+            "nickname": "Chang Gang",
+            "height": "5′8″",
+            "hometown": "Lexington, MA",
+            "highschool": "LHS",
+            "concentration": "Bio",
+            "number": 42,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Who knows you the best?",
+                  "answer": "Jesus"
+                },
+                {
+                  "question": "What motivates you?",
+                  "answer": "Jesus"
+                },
+                {
+                  "question": "What’s a thought you have often?",
+                  "answer": "is God real "
+                }
+              ]
+        },
+        "elliott": {
+            "id": "elliott",
+            "name": "Elliott Rosenberg",
+            "class": 2023,
+            "nickname": "Yut",
+            "height": "6′0″",
+            "hometown": "Oakland, CA",
+            "highschool": "Lick-Wilmerding High School (Go Tigers)",
+            "concentration": "Furniture Design + Engineering + CS",
+            "number": 27,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "What motivates you?",
+                  "answer": "Do you ever feel like you’re right at the precipice? Like soooo close? But you’re not quite sure what precipice you’re at or where it might take you? But you’re right there"
+                },
+                {
+                  "question": "Who is Talon Johnson?",
+                  "answer": "Jalon Tohnson is the world #1 Minecraft player, infamous for his complex tunnel strats and days of unbroken focus. Legend has it the man didn’t sleep or eat for 24 hours grinding one of his tunnels on the craft until he found the edge of the seed. He promptly unplugged his computer such that no one else would be able to witness such a sight."
+                },
+                {
+                  "question": "What’s a thought you have often?",
+                  "answer": "I should be dabbing more"
+                }
+              ]
+        },
+        "henry": {
+            "id": "henry",
+            "name": "Henry Egan",
+            "class": 2025,
+            "nickname": "Prom King",
+            "height": "6′4″",
+            "hometown": "Omaha, NE",
+            "highschool": "Creighton Preparatory School",
+            "concentration": "Business Economics + Entrepreneurship",
+            "number": 99,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Chart the course of your marriage",
+                  "answer": "I get married at the age of 27. On my honeymoon, I am approached by John “Doer of Things” Randolph who challenges me to an “UpDating” show for my new bride’s hand in marriage. While I put up a valiant effort, I am unable to beat John’s charisma and Ultiworld fame. My wife leaves me, and I am sad for the remainder of my days."
+                },
+                {
+                  "question": "What about yourself do you hide from others?",
+                  "answer": "My 80-yard flick huck"
+                },
+                {
+                  "question": "Favorite Brown University art installation?",
+                  "answer": "Rock in Tree changed my life."
+                }
+            ]
+        },
+        "jacques": {
+            "id": "jacques",
+            "name": "Jacques Nissen",
+            "class": 2023,
+            "nickname": "Mike Wazowski",
+            "height": "6′1″",
+            "hometown": "Washington, DC",
+            "highschool": "Jackson-Reed",
+            "concentration": "Cognitive Science",
+            "number": 24,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Chart the course of your marriage",
+                  "answer": "Get married at 33, kids at 36, more kids at 39. Brief mid life crisis at 43 brought on by my eldest child’s perennial shortcomings in the t-ball championships, but with the help of a shrink, I work through these problems and direct my kids to the sport of “frisbee″"
+                },
+                {
+                  "question": "Are we merely seeing the shadows of reality, or reality itself?",
+                  "answer": "Learning to play the shadows is the best tip I give to any up and coming frisbee player. If you want the secret, find me outside the classics building at 11pm on the coldest night of the year"
+                },
+                {
+                    "question": "What abstract ideal would you lay down your life for?",
+                    "answer": "Wtf is an abstract ideal"
+                }
+              ]
+        },
+        "jason": {
+            "id": "jason",
+            "name": "Jason Tapper",
+            "class": 2026,
+            "nickname": "Tappan Zee Bridge",
+            "height": "6′0″",
+            "hometown": "Atlanta, GA",
+            "highschool": "Pace Academy",
+            "concentration": "APMA-CS",
+            "number": 9,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "A recent movie you saw + review",
+                  "answer": "Disney-Pixar’s Cars (2006): 9.3/10. I watched it on the plane with Siddharth on the way to CCC and it was incredible (no pun intended). It was a 12/10 for nostalgia because from age 4-9 I watched this movie on every flight. The cinematography and animation of the gorgeous Route 66 landscapes is revolutionary especially for a movie from 2006. The soundtrack and score beautifully accompany the film and adds to the brilliant characters that make this film one of the all time greats. \n\n“Cal, Cars 2 or Cars 3” -Siddharth Yende\n“Cars 1 is fantastic” -Cal Nightingale \n"
+                },
+                {
+                  "question": "What’s something you would NEVER name your child?",
+                  "answer": "Homerun Danger Tapper"
+                },
+                {
+                  "question": "This is a sign in Providence: \"This garden was given by a mother in loving memory of her little girl who loved this spot and who used to walk here with her father when it was part of an attractive ravine.\" Lame, or rad?",
+                  "answer": "Rad, we need more historical notes like this one. I wish this sign also came with a photograph of said attractive ravine that would be even more rad."
+                }
+              ]
+        },
+        "leo": {
+            "id": "leo",
+            "name": "Leo Gordon",
+            "class": 2023,
+            "nickname": "Gorf Gorf",
+            "height": "5′8″",
+            "hometown": "Frisco",
+            "highschool": "Berkeley High",
+            "concentration": "Education",
+            "number": 47,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "What about yourself do you hide from others?",
+                  "answer": "My deepseated hatred of monogamy"
+                },
+                {
+                  "question": "Would you sacrifice five people tied to a train track to save innocent bystander Andy Burris?",
+                  "answer": "I'd sacrifice all six of them to save the train"
+                },
+                {
+                  "question": "What historical figure could you see yourself falling in love with?",
+                  "answer": "Margaret Thatcher #girlboss"
+                }
+              ]
+        },
+        "luca": {
+            "id": "luca",
+            "name": "Luca Duclos-Orsello",
+            "class": 2024,
+            "nickname": "Luca Ducs",
+            "height": "6′2″",
+            "hometown": "Somerville, MA",
+            "highschool": "Somerville High School",
+            "concentration": "IAPA and French",
+            "number": 11,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Let’s be real for a second.",
+                  "answer": "Zachary Kaufman is the Ultimate player with the largest differential between how athletic he looks while playing and his true athletic abilities. "
+                },
+                {
+                  "question": "Has Zach Kaufman hosted a Wine and Cheese yet?",
+                  "answer": "While he has yet to host Wine and Cheese, he has practiced conversations alone in the bathroom mirror 3 times a week for the last 2 months. "
+                },
+                {
+                  "question": "Why is Zachary such a sourpuss? (Amrik answer mandatory)",
+                  "answer": "Zachary Kaufman is a sourpuss because he has not recovered from discovering the inevitable heat-death of the planet and all species living on it. Zachary Merrill is such a sourpuss because his roommate bought single-ply toilet paper. "
+                }
+              ]
+        },
+        "matias": {
+            "id": "matias",
+            "name": "Matias Lee",
+            "class": 2025,
+            "nickname": "Teez",
+            "height": "6′0″",
+            "hometown": "Hanover, NH",
+            "highschool": "Hanover High School",
+            "concentration": "Applied Mathematics – Biology",
+            "number": 19,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                  "answer": "In isolation this one-on-one conversation could lead to strong connection, but difficult to arrive at love. What I do believe is true is you are able to sus out quickly if this person could or not be a person for life.  "
+                },
+                {
+                  "question": "This is a sign in Providence: \"This garden was given by a mother in loving memory of her little girl who loved this spot and who used to walk here with her father when it was part of an attractive ravine.\" Lame, or rad?",
+                  "answer": "gonna go with Lame, the sign needs to get media trained "
+                },
+                {
+                  "question": "What historical figure could you see yourself falling in love with?",
+                  "answer": "Cleopatra, she had to have been a baddie 😍"
+                }
+              ]
+        },
+        "noah": {
+            "id": "noah",
+            "name": "Noah Urrutia",
+            "class": 2025,
+            "nickname": "Fence",
+            "height": "5′9″",
+            "hometown": "Mountain Lakes, NJ",
+            "highschool": "Mountain Lakes High School",
+            "concentration": "Chemical Biology",
+            "number": 78,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Favorite dining hall food item",
+                  "answer": "Ivy Room Smoothie with mango, pineapple, peaches, spinach, strawberry yogurt, orange juice, ice, chia seeds, honey, and mint"
+                },
+                {
+                  "question": "Bro, I'm pissed! I'm so pissed!",
+                  "answer": "WHY DO THEY THROW OUT THE EXTRA SMOOTHIE AT THE IVY ROOM INSTEAD OF GIVING IT TO ME"
+                },
+                {
+                  "question": "Why don’t you floss?",
+                  "answer": "I like getting sporadic flecks of deliciousness throughout my day "
+                }
+              ]
+        },
+        "oliver": {
+            "id": "oliver",
+            "name": "Oliver David Kahn",
+            "class": 2027,
+            "nickname": "Genghis",
+            "height": "5′7″",
+            "hometown": "Chevy Chase, MD",
+            "highschool": "Bethesda Chevy Chase",
+            "concentration": "Mathematics",
+            "number": 32,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Bro, I'm pissed! I'm so pissed!",
+                  "answer": "The demons they chase me day and night "
+                },
+                {
+                  "question": "Who knows you the best?",
+                  "answer": "Your mom"
+                },
+                {
+                  "question": "Why don’t you floss?",
+                  "answer": "The demons. They are everywhere. They call to me, beckoning me."
+                }
+              ]
+        },
+        "oscar": {
+            "id": "oscar",
+            "name": "Oscar Low",
+            "class": 2025,
+            "nickname": "OLow",
+            "height": "5′11″",
+            "hometown": "The Berkshires",
+            "highschool": "Mount Greylock Regional High School",
+            "concentration": "IAPA & APMA",
+            "number": 29,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Who knows you the best?",
+                  "answer": "Those who eat the cookies on Jane Street"
+                },
+                {
+                  "question": "Chart the course of your marriage",
+                  "answer": "#1 Rustic Vermont Farm House, #2 Punta Cana, #3 Long Island Country Club, #4 The Eiffel Tower (Las Vegas)"
+                },
+                {
+                  "question": "Who is Talon Johnson?",
+                  "answer": "Big game poacher based out of Anchorage. Has significant financial stakes in British Columbian pipelines and US/Canada fuel autonomy. "
+                }
+              ]
+        },
+        "patrick": {
+            "id": "patrick",
+            "name": "Patrick Connor",
+            "class": 2024,
+            "nickname": "King’s Back -Caleb Moran",
+            "height": "6′4″",
+            "hometown": "Austin, TX",
+            "highschool": "LASA",
+            "concentration": "Environmental Studies, Computer Science",
+            "number": 35,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "What motivates you?",
+                  "answer": "The everlasting fear of ennui"
+                },
+                {
+                  "question": "Why don’t you floss?",
+                  "answer": "I don't stop flossing"
+                },
+                {
+                  "question": "What’s something you would NEVER name your child?",
+                  "answer": "Martin Trulloid"
+                }
+              ]
+        },
+        "emmett": {
+            "id": "emmett",
+            "name": "Emmett Young",
+            "class": 2026,
+            "nickname": "Stinkbug",
+            "height": "5′7″",
+            "hometown": "Burlington, VT",
+            "highschool": "Exeter Academy",
+            "concentration": "Geology",
+            "number": 15,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "A recent movie you saw + review",
+                  "answer": "Saltburn. Too kid-friendly. I only watch serious movies."
+                },
+                {
+                  "question": "What is one thing you will never do again?",
+                  "answer": "Go back to the hellhole that is the state of Vermont"
+                },
+                {
+                  "question": "What else?",
+                  "answer": "I might be the most gullible person on this team. Reflecting on it now, that's probably why I lose every argument with Jake."
+                }
+              ]
+        },
+        "ryan": {
+            "id": "ryan",
+            "name": "Ryan Hsi",
+            "class": 2027,
+            "nickname": "Shorts",
+            "height": "5′9″",
+            "hometown": "Seattle, WA",
+            "highschool": "Mercer Island High School",
+            "concentration": "Chemical Biology",
+            "number": 5,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                  "answer": "Extremely satisfied. Water is no longer necessary when your salivary glands operate at the heightened level of production that mine do."
+                },
+                {
+                  "question": "What's an early memory of confronting your own human weakness?",
+                  "answer": "In 2nd grade I did martial arts and my sparring partner was a 6'3 36-year-old. I tried to foot sweep him and ended up taking a trip to the children's hospital. "
+                },
+                {
+                  "question": "What historical figure could you see yourself falling in love with?",
+                  "answer": "Obama"
+                }
+              ]
+        },
+        "siddarth": {
+            "id": "siddarth",
+            "name": "Siddharth Yende",
+            "class": 2026,
+            "nickname": "Zoboomafoo",
+            "height": "5′9″ on a good day",
+            "hometown": "Aguas Calientas, México",
+            "highschool": "Fox Chapel AHS",
+            "concentration": "APMA-BIO",
+            "number": 95,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Bro, I'm pissed! I'm so pissed!",
+                  "answer": "They think Lightning McQueen should have finished the race in Cars 3"
+                },
+                {
+                  "question": "Who among current BMo players is Sam Bankman-Fried?",
+                  "answer": "Gotta be Cam, still don't believe he was \"acting\" in his year off"
+                },
+                {
+                  "question": "Let’s be real for a second.",
+                  "answer": "Are caleb and andy even friends?"
+                }
+              ]
+        },
+        "zachkaufman": {
+            "id": "zachkaufman",
+            "name": "Zachary Kaufman",
+            "class": 2024,
+            "nickname": "Zach",
+            "height": "6′1″",
+            "hometown": "Lexington, MA",
+            "highschool": "Lexington High School",
+            "concentration": "Applied Math",
+            "number": 17,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "Is there something you want to do before you die?",
+                  "answer": "Rebuild the ancient wonders of the world"
+                },
+                {
+                  "question": "Oh so you never had a real friend?",
+                  "answer": "Not since the accident."
+                },
+                {
+                  "question": "Deterministic universe… free will?",
+                  "answer": "Deterministic universe. I determine it."
+                }
+              ]
+        },
+        "zachmerrill": {
+            "id": "zachmerrill",
+            "name": "Zach Merrill",
+            "class": 2024,
+            "nickname": "Sourpuss",
+            "height": "6′0″",
+            "hometown": "Cape Elizabeth, ME",
+            "highschool": "Cape Elizabeth High School",
+            "concentration": "Astronomy and Architecture",
+            "number": 4,
+            "captain": false,
+            "bioQuestions": [
+                {
+                  "question": "What is one thing you will never do again?",
+                  "answer": "Eat peanuts hopefully"
+                },
+                {
+                  "question": "Who is Talon Johnson?",
+                  "answer": "ill tal on your johnson"
+                },
+                {
+                  "question": "What was your first impression of Jake?",
+                  "answer": "Seems like a guy who really hates taylor swift"
+                }
+              ]
+        }
+    },
+    "2023": {
+        "adrian": {
+            "id": "adrian",
+            "number": 6,
+            "captain": false,
+            "name": "Adrian Lin",
+            "class": 2026,
+            "nickname": "Freckles",
+            "height": "6′4″",
+            "hometown": "Andover, MA",
+            "highschool": "Phillips Academy",
+            "concentration": "Neuroscience",
+            "bioQuestions": [
+                {
+                    "question": "Favorite dining hall food item",
+                    "answer": "The now-defunct vdub wing wednesday"
+                },
+                {
+                    "question": "Do you collect anything?",
+                    "answer": "“Stolen” salted peanuts from the Zucc"
+                },
+                {
+                    "question": "What is one thing you will never do again?",
+                    "answer": "Never again doubt Will's mixological genius"
+                }
+            ]
+        },
+        "amrik": {
+            "id": "amrik",
+            "number": 10,
+            "captain": false,
+            "name": "Amrik Eadara",
+            "class": 2026,
+            "nickname": "Rik",
+            "height": "6′1″",
+            "hometown": "Sharon, MA",
+            "highschool": "Sharon High School",
+            "concentration": "Health & Human Biology (Global Health Track) + Economics",
+            "bioQuestions": [
+                {
+                    "question": "Do you want your child to be taller than you?",
+                    "answer": "Yes plz!!! League my child ;)"
+                },
+                {
+                    "question": "Who knows you the best?",
+                    "answer": "The Lord"
+                },
+                {
+                    "question": "What else?",
+                    "answer": "I fractured my forearm playing the 100 meter dash event in Mario & Sonic at the Summer Olympic Games against my brother when vigorously shaking the Wii remote. Was it worth it??? 100%, beat my bro for the first time in my Olympic Games career."
+                }
+            ]
+        },
+        "andy": {
+            "id": "andy",
+            "number": 76,
+            "captain": false,
+            "name": "Andy Burris",
+            "class": 2025,
+            "nickname": "AB",
+            "height": "5′11″",
+            "hometown": "Washington, DC",
+            "highschool": "Jackson-Reed",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "What else?",
+                    "answer": "Alex Rubin from Ultiworld worked at my sleepaway camp for a year and I'm really curious whether he'll remember me. My biggest motivating factor for getting better at frisbee is to get in a position where it'll be clear whether or not he does."
+                },
+                {
+                    "question": "What will your future unhinged manifesto be about?",
+                    "answer": "I got into an argument last week with one of my hallmates about what Ice Spice's best song is (it's Euphoric by a mile) so probably that"
+                },
+                {
+                    "question": "Favorite BMo quote",
+                    "answer": "Oh god are you one of those drivers that uses their rearview mirror?"
+                }
+            ]
+        },
+        "cal": {
+            "id": "cal",
+            "number": 2,
+            "captain": false,
+            "name": "Cal Nightingale",
+            "class": 2024,
+            "nickname": "Munch",
+            "height": "5′11″",
+            "hometown": "Durham, NC",
+            "highschool": "Charles E. Jordan Senior High School",
+            "concentration": "APMA/CS",
+            "bioQuestions": [
+                {
+                    "question": "Who knows you the best?",
+                    "answer": "Not you, that's for sure"
+                },
+                {
+                    "question": "What will Sid's future unhinged manifesto be about?",
+                    "answer": "How the proletariat (the Pittsburgh frisbee community) must seize the means of production (USA Ultimate) to establish a communist utopia (everyone uses Aria discs)"
+                },
+                {
+                    "question": "Ideal BMo 5-person zombie apocalypse team",
+                    "answer": "Just me. The rest would only slow me down"
+                }
+            ]
+        },
+        "caleb": {
+            "id": "caleb",
+            "number": 30,
+            "captain": false,
+            "name": "Caleb Moran",
+            "class": 2025,
+            "nickname": "Cleb",
+            "height": "5′11″ and change",
+            "hometown": "Arlington, Virginia ",
+            "highschool": "HB Woodlawn",
+            "concentration": "APMA-CS",
+            "bioQuestions": [
+                {
+                    "question": "Favorite dining hall food item",
+                    "answer": "Uncrustables when Joes's has the Buy None, Get One Free deal"
+                },
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "A five-minute, in-person, one-on-one conversation is the *perfect* set-up to pitch someone on the really cool multi-level marketing business with great opportunities you just joined. Be your own boss!"
+                },
+                {
+                    "question": "What is one thing you will never do again?",
+                    "answer": "Sneeze. I'm done sneezing. The sneeze bit is played out."
+                }
+            ]
+        },
+        "elliott": {
+            "id": "elliott",
+            "number": 27,
+            "captain": false,
+            "name": "Elliott Rosenberg",
+            "class": 2023,
+            "nickname": "Yut",
+            "height": "6′0.01″",
+            "hometown": "Oakland, CA",
+            "highschool": "Lick-Wilmerding High School",
+            "concentration": "Furniture",
+            "bioQuestions": [
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "The Whale - Depressing and moving family story for most, comedy sketch for Riley. "
+                },
+                {
+                    "question": "What else?",
+                    "answer": "Zach Burpee is an up-and-coming ace up Tuft’s sleeve; key words: up-and-coming. With the agility and stamina of a baby deer, this lanky fcg will jog everywhere on his wobbly stilt legs. He likes to jog under or hover in open space ready to receive a disc on the sideline for few, if any, yards. He will then take his time on every fake and throw to ensure he looks casual doing it. Whether this means throwing a dish with a totally cocked wrist and almost missing his receiver because he wanted to flip the disc with the nonchalance of a unionized Frenchman or tossing a blade-scoober to the far handler in zone with the confidence of an affluent heterosexual white male in America. While he has some skill, he will overestimate his own abilities throwing downfield, or he will mindlessly dump for a loss like someone for whom yards have never been in short supply. When Zach goes deep it is often halfhearted though well timed. He will go deep from a standstill if there is nobody above him as well as after an easily guarded under cut. This is somebody we can bully, and someone we should not fear so long as we are confident in our defensive sets and help each other out."
+                },
+                {
+                    "question": "Ideal BMo 5-person zombie apocalypse team",
+                    "answer": "theo - brains, brawn and beauty || andy - token hacker guy that's on every apocalypse team || JR - bag carrier and zombie sacrifice || riley - apocalypse know how || Eli Chang - 'nuff said"
+                }
+            ]
+        },
+        "emmett": {
+            "id": "emmett",
+            "number": 15,
+            "captain": false,
+            "name": "Emmett Young",
+            "class": 2026,
+            "nickname": "Stinkbug",
+            "height": "5′7″",
+            "hometown": "Burlington, VT",
+            "highschool": "Exeter Academy",
+            "concentration": "Geology",
+            "bioQuestions": [
+                {
+                    "question": "Fictional character who you self-identify as in your weakest moments",
+                    "answer": "Quasimodo because he's French"
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "Jake's stay-at-home life partner"
+                },
+                {
+                    "question": "What is the most average state in the US",
+                    "answer": "Vermont"
+                }
+            ]
+        },
+        "graham": {
+            "id": "graham",
+            "number": 48,
+            "captain": false,
+            "name": "Graham Huntington",
+            "class": 2025,
+            "nickname": "Vermont Freak",
+            "height": "6′4″",
+            "hometown": "Starksboro, VT",
+            "highschool": "BB&N",
+            "concentration": "Public health",
+            "bioQuestions": [
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Camera man or boom operator"
+                },
+                {
+                    "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                    "answer": "Yes. Dice might disagree but I would say yes"
+                },
+                {
+                    "question": "Briefly describe the course of your marriage",
+                    "answer": "Meet —> date —> get engaged —> get married —> Martin steals my wife —> get divorced"
+                }
+            ]
+        },
+        "henry": {
+            "id": "henry",
+            "number": 99,
+            "captain": false,
+            "name": "Henry Egan",
+            "class": 2025,
+            "nickname": "Prom King",
+            "height": "6′4″",
+            "hometown": "Omaha, NE",
+            "highschool": "Creighton Preparatory School",
+            "concentration": "Business Economics & Political Science",
+            "bioQuestions": [
+                {
+                    "question": "Bro, I'm pissed! I'm so pissed!",
+                    "answer": "Me after I make a guarded deep cut and they don’t throw me a meatball."
+                },
+                {
+                    "question": "What did Henry and Jacques talk about when they were alone in the FloWo hotel pool for ten minutes?",
+                    "answer": "Almost exclusively how cold the pool was."
+                },
+                {
+                    "question": "Favorite BMo quote",
+                    "answer": "Matias's demand for the disc is inelastic."
+                }
+            ]
+        },
+        "ian": {
+            "id": "ian",
+            "number": 12,
+            "captain": false,
+            "name": "Ian Layzer",
+            "class": 2022,
+            "nickname": "Meat Mortar",
+            "height": "5′7″",
+            "hometown": "Bull City",
+            "highschool": "Durham Academy",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "I'm not a love guy. Never been a love guy. Never saw the whole big deal. "
+                },
+                {
+                    "question": "Who is your biggest non-family, non-Burris hero?",
+                    "answer": "Gotta go with myself for this one"
+                },
+                {
+                    "question": "Thoughts on crypto?",
+                    "answer": "A lot of people like to shit on crypto, but gold-backed currency is a relic of the past. I think once all the hype dies down that the blockchain paradigm is going to be a massive boon to humanity. "
+                }
+            ]
+        },
+        "jacques": {
+            "id": "jacques",
+            "number": 24,
+            "captain": true,
+            "name": "Jacques Nissen",
+            "class": 2023,
+            "nickname": "el problema",
+            "height": "6′1″",
+            "hometown": "THE Washington, DC",
+            "highschool": "Jackson-Reed High School",
+            "concentration": "Cognitive Science ",
+            "bioQuestions": [
+                {
+                    "question": "Favorite brown prof",
+                    "answer": "Robert Self. Bald people from around the world should look at this guys beard, because it complements the shininess of the dome incredibly well"
+                },
+                {
+                    "question": "What was your first impression of Jake?",
+                    "answer": "I met Jake at YCC my senior year and remember thinking he looked like Dylan Freechild. More than held my own in the conversation, and I have maintained this power dynamic ever since"
+                },
+                {
+                    "question": "Ideal BMo 5-person zombie apocalypse team",
+                    "answer": "Adrian - smart, thinks before he acts, will prevent dumb mistakes. Ian: Big Last of Us fan, got some brawn to him. Theo: He's got a lot of flesh on him, could throw him to wolves and buy ourselves time to escape. Henry: Companion for the trip, vibe bringer. Jacques: Protagonist"
+                }
+            ]
+        },
+        "jason": {
+            "id": "jason",
+            "number": 9,
+            "captain": false,
+            "name": "Jason Tapper",
+            "class": 2026,
+            "nickname": "J",
+            "height": "6′0″",
+            "hometown": "Atlanta, GA",
+            "highschool": "Pace Academy",
+            "concentration": "APMA/CS",
+            "bioQuestions": [
+                {
+                    "question": "Pet Peeve",
+                    "answer": "When someone texts “hey I have something to ask you” or something like that and waits for you to respond and then they ask the question. "
+                },
+                {
+                    "question": "Bro, I'm pissed! I'm so pissed!",
+                    "answer": "I just wanted a burrito bowl at andrews and the line is wrapped all the way to the other door"
+                },
+                {
+                    "question": "If you could live forever, what year would you choose to die?",
+                    "answer": "312 CE"
+                }
+            ]
+        },
+        "leo": {
+            "id": "leo",
+            "number": 7,
+            "captain": false,
+            "name": "Leo Tamagawa Gordon",
+            "class": 2023,
+            "nickname": "𝐖𝑨𝒓ⓔᶤʳᵈ𝖘🄴",
+            "height": "5′10″",
+            "hometown": "Berkeley, CA",
+            "highschool": "Berkeley High School",
+            "concentration": "Education Studies",
+            "bioQuestions": [
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "As Jesus, returning from the grave only to disappear again with a new 4 weeks debilitating injury"
+                },
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "Everything Everywhere All At Once—Ke Huy Quan’s multiplicities combined make up my personal version of the “ideal man.″"
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "9th Grade English Teacher to U.S. Secretary of Education Pipeline"
+                }
+            ]
+        },
+        "luca": {
+            "id": "luca",
+            "number": 11,
+            "captain": false,
+            "name": "Luca Duclos-Orsello",
+            "class": 2024,
+            "nickname": "Archduke slimy man",
+            "height": "6′2″",
+            "hometown": "Somerville, MA",
+            "highschool": "Somerville High School ",
+            "concentration": "IAPA and French ",
+            "bioQuestions": [
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "Luca - 0/5 - very inaccurate and I was not consulted in its making."
+                },
+                {
+                    "question": "To which senior are you most likely to divulge your precious precious secrets by season's end?",
+                    "answer": "Martin"
+                },
+                {
+                    "question": "What is the single biggest problem facing humanity right now?",
+                    "answer": "The fact that March Madness is not a federal holiday"
+                }
+            ]
+        },
+        "martin": {
+            "id": "martin",
+            "number": 22,
+            "captain": false,
+            "name": "Martin Trouilloud",
+            "class": 2022,
+            "nickname": "Marty",
+            "height": "6′4″",
+            "hometown": "Norwood, NJ",
+            "highschool": "Northern Valley Old Tappan",
+            "concentration": "Physics; Math",
+            "bioQuestions": [
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "martin gets his drip back"
+                },
+                {
+                    "question": "Biggest fear",
+                    "answer": "that i'll never get my drip back"
+                },
+                {
+                    "question": "What was your first impression of Jake?",
+                    "answer": "Bullied in elementary school"
+                }
+            ]
+        },
+        "matias": {
+            "id": "matias",
+            "number": 19,
+            "captain": false,
+            "name": "Matias Lee",
+            "class": 2025,
+            "nickname": "Teez",
+            "height": "6′0″",
+            "hometown": "Hanover, NH",
+            "highschool": "Hanover High School ",
+            "concentration": "Applied Mathematics—Biology",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "I believe in falling in love in a one-on-one conversation. I did just the other night 😅"
+                },
+                {
+                    "question": "Biggest fear",
+                    "answer": "Dying"
+                },
+                {
+                    "question": "Briefly describe the course of your marriage",
+                    "answer": "I get married, and I don't have problems "
+                }
+            ]
+        },
+        "morgann": {
+            "id": "morgann",
+            "number": 3,
+            "captain": false,
+            "name": "Morgann Thain",
+            "class": 2022,
+            "nickname": "Mdog, Momo, Springs, Mom",
+            "height": ".34 inches taller than Ian",
+            "hometown": "Abington, PA",
+            "highschool": "Abington Friends School",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "Fictional character who you self-identify as in your weakest moments",
+                    "answer": "Protagonist of “Notes from the Underground”, Dostoyevsky"
+                },
+                {
+                    "question": "Pet Peeve",
+                    "answer": "google forms"
+                },
+                {
+                    "question": "What's the craziest thing you've done in the name of love?",
+                    "answer": "Vibe all night, walk her home from the bar, sit on her porch talking, she says “Morgann....you're loitering”, still don't make a move on her, go home frustrated but happy, shower and get in bed, get a text that she thinks you're a coward, walk back to her house, tell her “come back out.”, kiss her, skip home giddy like a child. God why must good things end somebody please love me. "
+                }
+            ]
+        },
+        "noah": {
+            "id": "noah",
+            "number": 4,
+            "captain": false,
+            "name": "Noah Ball-Burack",
+            "class": 2023,
+            "nickname": "Bert",
+            "height": "6′0″",
+            "hometown": "Bezerkeley, CA",
+            "highschool": "Bezerkeley High School",
+            "concentration": "Public Policy and Economics",
+            "bioQuestions": [
+                {
+                    "question": "Favorite dining hall food item",
+                    "answer": "Alison Roman salted butter and chocolate chunk shortbread cookies"
+                },
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Marty will be Dumbledore and I will be Snape"
+                },
+                {
+                    "question": "What's your relationship with the theater?",
+                    "answer": "I am Noah Ball-Burack."
+                }
+            ]
+        },
+        "oscar": {
+            "id": "oscar",
+            "number": 29,
+            "captain": false,
+            "name": "Oscar Low",
+            "class": 2025,
+            "nickname": "OLow",
+            "height": "5′11″",
+            "hometown": "The Berkshires",
+            "highschool": "Mount Greylock",
+            "concentration": "IAPA and APMA",
+            "bioQuestions": [
+                {
+                    "question": "Do you collect anything?",
+                    "answer": "Big blinds"
+                },
+                {
+                    "question": "What is one thing you will never do again?",
+                    "answer": "Speak earnestly to Willis"
+                },
+                {
+                    "question": "What did Henry and Jacques talk about when they were alone in the FloWo hotel pool for ten minutes?",
+                    "answer": "Just about how blessed they both felt to be competing in Florida"
+                }
+            ]
+        },
+        "patrick": {
+            "id": "patrick",
+            "number": 35,
+            "captain": false,
+            "name": "Patrick Connor",
+            "class": 2024,
+            "nickname": "Eliezer Yudkowsky",
+            "height": "6′4″",
+            "hometown": "Austin, TX",
+            "highschool": "LASA",
+            "concentration": "Environmental Technology",
+            "bioQuestions": [
+                {
+                    "question": "Longest you've gone without sleeping",
+                    "answer": "76 hours"
+                },
+                {
+                    "question": "What will your future unhinged manifesto be about?",
+                    "answer": "Barefoot Shoes"
+                },
+                {
+                    "question": "BMo player that'd do best as a cornered prey animal (and which animal)",
+                    "answer": "Caleb Moran, African fork-tailed drongo bird"
+                }
+            ]
+        },
+        "riley": {
+            "id": "riley",
+            "number": 67,
+            "captain": false,
+            "name": "Riley Frey",
+            "class": 2026,
+            "nickname": "Riles",
+            "height": "5′10″",
+            "hometown": "Washington, DC",
+            "highschool": "Jackson-Reed High School (formerly Wilson HS)",
+            "concentration": "Neuroscience ",
+            "bioQuestions": [
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "everything everywhere all at once. \n \n Watching this movie is like continuously losing socks when doing laundry: you're utterly confused but then its like, it doesn't really matter. The thrill takes over. "
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "private chef for some rich California family that has some twisted and crazy drama to keep entertained!"
+                },
+                {
+                    "question": "If you could go back to prehistoric times, what technological innovation you would introduce to cavemen?",
+                    "answer": "wii sports "
+                }
+            ]
+        },
+        "siddharth": {
+            "id": "siddharth",
+            "number": 95,
+            "captain": false,
+            "name": "Siddharth Yende",
+            "class": 2026,
+            "nickname": "Whatever Marty chooses but Cal gets a Veto",
+            "height": "5′9″",
+            "hometown": "Pittsburgh, PA",
+            "highschool": "Fox Chapel High School",
+            "concentration": "Undecided",
+            "bioQuestions": [
+                {
+                    "question": "Biggest fear",
+                    "answer": "Locked in a bathroom with Marty"
+                },
+                {
+                    "question": "What motivates you?",
+                    "answer": "A fear of sinkholes"
+                },
+                {
+                    "question": "What did Henry and Jacques talk about when they were alone in the FloWo hotel pool for ten minutes?",
+                    "answer": "It was only eye contact"
+                }
+            ]
+        },
+        "theo": {
+            "id": "theo",
+            "number": 84,
+            "captain": false,
+            "name": "Theo Hardy",
+            "class": 2023,
+            "nickname": "Tartuffe the Spry Wonderdog",
+            "height": "6′3″",
+            "hometown": "Atlanta, GA",
+            "highschool": "Chamblee Charter High School",
+            "concentration": "Economics",
+            "bioQuestions": [
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Guy who gets bit during the zombie apocalypse but doesn't tell anyone"
+                },
+                {
+                    "question": "Thoughts on crypto?",
+                    "answer": "Scam but I will convince Morgann to invest"
+                },
+                {
+                    "question": "What was your first impression of Jake?",
+                    "answer": "Way too into Overwatch"
+                }
+            ]
+        },
+        "will": {
+            "id": "will",
+            "number": 8,
+            "captain": true,
+            "name": "Will Steinfeld",
+            "class": 2023,
+            "nickname": "Not Willis",
+            "height": "5′4″",
+            "hometown": "Lexington, RI",
+            "highschool": "Jonas Clarke Middle School",
+            "concentration": "IAPA",
+            "bioQuestions": [
+                {
+                    "question": "Favorite brown prof",
+                    "answer": "Edward “Daddy” Steinfeld"
+                },
+                {
+                    "question": "Who knows you the best?",
+                    "answer": "Only my world of tanks blitz clan knows my true colors"
+                },
+                {
+                    "question": "What did Henry and Jacques talk about when they were alone in the FloWo hotel pool for ten minutes?",
+                    "answer": "Both sitting on the same side of the pool, both looking straight ahead. Both shivering. They discuss Jacques' mlb the show my player season. They discuss whether henry knows jacques took the over on derrick white points+assists, and does hank know jacques thinks it'll cash. They have a great conversation where jacques looks at the yahoo sports app to see the nats box score and says “ay lets go big fella”. And most of all they relish the luxury of being able to sit in the silence of a beautiful male friendship"
+                }
+            ]
+        },
+        "zachary": {
+            "id": "zachary",
+            "number": 17,
+            "captain": false,
+            "name": "Zachary Kaufman",
+            "class": 2024,
+            "nickname": "Zach",
+            "height": "6′1″",
+            "hometown": "Lexington, MA",
+            "highschool": "Lexington High School",
+            "concentration": "Applied Math",
+            "bioQuestions": [
+                {
+                    "question": "Who from a combined roster of BMo and your immediate family would you trade to the Amish for a free trip to Lancaster, PA?",
+                    "answer": "I'd trade Riley for some shoo-fly pie."
+                },
+                {
+                    "question": "Thoughts on crypto?",
+                    "answer": "Let me tell you that we are really changing the world as we know it, the world is not anymore the way it used to be, mmm mmm, No! No! No! BITCONNNNNNECT!"
+                },
+                {
+                    "question": "What was your first impression of Jake?",
+                    "answer": "I thought he was a grad student playing Providence Poultry when I first saw him"
+                }
+            ]
+        }
+    },
+    "2022": {
+        "andy": {
+            "id": "andy",
+            "name": "Andy Burris",
+            "number": 76,
+            "captain": false,
+            "class": 2025,
+            "nickname": "Burris With a 'B'",
+            "height": "5'11\"",
+            "hometown": "Washington DC",
+            "highschool": "Wilson High",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "A good memory with BMo",
+                    "answer": "First Jos run during tryouts"
+                },
+                {
+                    "question": "Pet Peeve",
+                    "answer": "Slow left turns when they have an arrow"
+                },
+                {
+                    "question": "What's the craziest thing you've done in the name of love?",
+                    "answer": "Got addicted to TikTok"
+                }
+            ]
+        },
+        "boyce": {
+            "id": "boyce",
+            "name": "William Boyce V",
+            "number": 5,
+            "captain": false,
+            "class": 2025,
+            "nickname": "Boyce",
+            "height": "6'0\"",
+            "hometown": "Old Tappan, NJ",
+            "highschool": "Northern Valley Regional High School at Old Tappan (NVOT)",
+            "concentration": "Biology",
+            "bioQuestions": [
+                {
+                    "question": "What motivates you?",
+                    "answer": "The inevitable heat death of the universe"
+                },
+                {
+                    "question": "Fictional character who you self-identify as in your weakest moments",
+                    "answer": "Baby yoda"
+                },
+                {
+                    "question": "What else?",
+                    "answer": "New Jersey is the best state in the US and Marty and I could easily take over the Northeast in a matter of milliseconds."
+                }
+            ]
+        },
+        "cam": {
+            "id": "cam",
+            "name": "Cameron Curney",
+            "number": 16,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Cam",
+            "height": "6'7\"",
+            "hometown": "Abington, MA",
+            "highschool": "Abington High",
+            "concentration": "Engineering Maybe",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "A lotta people have like their first three to five interactions with people scripted.  You really don't start to know a person until meet up number 6."
+                },
+                {
+                    "question": "Who is your hero?",
+                    "answer": "One time I was about to throw my retainer away in the Ratty, when a random girl, who had seen me take it out before I ate, said, \"hey make sure you don't throw away your retainer.\"  So her."
+                },
+                {
+                    "question": "Do you want your child to be taller than you?",
+                    "answer": "Eh its a hassle being this tall anytime I'm indoors, so it'd likely build character if they were.  I'm going with yes"
+                }
+            ]
+        },
+        "cleb": {
+            "id": "cleb",
+            "name": "Caleb Moran",
+            "number": 30,
+            "captain": false,
+            "class": 2025,
+            "nickname": "Cleb",
+            "height": "5'11\"",
+            "hometown": "Arlington, VA",
+            "highschool": "HB Woodlawn",
+            "concentration": "Applied Math / Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "The threshold for True Love is unfortunately at the 5-minute-and-11-seconds mark, but once that is achieved, True Love is guaranteed"
+                },
+                {
+                    "question": "Alumni with the most overrrated kids",
+                    "answer": "Sol’s army of future lawyers are going to destroy the game"
+                },
+                {
+                    "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                    "answer": "I wish I was drooling exuberant amounts 24/7, enough to feed a family of four"
+                }
+            ]
+        },
+        "dice": {
+            "id": "dice",
+            "name": "Jackson de Campos",
+            "number": 14,
+            "captain": true,
+            "class": 2022,
+            "nickname": "Dice",
+            "height": "6'0\"",
+            "hometown": "Seattle, WA",
+            "highschool": "Lakeside",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "Biggest fear",
+                    "answer": "[redacted]"
+                },
+                {
+                    "question": "Pet Peeve",
+                    "answer": "Subject-verb disagreement"
+                },
+                {
+                    "question": "What is one thing you will never do again?",
+                    "answer": "I'll never again be wholly entertained by a garbage truck"
+                }
+            ]
+        },
+        "dyl": {
+            "id": "dyl",
+            "name": "Dylan Villeneuve",
+            "number": 6,
+            "captain": false,
+            "class": 2022,
+            "nickname": "Dyl",
+            "height": "6'2\"",
+            "hometown": "Berkeley, CA",
+            "highschool": "Berkeley High",
+            "concentration": "Literary Arts",
+            "bioQuestions": [
+                {
+                    "question": "A good memory with BMo",
+                    "answer": "Nothing beats winning a national championship."
+                },
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Definitely a villain. At least a voice of opposition. Chaos will reign supreme."
+                },
+                {
+                    "question": "Thoughts on crypto?",
+                    "answer": "I bought 160 bitcoin in high school and lost the login info. I cry myself to sleep regularly."
+                }
+            ]
+        },
+        "graham": {
+            "id": "graham",
+            "name": "Graham Huntington",
+            "number": 48,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Grunt",
+            "height": "6'4\"",
+            "hometown": "Starksboro, VT",
+            "highschool": "BB&N",
+            "concentration": "Not sure… IAPA maybe",
+            "bioQuestions": [
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Camera man"
+                },
+                {
+                    "question": "What would you do for Trails if he was in a real pickle?",
+                    "answer": "1. Crack the jar/barrel/etc \n2. Drain the pickle juice \n3. Locate the pickle in which trails is stuck \n4. Extract trails from said pickle \n5. Eat pickle"
+                },
+                {
+                    "question": "Biggest fear",
+                    "answer": "Chocolate chips in pancakes"
+                }
+            ]
+        },
+        "ian": {
+            "id": "ian",
+            "name": "Ian Layzer",
+            "number": 12,
+            "captain": false,
+            "class": 2023,
+            "nickname": "Layzer",
+            "height": "5'9\"",
+            "hometown": "Durham, NC",
+            "highschool": "Durham Academy",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "A good memory with BMo",
+                    "answer": "Unlimited breadsticks and Martin ordering the Tour of Italy at Olive Garden."
+                },
+                {
+                    "question": "What do you do outside of BMo?",
+                    "answer": "I've been a TA and HTA for numerous CS classes. I also like to read and play board games with my roommates."
+                },
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "Dune: stunning cinematography and design, nailed the feeling of how I imagined Dune, plot was a little underwhelming though"
+                }
+            ]
+        },
+        "jac": {
+            "id": "jac",
+            "name": "Jacques Nissen",
+            "number": 24,
+            "captain": true,
+            "class": 2024,
+            "nickname": "Moped",
+            "height": "6'1\"",
+            "hometown": "Washington, DC",
+            "highschool": "Wilson High",
+            "concentration": "Cognitive Science",
+            "bioQuestions": [
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "North by Northwest (Hitchcock Movie). I picked this movie out of the 326 offerings on the plane, and I wish I had picked something else. I had watched this move before when I was around 8 years old and I remember I loved it, but looking back that is probably only because I thought that escaping from criminals by climbing down Mt. Rushmore was the coolest thing in the world. The movie overall was solid (as all Hitchcock's are), but the ending of this one was especially outrageous and incomprehensible. 7/10"
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "VDub chicken finger supplier"
+                },
+                {
+                    "question": "Who is your hero?",
+                    "answer": "Will Shortz"
+                }
+            ]
+        },
+        "john": {
+            "id": "john",
+            "name": "John Randolph",
+            "number": 34,
+            "captain": true,
+            "class": 2022,
+            "nickname": "JR",
+            "height": "5'11\"",
+            "hometown": "Seattle, WA",
+            "highschool": "Lakeside",
+            "concentration": "APMA-CS & Behavioral Decision Sciences",
+            "bioQuestions": [
+                {
+                    "question": "What do you do outside of BMo?",
+                    "answer": "Not much"
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "Chief envoy to the moon people"
+                },
+                {
+                    "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                    "answer": "I am not satisfied. I need enough saliva to eat a pack of saltines in sixty seconds"
+                }
+            ]
+        },
+        "leo": {
+            "id": "leo",
+            "name": "Leo Tamagawa Gordon",
+            "number": 7,
+            "captain": false,
+            "class": 2023,
+            "nickname": "Leland",
+            "height": "5'10\"",
+            "hometown": "Berkeley, CA",
+            "highschool": "Berkeley High",
+            "concentration": "Education Studies",
+            "bioQuestions": [
+                {
+                    "question": "What do you do outside of BMo?",
+                    "answer": "Roast fools, multiracial club, ESV, bike without a helmet, paint cards, procrastinate, read books"
+                },
+                {
+                    "question": "What's the craziest thing you've done in the name of love?",
+                    "answer": "nothing is crazy if done in the name of love"
+                },
+                {
+                    "question": "Do you collect anything",
+                    "answer": "hearts in a jar"
+                }
+            ]
+        },
+        "luca": {
+            "id": "luca",
+            "name": "Luca Duclos-Orsello",
+            "number": 11,
+            "captain": false,
+            "class": 2024,
+            "nickname": "The Cheesman of North Ubmria",
+            "height": "6'2\"",
+            "hometown": "Somerville, MA",
+            "highschool": "Somerville High",
+            "concentration": "International and Public Affairs ; French and Francophone Studies",
+            "bioQuestions": [
+                {
+                    "question": "What motivates you?",
+                    "answer": "Self-belief and ice cream"
+                },
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "The Guilty - 3/5 -> intriguing, but main character lacked depth/variety of personality traits. Fun twist, but unsurprising that there was going to be a twist. Okay job of tying up loose ends at the end of the movie."
+                },
+                {
+                    "question": "Who knows you the best?",
+                    "answer": "My Mom"
+                }
+            ]
+        },
+        "marty": {
+            "id": "marty",
+            "name": "Martin Trouilloud",
+            "number": 22,
+            "captain": false,
+            "class": 2023,
+            "nickname": "Marty",
+            "height": "6'4\"",
+            "hometown": "Norwood, NJ",
+            "highschool": "Old Tappan",
+            "concentration": "Physics and Math",
+            "bioQuestions": [
+                {
+                    "question": "Favorite restaurant on Thayer",
+                    "answer": "CVS"
+                },
+                {
+                    "question": "What motivates you?",
+                    "answer": "The knowledge that one day I will be proven right about everything completely"
+                },
+                {
+                    "question": "A recent movie you saw + review",
+                    "answer": "Luca (the Disney movie) is an unnervingly accurate documentary of Luca Duclos-Orsello’s secret Italian childhood, down to his frightening parents and communist sympathies. Pretty boring!"
+                }
+            ]
+        },
+        "matias": {
+            "id": "matias",
+            "name": "Matias Lee",
+            "number": 19,
+            "captain": false,
+            "class": 2025,
+            "nickname": "Teez",
+            "height": "5.9375 ft",
+            "hometown": "Hanover, NH",
+            "highschool": "Hanover High",
+            "concentration": "Applied Mathematics - Biology",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "Love is mereLy a chemical sensaTion, The moLecules in the body working to make you feel good. However, ThaT being said, I do beLieve that one could meet a LoveLy person in a one on one conversaTion."
+                },
+                {
+                    "question": "Favorite TV show",
+                    "answer": "Friends (i know)"
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "Not working at Facebook"
+                }
+            ]
+        },
+        "morgann": {
+            "id": "morgann",
+            "name": "Morgann Thain",
+            "number": 3,
+            "captain": false,
+            "class": 2022,
+            "nickname": "Mdog",
+            "height": "5'10\"",
+            "hometown": "Abington, PA",
+            "highschool": "Abington Friends",
+            "concentration": "Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "I believe in “falling in love” like that, but I don’t think it’s True Love til you spend a lot of time together, know each other, and like internalize caring for each other to the point that you value them similarly to how you value yourself (think of how for some parents, their children are like their purpose and even more important than themselves) "
+                },
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Inspiring feel good underdog story where I grind and fail for 3 straight years, each more painful than the last, but then I finally make it my senior year and it’s hype"
+                },
+                {
+                    "question": "Pet Peeve",
+                    "answer": "English language, specifically questions like “do you mind if…” making you answer with no when you want to affirm them"
+                }
+            ]
+        },
+        "munch": {
+            "id": "munch",
+            "name": "Cal Nightingale",
+            "number": 2,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Munch",
+            "height": "5'11\"",
+            "hometown": "Durham, NC",
+            "highschool": "Jordan High",
+            "concentration": "Applied Math / Computer Science",
+            "bioQuestions": [
+                {
+                    "question": "Fictional character who you self-identify as in your weakest moments",
+                    "answer": "Martin Trouilloud"
+                },
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Just like Dennis Rodman in The Last Dance"
+                },
+                {
+                    "question": "If you were king for a day what law would you impose?",
+                    "answer": "That I'm king for all subsequent days. Boom!"
+                }
+            ]
+        },
+        "noah": {
+            "id": "noah",
+            "name": "Noah Ball-Burack",
+            "number": 4,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Bert",
+            "height": "6'0\"",
+            "hometown": "Berkeley, CA",
+            "highschool": "Berkeley High",
+            "concentration": "Public Policy and Economics",
+            "bioQuestions": [
+                {
+                    "question": "What do you do outside of BMo?",
+                    "answer": "Climate research!"
+                },
+                {
+                    "question": "Alumni with the most overrated kids? Alumni / current player who will have the most overrated kids?",
+                    "answer": "If Cal's kids are rated, this will be done overly"
+                },
+                {
+                    "question": "Are you satisfied with the amount of saliva you produce? Explain",
+                    "answer": "Yes, actually. There must be benefits to producing saliva, though I cannot articulate said benefits. Therefore, I would not reduce the amount of saliva I produce. Meanwhile, I would not increase the amount, since I enjoy not spitting on people and stuff."
+                }
+            ]
+        },
+        "oscar": {
+            "id": "oscar",
+            "name": "Oscar Low",
+            "number": 29,
+            "captain": false,
+            "class": 2025,
+            "nickname": "OLow",
+            "height": "5'11\"",
+            "hometown": "Williamstown, MA",
+            "highschool": "Mount Greylock Regional High",
+            "concentration": "Undecided",
+            "bioQuestions": [
+                {
+                    "question": "Biggest fear",
+                    "answer": "Being trapped in an elevator"
+                },
+                {
+                    "question": "What is one thing you will never do again?",
+                    "answer": "take a math class"
+                },
+                {
+                    "question": "Fictional character who you self-identify as in your weakest moments",
+                    "answer": "Shrek"
+                }
+            ]
+        },
+        "patrick": {
+            "id": "patrick",
+            "name": "Patrick Connor",
+            "number": 35,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Archduke Slimy Man",
+            "height": "6'4\"",
+            "hometown": "Austin, TX",
+            "highschool": "LASA",
+            "concentration": "Undecided",
+            "bioQuestions": [
+                {
+                    "question": "A good memory with BMo",
+                    "answer": "Star St. Sprints"
+                },
+                {
+                    "question": "Who is your hero?",
+                    "answer": "Jake Smart"
+                },
+                {
+                    "question": "Do you collect anything",
+                    "answer": "Coins and Rocks"
+                }
+            ]
+        },
+        "trails": {
+            "id": "trails",
+            "name": "Talon Johnson",
+            "number": 68,
+            "captain": false,
+            "class": 2022,
+            "nickname": "Trails",
+            "height": "6'3\"",
+            "hometown": "Kangaroo Court, KS",
+            "highschool": "Hopkins School",
+            "concentration": "Chemical Biology",
+            "bioQuestions": [
+                {
+                    "question": "Thoughts on crypto?",
+                    "answer": "Blockchain synergy aligns pragmatic quarterly business objectives to forge innovative new strategies for engaging forward-thinking partners in the meta-verse."
+                },
+                {
+                    "question": "Bro, I'm pissed! I'm so pissed!",
+                    "answer": "Yeah, me too. Bottle it up and age it like a fine barolo. One day, it'll be ready to open like a beefy can of whoop-ass."
+                },
+                {
+                    "question": "If you were king for a day what law would you impose?",
+                    "answer": "Schools must bring back the dunce cap and all the dunces will know once more what dummy little dumb dumbs they are."
+                }
+            ]
+        },
+        "willis": {
+            "id": "willis",
+            "name": "Will Steinfeld",
+            "number": 8,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Willis",
+            "height": "5'8\"",
+            "hometown": "Lexington, MA",
+            "highschool": "The Lexington High School",
+            "concentration": "International and Public Affairs",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "If you have the right conversation topics written on your hand, definitely possible"
+                },
+                {
+                    "question": "If you were king for a day what law would you impose?",
+                    "answer": "Large infrastructure investment into chocolate milk/seltzer water fountains"
+                },
+                {
+                    "question": "Who knows you the best?",
+                    "answer": "It's not about if you know who you are, it's not about if other people know who you are, it's about if you know who other people know who you are. Everyone knows that."
+                }
+            ]
+        },
+        "yut": {
+            "id": "yut",
+            "name": "Elliott Rosenberg",
+            "number": 27,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Yut",
+            "height": "6'0\"",
+            "hometown": "Oakland, CA",
+            "highschool": "Lick-Wilmerding",
+            "concentration": "Engineering & Furniture Design",
+            "bioQuestions": [
+                {
+                    "question": "In the forthcoming BMo documentary, how will you be portrayed?",
+                    "answer": "Like chandler in friends"
+                },
+                {
+                    "question": "What motivates you?",
+                    "answer": "The fear of no-nonsense Cal’s wrath"
+                },
+                {
+                    "question": "Ideal job/career path",
+                    "answer": "Valet for Frisbee Legend Beau Kittredge"
+                }
+            ]
+        },
+        "zach": {
+            "id": "zach",
+            "name": "Zachary Kaufman",
+            "number": 17,
+            "captain": false,
+            "class": 2024,
+            "nickname": "Zach",
+            "height": "6'1\"",
+            "hometown": "Lexington, MA",
+            "highschool": "Lexington High School",
+            "concentration": "Applied Math-Econ",
+            "bioQuestions": [
+                {
+                    "question": "As a team, we don't believe in love at first sight. What are your thoughts on love at five-minute, in-person, one-on-one conversation? Capital T, capital L.",
+                    "answer": "My heart says it's possible, and my brain says it isn't."
+                },
+                {
+                    "question": "You're an aging one-hit-wonder boy band frontman. One day, you get a call from Raja Gosnell, director of the Smurfs multimedia franchise. He wants your band to write the soundtrack for Smurfs 4: Smurfs Fight Back. Five years ago, you'd laugh in his face, but people are starting to forget you. Do you accept?",
+                    "answer": "Smurf yes!"
+                },
+                {
+                    "question": "What motivates you?",
+                    "answer": "My haters"
+                }
+            ]
+        },
+        "zuck": {
+            "id": "zuck",
+            "name": "Kaleb Zuckerman",
+            "number": 42,
+            "captain": false,
+            "class": 2025,
+            "nickname": "Zuck",
+            "height": "6'0\"",
+            "hometown": "Northampton, MA",
+            "highschool": "Northampton High",
+            "concentration": "Computer science + biochemistry",
+            "bioQuestions": [
+                {
+                    "question": "Who from a combined roster of BMo and your immediate family would you trade to the Amish for a free trip to Lancaster, PA?",
+                    "answer": "I would give up the whole team and my entire family just for a trip to Lancaster, PA"
+                },
+                {
+                    "question": "What's the craziest thing you've done in the name of love?",
+                    "answer": "Bought a $60 blanket for a girl I'd known for 2 weeks. We broke up not long after and I got nothing in return"
+                },
+                {
+                    "question": "What else?",
+                    "answer": "I used to hold a Guinness world record for most consecutive frisbee passes"
+                }
+            ]
+        }
+    },
+    "2020": "roster2020.jpg",
+    "2019": "roster2019.jpg"
+}
