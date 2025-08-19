@@ -42,11 +42,12 @@ export default function NavigationMenu() {
             <Popup>
               <Column>
                 <MenuItem title='News' pathname="/news" selectedPath={currentPath} />
+                <MenuItem title='Alumni' pathname="https://alumni.bmo.team" selectedPath={currentPath} openInNewTab />
                 <MenuItem title='Recruiting' pathname="/recruiting" selectedPath={currentPath} />
                 <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
-                <MenuItem title='Photos' pathname="https://photos.app.goo.gl/U1kvAPF6PReKE6nY6" selectedPath={currentPath} />
+                <MenuItem title='Photos' pathname="https://photos.app.goo.gl/U1kvAPF6PReKE6nY6" selectedPath={currentPath} openInNewTab />
                 <MenuItem title='Zip’s Tips' pathname="/zipstips" selectedPath={currentPath} />
-                <MenuItem title='Playbook' pathname="https://www.youtube.com/watch?v=dQw4w9WgXcQ" selectedPath={currentPath} />
+                <MenuItem title='Playbook' pathname="https://www.youtube.com/watch?v=dQw4w9WgXcQ" selectedPath={currentPath} openInNewTab />
               </Column>
             </Popup>
           </NavigationMenuPrimitive.Item>
@@ -126,15 +127,15 @@ const itemStyles: RecipeDefinition<RecipeVariantRecord> = {
   ],
 };
 
-interface LinkProps { title: string, pathname: string, selectedPath: string | null }
+interface LinkProps { title: string, pathname: string, selectedPath: string | null, openInNewTab?: boolean }
 
-function Tab({ title, pathname, selectedPath }: LinkProps) {
+function Tab({ title, pathname, selectedPath, openInNewTab }: LinkProps) {
   const isSelected = selectedPath?.endsWith(pathname)
-  const router = useRouter()
   // <UndecoratedLink href={pathname}>
   return (
     <TabBase 
       href={pathname} 
+      {...openInNewTab ? { target: "_blank", rel: "noopener noreferrer" } : {}}
       color={pathname == `/` ? "accent" : "neutral"} 
       //@ts-ignore selectState doesn't exist
       selectState={isSelected ? "selected" : "unselected"} >
@@ -174,10 +175,10 @@ const Popup = styled(NavigationMenuPrimitive.Content, {
   },
 })
 
-function MenuItem({ title, pathname, selectedPath }: LinkProps) {
+function MenuItem({ title, pathname, selectedPath, openInNewTab }: LinkProps) {
   const isSelected = pathname == selectedPath
   return (
-    <MenuItemBase href={pathname}>
+    <MenuItemBase href={pathname} {...openInNewTab ? { target: "_blank", rel: "noopener noreferrer" } : {}}>
       <Row gap='12px' justify='space-between' align='center' style={{ width: '100%' }}>
         <Text
           style={(isSelected) ? "subtitle" : "body"}

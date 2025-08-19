@@ -20,6 +20,16 @@ const nextConfig = {
             }
         ]
     },
+
+    async redirects() {
+        return [
+            {
+                source: '/alumni/:path*',
+                destination: 'https://alumni.bmo.team/:path*',
+                permanent: true,
+            },
+        ]
+    },
 };
 
 module.exports = nextConfig;
