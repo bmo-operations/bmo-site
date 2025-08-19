@@ -67,7 +67,7 @@ export default function HomePage() {
             { icon: (<FacebookLogo  />), text: "Facebook", colorPalette: Object.values(indigo), link: "https://www.facebook.com/bmoultimate/" },
         ]} />
         <ContentCard title="Watch" onMore={() => router.push('/videos')}>
-            {[...allVideos().entries()].sort(e => e[0]).reverse().map(e => e[1]).flat().slice(0, 3).map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
+            {[...allVideos().entries()].sort(e => e[0]).map(e => e[1]).flat().slice(0, 3).map((v) => <ContentItem key={v.link} title={v.title} link={v.link} imageSrc={videoThumbnail(v)}/>)}
         </ContentCard>
         <ContentCard title="News" onMore={() => router.push('/news')}>
             {allNews(3).map(pair => {
