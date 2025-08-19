@@ -23,7 +23,6 @@ export default function RecruitingPage() {
                         borderRadius: "24px",
                         maxHeight: "300px",
                         objectFit: "cover",
-                        filter: "saturate(0) contrast(1.2) brightness(1.1)",
                     }}
                 />
                 <Text style="h2" color="primary">Are you a <span style={{ color: "hsl(358, 65.0%, 48.7%)" }}>prospective student</span> interested in playing ultimate at Brown?</Text>
