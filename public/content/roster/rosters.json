@@ -208,6 +208,32 @@
         }
       ]
     },
+    "emmett": {
+      "id": "emmett",
+      "name": "Emmett Young",
+      "class": 2026,
+      "nickname": "Stinkbug",
+      "height": "5′8″",
+      "hometown": "Burlington, VT",
+      "highschool": "Exeter Academy",
+      "concentration": "Weak",
+      "captain": false,
+      "number": 15,
+      "bioQuestions": [
+        {
+          "question": "Bro, I'm pissed! I'm so pissed!",
+          "answer": "Evil Stout and Nate have stolen the gaze of my beloved Jake. "
+        },
+        {
+          "question": "What about yourself do you hide from others?",
+          "answer": "My USAU registration status"
+        },
+        {
+          "question": "What's the rarest emotion in your life?",
+          "answer": "Vermont love"
+        }
+      ]
+    },
     "eric": {
       "id": "eric",
       "name": "Eric Du",
