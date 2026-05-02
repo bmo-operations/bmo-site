@@ -2,7 +2,7 @@
 
 import { CaretDownIcon, CheckIcon } from '@radix-ui/react-icons';
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { css } from "styled-system/css";
 import { Column, Row, styled } from "styled-system/jsx";
@@ -28,7 +28,7 @@ export default function NavigationMenu() {
             <Tab title="Roster" selectedPath={currentPath} pathname="/roster" />
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
-            <Tab title="Support" selectedPath={currentPath} pathname="/support" />
+            <Tab title="Alumni" selectedPath={currentPath} pathname="https://alumni.bmo.team" openInNewTab />
           </NavigationMenuPrimitive.Item>
           <NavigationMenuPrimitive.Item>
             <Trigger
@@ -42,7 +42,7 @@ export default function NavigationMenu() {
             <Popup>
               <Column>
                 <MenuItem title='News' pathname="/news" selectedPath={currentPath} />
-                <MenuItem title='Alumni' pathname="https://alumni.bmo.team" selectedPath={currentPath} openInNewTab />
+                <MenuItem title='Support' pathname="/support" selectedPath={currentPath} />
                 <MenuItem title='Recruiting' pathname="/recruiting" selectedPath={currentPath} />
                 <MenuItem title='Videos' pathname="/videos" selectedPath={currentPath} />
                 <MenuItem title='Photos' pathname="https://photos.app.goo.gl/U1kvAPF6PReKE6nY6" selectedPath={currentPath} openInNewTab />
