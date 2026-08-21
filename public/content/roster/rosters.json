@@ -1,31 +1,6 @@
 {
   "2026": {
-    "aayush": {
-      "id": "aayush",
-      "name": "Aayush Muthuswamy",
-      "class": 2028,
-      "nickname": "Waluigi",
-      "height": "6′3″",
-      "hometown": "Seattle, WA",
-      "highschool": "Lincoln High School",
-      "concentration": "Public Health & Biology",
-      "captain": false,
-      "number": 40,
-      "bioQuestions": [
-        {
-          "question": "What's the smallest change you could make to your life right now that would result in meaningful improvement?",
-          "answer": "Drop everything, move to a Buddhist monastery, and immerse myself in the ways of Tai Chi. Only once I have fully mastered this art will I return to my true calling"
-        },
-        {
-          "question": "What reality TV show would you do the best on?",
-          "answer": "The Jerry Springer Show (audience member)"
-        },
-        {
-          "question": "Do you consider yourself a free thinker? If yes, what's one true unpopular opinion you have? (not something meaningless like \"showers are overrated\")",
-          "answer": "a) No.\nb) Showers are overrated"
-        }
-      ]
-    },
+    
     "adrian": {
       "id": "adrian",
       "name": "Adrian Lin",
@@ -678,32 +653,7 @@
     }
   },
   "2025": {
-    "aayush": {
-      "id": "aayush",
-      "name": "Aayush Muthuswamy",
-      "class": 2028,
-      "nickname": "Yoshi",
-      "height": "6′3″",
-      "hometown": "Seattle, WA",
-      "highschool": "Lincoln High School",
-      "concentration": "Undecided",
-      "captain": false,
-      "number": 40,
-      "bioQuestions": [
-        {
-          "question": "Who knows you the best?",
-          "answer": "Our son"
-        },
-        {
-          "question": "What about yourself do you hide from others?",
-          "answer": "When I'm nervous I do the macarena "
-        },
-        {
-          "question": "Do you consider yourself a free thinker? If yes, what's one true unpopular opinion you have? (not something meaningless like \"french toast is bad\")",
-          "answer": "a) No.\nb) French toast is bad"
-        }
-      ]
-    },
+    
     "adrian": {
       "id": "adrian",
       "name": "Adrian Lin",
